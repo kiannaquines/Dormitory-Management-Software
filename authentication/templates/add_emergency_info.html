@@ -1,0 +1,84 @@
+{% extends 'includes/base.html' %}
+
+
+{% block title %}Add Student Emergency Information{% endblock %}
+
+
+{% block content %}
+    <div class="col-lg-12">
+        <h2>Add Student Emergency Information</h2>
+        <div class="mg-t-20">
+            <div class="card custom-fieldset-style mg-b-30">
+                <form method="POST" action="{% url 'add_emergency_information' %}">
+                    {% csrf_token %}
+                    <div class="clearfix">
+
+
+                        <div class="row mg-t-20">
+                            <div class="col-lg mg-t-10 mg-lg-t-0">
+                                <label for="related_to">{{ emergency_form.user_id.label }} <span class="tx-danger">*</span> </label>
+                                <div class="input-group mb-3">
+                                    {{ emergency_form.user_id }}
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-lg">
+                            <label for="first_name">{{ emergency_form.emergency_detail_name.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_form.emergency_detail_name }}
+                            </div>
+                        </div>
+        
+                        <div class="row mg-t-20">
+                            <div class="col-lg mg-t-10 mg-lg-t-0">
+                                <label for="middle_name">{{ emergency_form.emergency_detail_middlename.label }} <span class="tx-danger">*</span> </label>
+                                {{ emergency_form.emergency_detail_middlename }}
+                            </div>
+        
+                            <div class="col-lg mg-t-10 mg-lg-t-0">
+                                <label for="last_name">{{ emergency_form.emergency_detail_lastname.label }} <span class="tx-danger">*</span> </label>
+                                {{ emergency_form.emergency_detail_lastname }}
+                            </div>
+                        </div>
+
+                        <div class="row mg-t-20">
+                            <div class="col-lg">
+                                <label for="first_name">{{ emergency_form.emergency_detail_mobile_number.label }} <span class="tx-danger">*</span> </label>
+                                {{ emergency_form.emergency_detail_mobile_number }} 
+                            </div>
+                            <div class="col-lg mg-t-10 mg-lg-t-0">
+                                <label for="gender">{{ emergency_form.emergency_detail_gender.label }} <span class="tx-danger">*</span> </label>
+                                <div class="input-group mb-3">
+                                    {{ emergency_form.emergency_detail_gender }}
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="row mg-t-20">
+                            <div class="col-lg">
+                                <label for="first_name">{{ emergency_form.emergency_detail_relation.label }} <span class="tx-danger">*</span> </label>
+                                {{ emergency_form.emergency_detail_relation }}
+                            </div>
+                        </div>
+        
+                        <div class="row mg-t-20">
+                                <div class="col-lg">
+                                <label for="address">{{ emergency_form.emergency_detail_address.label }} <span class="tx-danger">*</span> </label>
+                                {{ emergency_form.emergency_detail_address }}
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="row mg-t-20">
+                            <div class="col-lg">
+                                <input type="submit" class="btn btn-primary btn-md" value="Save emergency information">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+/**********************************************************************
+***********************************************************************
+### Charts CSS
+*********************************************************************
+*********************************************************************/
+
+.apexcharts-menu-item {
+	padding: 5px 3px !important;
+}
+
+.light .apexcharts-menu-item:hover {
+	background: #f2f4ff !important;
+}
+
+#wrapper {
+	position: relative;
+	background: #000524;
+	border: 1px solid #000;
+	box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.71);
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+#chart-bar {
+	position: relative;
+	margin-top: -38px;
+}
+
+.jqstooltip {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+	background: transparent;
+	background-color: rgba(0, 0, 0, 0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	color: $color-white;
+	font-size: 12px;
+	font-family: "IBM Plex Sans", san serif;
+	text-align: left;
+	white-space: nowrap;
+	padding: 12px;
+	border: $bd-default;
+	z-index: 10000;
+	display: inline-table;
+}

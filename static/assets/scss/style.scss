@@ -1,0 +1,48 @@
+/*****************************************************************************
+******************************************************************************
+Template Name Adata: Modern & Minimal Multipurpose Bootstrap Admin Dashboard
+Template URI: https://https://wrapcoders.xyz/adata/item/adata-modern-minimal-multipurpose-bootstrap-admin-dashboard/26635502
+Description: Adata is the ultimate admin template for Twitter Bootstrap. Adata calling the best the admin template for Bootstrap to date. It has a unique, pixel-perfect design, and many fully customized widgets. We gave special attention to design and focussed on building a versatile admin template that could work for an almost unlimited range of applications.
+Version: 1.0
+******************************************************************************
+******************************************************************************/
+/**********************************************************************
+***********************************************************************
+### Google Fonts
+*********************************************************************
+*********************************************************************/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+/**********************************************************************
+***********************************************************************
+### Imported SASS CSS
+*********************************************************************
+*********************************************************************/
+@import "general/general";
+@import "general/header";
+@import "general/sidebar";
+@import "general/dashboard";
+@import "general/app_mailbox";
+@import "general/app_calender";
+@import "general/app_file_manager";
+@import "general/ui_elements";
+@import "general/ui_utilities";
+@import "general/grid";
+@import "general/icons";
+@import "general/forms";
+@import "general/tables";
+@import "general/charts";
+@import "general/plugins_overwrite";
+@import "general/extended";
+@import "general/miscellaneous";
+@import "general/pages";
+@import "general/authentication";
+@import "general/bootstrap_overwrite";
+@import "general/pace";
+@import "general/highlightjs";
+@import "general/otheres";

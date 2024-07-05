@@ -1,0 +1,302 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Cyan
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.theme-cyan .logo a.logo-img {
+  background-image: url(../../../images/logos/logo-cyan.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-cyan .logo a.logo-img img {
+  display: none; }
+body.theme-cyan a:hover,
+body.theme-cyan .tx-primary,
+body.theme-cyan .custom-btn-group .nav-item a:hover,
+body.theme-cyan .btn-outline-brand,
+body.theme-cyan .btn-outline-primary,
+body.theme-cyan .btn-default:hover,
+body.theme-cyan .header-bottom .settings-dropdown a:hover,
+body.theme-cyan .header-bottom .settings-dropdown a:hover svg,
+body.theme-cyan .header-right .notifications-box a:hover h3,
+body.theme-cyan .daterangepicker .ranges li.active,
+body.theme-cyan .daterangepicker .ranges li:hover,
+body.theme-cyan .header-right .message-box a:hover h3,
+body.theme-cyan .header-right .top-message-area .top-message-footer a,
+body.theme-cyan .header-right .top-notifications-area .notifications-footer a,
+body.theme-cyan .header-right .languages-dropdown li a:hover,
+body.theme-cyan .header-right .user-profile-area .dropdown-item:hover,
+body.theme-cyan .page-sidebar-menu ul li.active > a,
+body.theme-cyan .page-sidebar-menu ul li .sub-menu a:hover,
+body.theme-cyan .page-sidebar-menu ul li.active > a i,
+body.theme-cyan .page-sidebar-menu ul li.active > a i.accordion-icon,
+body.theme-cyan .page-sidebar-menu ul li.open > a i.accordion-icon,
+body.theme-cyan .page-sidebar-menu ul li a:hover i.accordion-icon,
+body.theme-cyan .page-sidebar-menu ul li a:hover,
+body.theme-cyan .open:not(.active) > a,
+body.theme-cyan .custom-btn-group .nav-item a.active,
+body.theme-cyan .payment-info .nav-item a.active,
+body.theme-cyan .audience-overview-tab a.active h2,
+body.theme-cyan .audience-demographics .nav-tabs .nav-item.show .nav-link,
+body.theme-cyan .audience-demographics .nav-tabs .nav-link.active,
+body.theme-cyan .mailbox-mini-sidebar .mail-menu li:hover a,
+body.theme-cyan .mailbox-mini-sidebar .mail-menu li:hover a span svg,
+body.theme-cyan .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-cyan .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-cyan .mailbox-list-sidebar .mailbox-mail-list a.active .messages-name,
+body.theme-cyan .mailbox-list-sidebar .mailbox-mail-list a:hover .messages-name,
+body.theme-cyan .chat-list-sidebar .chat-contact-list a.active .messages-name,
+body.theme-cyan .chat-list-sidebar .chat-contact-list a:hover .messages-name,
+body.theme-cyan .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-cyan .chat-details .chat-details-header .chat-right-icons a:hover,
+body.theme-cyan .chat-details .middle .normal:hover a,
+body.theme-cyan .chat-details .middle .flex-row-reverse:hover a,
+body.theme-cyan .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+body.theme-cyan .file-manager-sidebar .file-manager-menu ul li:hover a,
+body.theme-cyan .file-manager-content .file-manager-file-list .card:hover .card-body a.tx-dark,
+body.theme-cyan .page-inner-content .inner-sidebar .section-nav .nav-link:hover,
+body.theme-cyan .page-inner-content .inner-sidebar .section-nav .nav-link.active,
+body.theme-cyan .ui-accordion-header.ui-state-active,
+body.theme-cyan .ui-accordion .ui-accordion-header:hover,
+body.theme-cyan .icons-list > div i,
+body.theme-cyan .icons-list > div svg,
+body.theme-cyan .settingPanelToggle {
+  color: #3dc7be; }
+body.theme-cyan .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.theme-cyan .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.theme-cyan .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill],
+body.theme-cyan .page-header .navbar-default .adata-svg-icon g [fill],
+body.theme-cyan .page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill],
+body.theme-cyan .adata-svg-icon g [fill] {
+  fill: #3dc7be; }
+body.theme-cyan .btn-primary,
+body.theme-cyan .btn-custom-primary,
+body.theme-cyan .btn-outline-brand:hover,
+body.theme-cyan .btn-outline-primary:hover,
+body.theme-cyan .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-cyan .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-cyan .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-cyan .tooltip-primary .tooltip-inner,
+body.theme-cyan .header-right .top-message-area .top-message-heading > span,
+body.theme-cyan .header-right .top-notifications-area .notifications-heading > span,
+body.theme-cyan .show > .btn-primary.dropdown-toggle,
+body.theme-cyan .daterangepicker td.active,
+body.theme-cyan .daterangepicker td.active:hover,
+body.theme-cyan .applyBtn.btn-primary:hover,
+body.theme-cyan .selectgroup-input-radio:focus + .selectgroup-button,
+body.theme-cyan .selectgroup-input-radio:checked + .selectgroup-button,
+body.theme-cyan .accordion-menu .sub-menu li a:hover:before,
+body.theme-cyan .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-cyan .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-cyan .badge-primary,
+body.theme-cyan .selectize-control.contacts .selectize-input > div,
+body.theme-cyan .tui-full-calendar-confirm,
+body.theme-cyan .tui-datepicker .tui-is-selectable.tui-is-selected,
+body.theme-cyan .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected,
+body.theme-cyan .tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator,
+body.theme-cyan .page-inner-content .inner-sidebar .section-nav .nav-link.active::after,
+body.theme-cyan .nav-pills .nav-link.active,
+body.theme-cyan .nav-pills .show > .nav-link,
+body.theme-cyan .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-cyan .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-cyan .custom-list-group .list-group-item.active,
+body.theme-cyan .custom-scrollbar .custom-scrollbar-color > .ps__rail-y > .ps__thumb-y,
+body.theme-cyan .irs--flat .irs-bar,
+body.theme-cyan .irs--flat .irs-from,
+body.theme-cyan .irs--flat .irs-to,
+body.theme-cyan .irs--flat .irs-single,
+body.theme-cyan .irs--flat .irs-handle > i:first-child,
+body.theme-cyan .irs--flat .irs-handle.state_hover > i:first-child,
+body.theme-cyan .irs--flat .irs-handle:hover > i:first-child,
+body.theme-cyan .checkbox label::after,
+body.theme-cyan .sk-plane,
+body.theme-cyan .sk-chase-dot:before,
+body.theme-cyan .sk-bounce-dot,
+body.theme-cyan .sk-wave-rect,
+body.theme-cyan .sk-pulse,
+body.theme-cyan .sk-flow-dot,
+body.theme-cyan .sk-swing-dot,
+body.theme-cyan .sk-circle-dot:before,
+body.theme-cyan .sk-circle-fade-dot:before,
+body.theme-cyan .sk-grid-cube,
+body.theme-cyan .sk-fold-cube:before,
+body.theme-cyan .sk-wander-cube,
+body.theme-cyan .btn-scroll-top {
+  background-color: #3dc7be; }
+body.theme-cyan .bg-primary,
+body.theme-cyan .header-color .accordion-title.bg-primary {
+  background-color: #3dc7be !important; }
+body.theme-cyan .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-cyan .bg-soft-color .ui-widget-content.ui-accordion-content-active {
+  background: rgba(62, 198, 189, 0.1); }
+body.theme-cyan .page-sidebar-menu ul li.active > a,
+body.theme-cyan .page-sidebar-menu ul li a:hover,
+body.theme-cyan .open:not(.active) > a,
+body.theme-cyan .page-sidebar-collapsed .page-sidebar-menu ul li.active > a,
+body.theme-cyan .page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.theme-cyan .page-sidebar-collapsed .open:not(.active) > a {
+  background: #e2f7f5; }
+body.theme-cyan .selectize-control.contacts .selectize-input > div {
+  background: #3dc7be;
+  background: -moz-linear-gradient(top, #3dc7be 0%, #3dc7be 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3dc7be), color-stop(100%, #3dc7be));
+  background: -webkit-linear-gradient(top, #3dc7be 0%, #3dc7be 100%);
+  background: -o-linear-gradient(top, #3dc7be 0%, #3dc7be 100%);
+  background: -ms-linear-gradient(top, #3dc7be 0%, #3dc7be 100%);
+  background: linear-gradient(to bottom, #3dc7be 0%, #3dc7be 100%); }
+body.theme-cyan .btn-primary,
+body.theme-cyan .btn-custom-primary,
+body.theme-cyan .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-cyan .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-cyan .btn-outline-brand,
+body.theme-cyan .btn-outline-primary,
+body.theme-cyan .btn-outline-primary:hover,
+body.theme-cyan .btn-default:hover,
+body.theme-cyan .show > .btn-primary.dropdown-toggle,
+body.theme-cyan .header-right .user-profile-area .dropdown-item:hover,
+body.theme-cyan .applyBtn.btn-primary:hover,
+body.theme-cyan .accordion-menu .sub-menu li a:hover:before,
+body.theme-cyan .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-cyan .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-cyan input:focus,
+body.theme-cyan .custom-file:focus,
+body.theme-cyan .custom-select:focus,
+body.theme-cyan .form-control:focus,
+body.theme-cyan .selectize-control.contacts .selectize-input > div,
+body.theme-cyan .selectize-control.contacts .selectize-input.dropdown-active,
+body.theme-cyan .tui-full-calendar-popup-section-item:focus,
+body.theme-cyan .tui-full-calendar-popup-section-item:hover,
+body.theme-cyan .tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+body.theme-cyan .tui-full-calendar-button:hover,
+body.theme-cyan .tui-full-calendar-month-creation-guide,
+body.theme-cyan .flow-drop,
+body.theme-cyan .border-color .accordion-title.bd-primary,
+body.theme-cyan .border-color .ui-widget-content.bd-primary,
+body.theme-cyan .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-cyan .bg-soft-color .ui-widget-content.ui-accordion-content-active,
+body.theme-cyan .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-cyan .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-cyan .custom-list-group .list-group-item.active,
+body.theme-cyan .contact-add-sidebar .form-group.birthday-select select:focus,
+body.theme-cyan .btn-scroll-top {
+  border-color: #3dc7be; }
+body.theme-cyan .tui-full-calendar-month-creation-guide {
+  border-color: #3dc7be !important; }
+body.theme-cyan .audience-overview-tab a.active {
+  border-top: 1px solid #3dc7be; }
+body.theme-cyan .irs--flat .irs-from:before,
+body.theme-cyan .irs--flat .irs-to:before,
+body.theme-cyan .irs--flat .irs-single:before {
+  border-top-color: #3dc7be; }
+body.theme-cyan .mailbox-mini-sidebar .mail-menu li:hover,
+body.theme-cyan .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-cyan .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-cyan .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-cyan .file-manager-sidebar .file-manager-menu ul li:hover a {
+  border-left: 1px solid #3dc7be; }
+body.theme-cyan .bg-soft-primary,
+body.theme-cyan .custom-btn-group .nav-item a.active {
+  background-color: rgba(61, 199, 190, 0.15) !important;
+  color: #3dc7be; }
+body.theme-cyan .btn-primary:hover,
+body.theme-cyan .btn-secondary:hover,
+body.theme-cyan .btn-warning:hover,
+body.theme-cyan .btn-success:hover,
+body.theme-cyan .btn-danger:hover,
+body.theme-cyan .btn-info:hover,
+body.theme-cyan .btn-dark:hover,
+body.theme-cyan .btn-custom-primary:hover,
+body.theme-cyan .btn-outline-brand:hover,
+body.theme-cyan .btn-outline-primary:hover,
+body.theme-cyan .tooltip-primary .tooltip-inner,
+body.theme-cyan .header-color .ui-accordion-header.ui-state-active,
+body.theme-cyan .header-color .ui-accordion-header,
+body.theme-cyan .header-color .ui-accordion-header:hover,
+body.theme-cyan .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-cyan .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-cyan .btn-scroll-top {
+  color: #ffffff; }
+body.theme-cyan .tooltip-primary.bs-tooltip-top .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #3dc7be; }
+body.theme-cyan .tooltip-primary.bs-tooltip-bottom .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #3dc7be; }
+body.theme-cyan .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #3dc7be; }
+body.theme-cyan .tooltip-primary.bs-tooltip-right .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before,
+body.theme-cyan .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #3dc7be; }
+body.theme-cyan .order-details-tab .nav-item a.active,
+body.theme-cyan .order-details-tab .nav-item a:hover {
+  color: #3dc7be;
+  border-bottom: 1px solid #3dc7be; }
+
+body.theme-cyan.page-sidebar-collapsed .logo a.logo-img img.small-logo {
+  background-image: url(../../../images/logos/small-logo-cyan.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-cyan.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  color: #3dc7be; }
+body.theme-cyan.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a .adata-svg-icon g [fill] {
+  fill: #3dc7be; }
+
+body.theme-cyan.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background-color: #3dc7be; }
+
+body.dark-sidebar.theme-cyan .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li.active > a,
+body.dark-sidebar.theme-cyan .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li a:hover,
+body.dark-sidebar.theme-cyan .page-sidebar .page-sidebar-inner .open:not(.active) > a {
+  background: #3dc7be; }
+
+/*Dark Theme CSS*/
+body.dark-theme.theme-cyan a:hover {
+  color: #3dc7be !important; }
+body.dark-theme.theme-cyan .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-cyan .open:not(.active) > a,
+body.dark-theme.theme-cyan .page-sidebar-menu ul li.active > a {
+  color: #3dc7be;
+  background-color: #245462; }
+body.dark-theme.theme-cyan input:focus,
+body.dark-theme.theme-cyan .custom-file:focus,
+body.dark-theme.theme-cyan .custom-select:focus,
+body.dark-theme.theme-cyan .form-control:focus,
+body.dark-theme.theme-cyan .calculator-block .cryptonatorwidget input:focus,
+body.dark-theme.theme-cyan .calculator-block .cryptonatorwidget select:focus,
+body.dark-theme.theme-cyan .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #3dc7be; }
+
+body.dark-theme.theme-cyan.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-cyan.page-sidebar-collapsed .open:not(.active) > a,
+body.dark-theme.theme-cyan.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  color: #3dc7be;
+  background-color: #245462; }
+
+/*Semi Dark Theme CSS*/
+body.semi-dark-theme.theme-cyan .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-cyan .open:not(.active) > a,
+body.semi-dark-theme.theme-cyan .page-sidebar-menu ul li.active > a {
+  color: #3dc7be;
+  background-color: #245462; }
+body.semi-dark-theme.theme-cyan input:focus,
+body.semi-dark-theme.theme-cyan .custom-file:focus,
+body.semi-dark-theme.theme-cyan .custom-select:focus,
+body.semi-dark-theme.theme-cyan .form-control:focus,
+body.semi-dark-theme.theme-cyan .calculator-block .cryptonatorwidget input:focus,
+body.semi-dark-theme.theme-cyan .calculator-block .cryptonatorwidget select:focus,
+body.semi-dark-theme.theme-cyan .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #3dc7be; }
+
+body.semi-dark-theme.theme-cyan.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-cyan.page-sidebar-collapsed .open:not(.active) > a,
+body.semi-dark-theme.theme-cyan.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  color: #3dc7be;
+  background-color: #245462; }
+
+/*# sourceMappingURL=theme-cyan.css.map */

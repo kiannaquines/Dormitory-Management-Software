@@ -1,0 +1,65 @@
+{% extends 'includes/base.html' %}
+
+
+{% block title %}Student Emergency Information{% endblock %}
+
+
+{% block content %}
+    <div class="col-lg-12">
+        <h2>Student Emergency Information</h2>
+
+        {% for message in messages %}
+            <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        {% endfor %}
+
+    <div class="card mt-3">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <table id="resultTable" class="table table-bordered responsive nowrap">
+                        <thead>
+                            <tr>
+                                <th>Related to</th>
+                                <th>Emnergency Detail Name</th>
+                                <th>Relation</th>
+                                <th>Date Added</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for info in emergency_info %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'edit_user' id=info.user_id.id %}">
+                                        {{ info.user_id.first_name }} {{ info.user_id.last_name }}
+                                    </a>
+                                    </td>
+                                <td>
+                                    <a href="{% url 'edit_emergency_info' id=info.id %}">{{ info.emergency_detail_name }} {{ info.emergency_detail_middlename }} {{ info.emergency_detail_lastname }}</a>
+                                </td>
+                                <td>{{ info.emergency_detail_relation }}</td>
+                                <td>{{ info.user_id.date_joined }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Related to</th>
+                                <th>Emnergency Detail Firstname</th>
+                                <th>Relation</th>
+                                <th>Date Added</th>
+                            </tr>
+                        </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

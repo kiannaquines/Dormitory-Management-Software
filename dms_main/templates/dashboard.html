@@ -1,0 +1,331 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+
+{% block page_css %}
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/dataTable/datatables.min.css' %}">
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/dataTable/extensions/dataTables.jqueryui.min.css' %}">	  
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/chart.js/chart.min.css' %}"/>
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/daterangepicker/daterangepicker.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<div class="row row-xs">
+
+   <div class="col-12">
+
+      {% for message in messages %}
+         <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            Hi, {{ request.user.username }} {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+        </div>
+      {% endfor %}
+      
+      <div class="card mg-b-20">
+         <div class="d-block d-md-flex justify-content-between align-items-center pd-15">
+            <div>
+               <h4 class="tx-15 mb-0 tx-normal">University of Southern Mindanao Men's Dormitory New Boarders Analytics</h4>
+            </div>           
+         </div>
+         <div class="card-body">
+            <div class="tab-content">
+               <div class="tab-pane fade active show" id="pills-4" role="tabpanel">
+                  <canvas id="audienceOverviewYear" height="80" style="margin: -1px!important"></canvas>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+    <div class="col-md-6 col-xl-4">
+        <div class="card card-body mg-b-20">
+           <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                 <h2 class="tx-12 tx-uppercase">Active Boarders</h2>
+                 <span class="tx-20 tx-rubik">{{ active_boarders }}</span>
+              </div>
+              <span class="cf-icon-style" style="background-color: rgba(243, 170, 18, 0.1)">
+              <i data-feather="users"></i>
+              </span>
+           </div>
+           <div class="card-progressbar mg-t-15">
+              <div class="progress" style="height: 3px">
+                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="col-md-6 col-xl-4">
+        <div class="card card-body mg-b-20">
+           <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                 <h2 class="tx-12 tx-uppercase">Inactive Boarders</h2>
+                 <span class="tx-20 tx-rubik">{{ inactive_boarders }}</span>
+              </div>
+              <span class="cf-icon-style" style="background-color: rgba(243, 170, 18, 0.1)">
+              <i data-feather="users"></i>
+              </span>
+           </div>
+           <div class="card-progressbar mg-t-15">
+              <div class="progress" style="height: 3px">
+                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+           </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-xl-4">
+        <div class="card card-body mg-b-20">
+           <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                 <h2 class="tx-12 tx-uppercase">Staff</h2>
+                 <span class="tx-20 tx-rubik">{{ staff }}</span>
+              </div>
+              <span class="cf-icon-style" style="background-color: rgba(243, 170, 18, 0.1)">
+              <i data-feather="users"></i>
+              </span>
+           </div>
+           <div class="card-progressbar mg-t-15">
+              <div class="progress" style="height: 3px">
+                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+    
+    <div class="col-md-6 col-xl-4">
+        <div class="card card-body mg-b-20">
+           <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                 <h2 class="tx-12 tx-uppercase">Daily Income</h2>
+                 <span class="tx-20 tx-rubik">{{ daily_total }}</span>
+              </div>
+              <span class="cf-icon-style">
+               ₱
+              </span>
+           </div>
+           <div class="card-progressbar mg-t-15">
+              <div class="progress" style="height: 3px">
+                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+    
+    <div class="col-md-6 col-xl-4">
+        <div class="card card-body mg-b-20">
+           <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                 <h2 class="tx-12 tx-uppercase">Monthly Income</h2>
+                 <span class="tx-20 tx-rubik">{{ monthly_total }}</span>
+              </div>
+              <span class="cf-icon-style">
+               ₱
+              </span>
+           </div>
+           <div class="card-progressbar mg-t-15">
+              <div class="progress" style="height: 3px">
+                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+    
+    <div class="col-md-6 col-xl-4">
+        <div class="card card-body mg-b-20">
+           <div class="d-flex justify-content-between align-items-center">
+              <div class="">
+                 <h2 class="tx-12 tx-uppercase">Yearly Income</h2>
+                 <span class="tx-20 tx-rubik">{{ yearly_total }}</span>
+              </div>
+              <span class="cf-icon-style">
+               ₱
+              </span>
+           </div>
+           <div class="card-progressbar mg-t-15">
+              <div class="progress" style="height: 3px">
+                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+     <div class="col-12">
+      <div class="card mg-b-20">
+
+         <div class="card-body">
+      
+            <div class="mb-2">
+               <h4 class="tx-15 mb-0 tx-normal">University of Southern Mindanao Men's Dormitory Boarders</h4>
+            </div>  
+      
+            <table id="hoverTable" class="table table-bordered responsive nowrap">
+               <thead>
+                  <tr>
+                     <th>Name</th>
+                     <th>College</th>
+                     <th>Student ID</th>
+                     <th>Contact Number</th>
+                     <th>Gender</th>
+                     <th>Status</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  {% for boarder in boarders %}
+                  <tr>
+                     <td>{{ boarder.first_name }} {{ boarder.last_name }}</td>
+                     <td>{{ boarder.college }}</td>
+                     <td>{{ boarder.student_id }}</td>
+                     <td>{{ boarder.contact_number }}</td>
+                     <td>
+                        {% if boarder.gender == "M" %}
+                           Male 
+                        {% elif boarder.gender == "F" %}
+                           Female
+                        {% endif %}
+                     </td>
+                     <td>
+                        {% if boarder.is_active %}
+                           <button class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect rounded-pill btn-sm">Active</button>
+                        {% else %}
+                           Inactive
+                        {% endif %}
+                     </td>
+                  </tr>
+                  {% endfor %}
+               </tbody>
+               <tfoot>
+                  <tr>
+                     <th>Name</th>
+                     <th>College</th>
+                     <th>Student ID</th>
+                     <th>Contact Number</th>
+                     <th>Gender</th>
+                     <th>Status</th>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+      </div>
+     </div>
+</div>
+{% endblock %}
+
+{% block page_js %}
+<script src="{% static 'assets/plugins/dataTable/datatables.min.js' %}"></script>
+<script src="{% static 'assets/plugins/dataTable/responsive/dataTables.responsive.js' %}"></script>
+<script src="{% static 'assets/plugins/dataTable/extensions/dataTables.jqueryui.min.js' %}"></script>
+<script>
+    $('#hoverTable').DataTable({
+        responsive: true,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        }
+    });
+</script>
+<script src="{% static 'assets/plugins/chart.js/chart.min.js' %}"></script>
+<script src="{% static 'assets/plugins/daterangepicker/daterangepicker.js' %}"></script>
+<script>
+"use strict";
+window.onload = function () {
+	var ctx1 = document.getElementById('audienceOverviewYear').getContext('2d');
+	window.audienceOverviewYear = new Chart(ctx1, {
+
+		type: 'bar',
+		data: {
+			labels: {{ year }},
+			datasets: [{
+				label: 'New Boarders Per Year',
+				fill: true,
+				backgroundColor: 'rgba(156, 39, 176, 0.15)', // rgba(92, 118, 251, 0.15)
+				borderColor: '#9c27b0',
+				borderWidth: 0.5,
+				bodyFontFamily: '"IBM Plex Sans", sans-serif',
+				data: {{ borders_count }},
+			}]
+		},
+		options: {
+
+			responsive: true,
+			tooltips: {
+				intersect: true,
+				bodyFontSize: 13,
+				bodyFontFamily: '"IBM Plex Sans", sans-serif',
+			},
+			hover: {
+				intersect: true
+			},
+			scales: {
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'New Boarders',
+						fontColor: '#868DAA',
+						fontSize: 13,
+						fontStyle: "normal",
+						fontFamily: '"IBM Plex Sans", sans-serif',
+					},
+					ticks: {
+						beginAtZero: true,
+						fontColor: '#868DAA',
+						fontSize: 13,
+						fontStyle: "normal",
+						fontFamily: '"IBM Plex Sans", sans-serif',
+					},
+					gridLines: {
+						display: true,
+						color: '#eee',
+					},
+				}],
+				xAxes: [{
+					display: true,
+					ticks: {
+						fontColor: '#868DAA',
+						fontSize: 13,
+						fontStyle: "normal",
+						fontFamily: '"IBM Plex Sans", sans-serif',
+					},
+					gridLines: {
+						display: true,
+						color: '#eee',
+					},
+				}],
+
+			},
+			legend: {
+				display: false,
+			},
+		}
+	});	
+}
+</script>
+{% endblock %}

@@ -1,0 +1,300 @@
+/**********************************************************************
+***********************************************************************
+### Theme Shadow CSS
+*********************************************************************
+*********************************************************************/
+
+/*Light Theme CSS*/
+body.theme-shadow {
+	.card {
+		-webkit-box-shadow: 0px 15px 20px 0 rgba(25, 42, 70, .12);
+		-moz-box-shadow: 0px 15px 20px 0 rgba(25, 42, 70, .12);
+		-ms-box-shadow: 0px 15px 20px 0 rgba(25, 42, 70, .12);
+		-o-box-shadow: 0px 15px 20px 0 rgba(25, 42, 70, .12);
+		box-shadow: 0px 15px 20px 0 rgba(25, 42, 70, .12);
+	}
+
+	.dropdown-menu,
+	.header-right .dropdown-menu,
+	.header-right .languages-dropdown,
+	.select2-dropdown {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+	}
+
+	.header-bottom,
+	.th-search-form .tt-open {
+		-webkit-box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+		-moz-box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+		-ms-box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+		box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+	}
+
+	.page-sidebar {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.10);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.10);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.10);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.10);
+		box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.10);
+	}
+
+	.showSettingPanel {
+		-webkit-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.50);
+		-moz-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.50);
+		-ms-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.50);
+		-o-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.50);
+		box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.50);
+	}
+
+	.box-shadow {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+		box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+	}
+
+	.page-footer {
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+		-moz-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+		-ms-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+		box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+	}
+
+	.popover {
+		-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+		-ms-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+		-o-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	.card-hover:hover {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-ms-box-shadow: none;
+		-o-box-shadow: none;
+		box-shadow: none;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+
+	.modal.effect-scale.show .modal-dialog {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+	}
+
+	.search-form {
+		-webkit-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		-moz-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		-ms-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		-o-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+	}
+
+	.tt-menu {
+		-webkit-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		-moz-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		-ms-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		-o-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+		box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+	}
+
+	.btn-scroll-top {
+		-webkit-box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+		-moz-box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+		-ms-box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+		box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+	}
+
+	.tooltip-inner {
+		-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+		-ms-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+		-o-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	}
+
+	.popover-details.popover {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+		box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+	}
+
+	.daterangepicker {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+		box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+	}
+
+	.mail-compose-sidebar {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+	}
+
+	.selectize-control.contacts .selectize-dropdown-content {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+		box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+	}
+
+	.add-sidebar {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		-o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+		box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+	}
+
+	.tui-full-calendar-popup,
+	.tui-full-calendar-popup-container,
+	.growl {
+		-webkit-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+		-moz-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+		-ms-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+		box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+	}
+
+	.custom-fieldset {
+		-webkit-box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+		-moz-box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+		-ms-box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+		box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+	}
+
+	.theme-setting-options ul li div {
+		-webkit-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+		-ms-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.theme-setting-options ul li.active div {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-ms-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.selectize-control.contacts .selectize-input>div {
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	}
+
+	#toast-container>div:hover {
+		-moz-box-shadow: 0 0 12px #7b7986;
+		-webkit-box-shadow: 0 0 12px #7b7986;
+		box-shadow: 0 0 12px #7b7986;
+	}
+
+	.hover-shadow:hover {
+		-webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		-moz-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		-ms-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+} 
+
+body.theme-shadow.page-sidebar-collapsed .page-sidebar-menu ul.sub-menu {
+	-webkit-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+	-moz-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+	-ms-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+	-o-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+	box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+}
+
+
+
+/*Dark Theme CSS*/
+body.theme-shadow.dark-theme {
+	.dropdown-menu,
+	.header-right .dropdown-menu,
+	.header-right .languages-dropdown,
+	.select2-dropdown,
+	.custom-fieldset,
+	.card,
+	.tt-menu,
+	.header-bottom,
+	.th-search-form .tt-open,
+	.daterangepicker,
+	.modal-content,
+	.popover,
+	.popover-details.popover,
+	.selectize-control.contacts .selectize-dropdown-content,
+	.tui-full-calendar-popup,
+	.tui-full-calendar-popup-container,
+	.growl,
+	.swal2-popup,
+	#toast-container>div {
+		-webkit-box-shadow: 0px 15px 25px 0px rgba(10, 15, 40, 1);
+		-moz-box-shadow: 0px 15px 25px 0px rgba(10, 15, 40, 1);
+		-ms-box-shadow: 0px 15px 25px 0px rgba(10, 15, 40, 1);
+		-o-box-shadow: 0px 15px 25px 0px rgba(10, 15, 40, 1);
+		box-shadow: 0px 15px 25px 0px rgba(10, 15, 40, 1);
+	}
+
+	.settingPanelToggle,
+	.page-footer,
+	.add-sidebar {
+		-webkit-box-shadow: -10px 15px 25px 0px rgba(10, 15, 40, 1);
+		-moz-box-shadow: -10px 15px 25px 0px rgba(10, 15, 40, 1);
+		-ms-box-shadow: -10px 15px 25px 0px rgba(10, 15, 40, 1);
+		-o-box-shadow: -10px 15px 25px 0px rgba(10, 15, 40, 1);
+		box-shadow: -10px 15px 25px 0px rgba(10, 15, 40, 1);
+	}
+
+	.showSettingPanel {
+		-webkit-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+		-moz-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+		-ms-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+		-o-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+		box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+	}
+
+	body.theme-shadow.dark-theme.page-sidebar-collapsed .page-sidebar-menu ul.sub-menu {
+		-webkit-box-shadow: 0px 10px 25px 0px rgb(12, 18, 40);
+		-moz-box-shadow: 0px 10px 25px 0px rgb(12, 18, 40);
+		-ms-box-shadow: 0px 10px 25px 0px rgb(12, 18, 40);
+		-o-box-shadow: 0px 10px 25px 0px rgb(12, 18, 40);
+		box-shadow: 0px 10px 25px 0px rgb(12, 18, 40);
+	}
+
+	.box-shadow {
+		-webkit-box-shadow: 0px 10px 30px 0px rgb(11, 17, 42);
+		-moz-box-shadow: 0px 10px 30px 0px rgb(11, 17, 42);
+		-ms-box-shadow: 0px 10px 30px 0px rgb(11, 17, 42);
+		-o-box-shadow: 0px 10px 30px 0px rgb(11, 17, 42);
+		box-shadow: 0px 10px 30px 0px rgb(11, 17, 42);
+	}
+}
+
+body.dark-theme .page-container.container {
+	-webkit-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+	-moz-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+	-ms-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+	-o-box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+	box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+}

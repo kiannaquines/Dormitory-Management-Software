@@ -1,0 +1,64 @@
+{% extends 'includes/base.html' %}
+
+{% block title %}Client Deleted Reservation{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+
+    <h2>My deleted reservation</h2>
+    {% for message in messages %}
+         <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+        </div>
+      {% endfor %}
+    <div class="card mt-3">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <table id="resultTable" class="table table-bordered responsive nowrap">
+                        <thead>
+                            <tr>
+                                <th>Reserved Dorm</th>
+                                <th>Reserved Room</th>
+                                <th>Your moved in date</th>
+                                <th>Date reserved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for deleted_reservation in deleted_reservations %}
+                            <tr>
+                                <td>
+                                    <a href="#">{{ deleted_reservation.dorm_id.dorm_name }}</a>
+                                </td>
+                                <td>
+                                    {{ deleted_reservation.room_id.room_name }}
+                                </td>
+                                <td>
+                                    {{ deleted_reservation.move_in_date }}
+                                </td>
+                                <td>
+                                    {{ deleted_reservation.date_reserved }}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Reserved Dorm</th>
+                                <th>Reserved Room</th>
+                                <th>Your moved in date</th>
+                                <th>Date reserved</th>
+                            </tr>
+                        </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

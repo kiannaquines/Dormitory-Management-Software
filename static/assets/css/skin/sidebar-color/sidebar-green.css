@@ -1,0 +1,155 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Sidebar Theme Green
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.sidebar-green .logo a.logo-img {
+  background-image: url(../../../images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.sidebar-green .logo a.logo-img img {
+  display: none; }
+body.sidebar-green .page-sidebar .logo {
+  background-color: #6fa531;
+  border-right: 1px solid #6fa531;
+  border-bottom: 1px solid #6fa531; }
+body.sidebar-green .page-sidebar {
+  border-right: 1px solid #6fa531; }
+body.sidebar-green .page-sidebar-menu ul li.menu-label,
+body.sidebar-green .page-sidebar-menu ul li a,
+body.sidebar-green .page-sidebar-menu ul li a i.accordion-icon,
+body.sidebar-green .accordion-menu .sub-menu .sub-menu-label {
+  color: #f1f1ff !important; }
+body.sidebar-green .page-sidebar-menu ul li a:hover,
+body.sidebar-green .page-sidebar-menu ul li.active > a,
+body.sidebar-green .open:not(.active) > a {
+  color: #ffffff !important;
+  background: #65982a !important; }
+body.sidebar-green .page-sidebar-menu ul li ul.sub-menu li.active > a,
+body.sidebar-green .page-sidebar-menu ul li .sub-menu a:hover {
+  color: #ffffff !important;
+  background: transparent !important; }
+body.sidebar-green .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.sidebar-green .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.sidebar-green .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill] {
+  fill: #ffffff !important;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+body.sidebar-green .accordion-menu .sub-menu li a:before {
+  border: 1px solid #f1f1ff; }
+body.sidebar-green .page-sidebar-menu ul li ul li.active > a:before,
+body.sidebar-green .accordion-menu .sub-menu li a:hover:before,
+body.sidebar-green .page-sidebar-menu ul li ul li.active > a:hover:before {
+  border: 1px solid #6fa531 !important;
+  background: #ffffff !important; }
+body.sidebar-green .page-sidebar {
+  background: #7ab339; }
+body.sidebar-green .page-sidebar-inner .accordion-menu .sub-menu {
+  background: #5d9022; }
+body.sidebar-green .accordion-menu .sub-menu li.divider-border {
+  border-top: 1px solid #639825; }
+  
+body.sidebar-green.page-sidebar-collapsed .logo a.logo-img img.small-logo {
+  background-image: url(../../../images/small-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.sidebar-green.page-sidebar-collapsed .page-sidebar .logo {
+  background-color: #65982a; }
+body.sidebar-green.page-sidebar-collapsed .page-sidebar {
+  background: #6fa531; }
+body.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background: #6fa531; }
+body.sidebar-green.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu {
+  border-left: 1px solid #6fa531;
+  border-right: 1px solid #6fa531;
+  border-bottom: 1px solid #6fa531; }
+body.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li > a,
+body.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  border: 1px solid #6fa531; }
+
+/*Semi-Dark Theme CSS*/
+body.semi-dark-theme.sidebar-green .page-sidebar-menu ul li ul.sub-menu li.active > a,
+body.semi-dark-theme.sidebar-green .page-sidebar-menu ul li .sub-menu a:hover {
+  color: #6fa531 !important; }
+body.semi-dark-theme.sidebar-green .page-sidebar-menu ul li a .adata-svg-icon g [fill] {
+  fill: #6fa531 !important; }
+body.semi-dark-theme.sidebar-green .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.semi-dark-theme.sidebar-green .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill] {
+  fill: #ffffff !important; }
+
+body.semi-dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li > a,
+body.semi-dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  border: 1px solid #1a233a; }
+body.semi-dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu ul li.active > a,
+body.semi-dark-theme.sidebar-green.page-sidebar-collapsed .open:not(.active) > a {
+  color: #ffffff !important;
+  background: #151d33 !important; }
+
+/*Dark Theme CSS*/
+body.dark-theme.sidebar-green .page-sidebar .logo {
+  background-color: #6fa531;
+  border-right: 1px solid #6fa531;
+  border-bottom: 1px solid #6fa531; }
+body.dark-theme.sidebar-green .page-sidebar {
+  border-right: 1px solid #6fa531; }
+body.dark-theme.sidebar-green .page-sidebar-menu ul li.menu-label,
+body.dark-theme.sidebar-green .page-sidebar-menu ul li a,
+body.dark-theme.sidebar-green .page-sidebar-menu ul li a i.accordion-icon,
+body.dark-theme.sidebar-green .accordion-menu .sub-menu .sub-menu-label {
+  color: #f1f1ff !important; }
+body.dark-theme.sidebar-green .page-sidebar-menu ul li a:hover,
+body.dark-theme.sidebar-green .page-sidebar-menu ul li.active > a,
+body.dark-theme.sidebar-green .open:not(.active) > a {
+  color: #ffffff !important;
+  background: #65982a !important; }
+body.dark-theme.sidebar-green .page-sidebar-menu ul li ul.sub-menu li.active > a,
+body.dark-theme.sidebar-green .page-sidebar-menu ul li .sub-menu a:hover {
+  color: #ffffff !important;
+  background: transparent !important; }
+body.dark-theme.sidebar-green .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.dark-theme.sidebar-green .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.dark-theme.sidebar-green .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill] {
+  fill: #ffffff !important;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+body.dark-theme.sidebar-green .accordion-menu .sub-menu li a:before {
+  border: 1px solid #f1f1ff; }
+body.dark-theme.sidebar-green .page-sidebar-menu ul li ul li.active > a:before,
+body.dark-theme.sidebar-green .accordion-menu .sub-menu li a:hover:before,
+body.dark-theme.sidebar-green .page-sidebar-menu ul li ul li.active > a:hover:before {
+  border: 1px solid #6fa531 !important;
+  background: #ffffff !important; }
+body.dark-theme.sidebar-green .page-sidebar {
+  background: #7ab339; }
+body.dark-theme.sidebar-green .page-sidebar-inner .accordion-menu .sub-menu {
+  background: #5d9022; }
+body.dark-theme.sidebar-green .accordion-menu .sub-menu li.divider-border {
+  border-top: 1px solid #6fa531; }
+body.dark-theme.sidebar-green #collapsed-sidebar-toggle-button:hover {
+  background-color: #6fa531; }
+
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar .logo {
+  background-color: #65982b; }
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar {
+  background: #6fa531; }
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background: #6fa531; }
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu {
+  border-left: 1px solid #6fa531;
+  border-right: 1px solid #6fa531;
+  border-bottom: 1px solid #6fa531; }
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li > a,
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a,
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li.active > a {
+  border: 1px solid #6fa531; }
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a,
+body.dark-theme.sidebar-green.page-sidebar-collapsed .page-sidebar-menu > ul > li.active > a {
+  background-color: #6fa531; }
+
+/*# sourceMappingURL=sidebar-green.css.map */

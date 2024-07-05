@@ -1,0 +1,174 @@
+/**********************************************************************
+***********************************************************************
+### Collapse Sidebar CSS
+*********************************************************************
+*********************************************************************/
+
+/*Light Theme CSS*/
+.page-sidebar-collapsed {
+	.page-sidebar .logo {
+		width: 60px;
+	}
+
+	.logo a.logo-img img.desktop-logo {
+		display: none;
+	}
+
+	.logo a.logo-img img.small-logo {
+		display: block;
+	}
+
+	.page-sidebar-menu>ul>li>a:hover {
+		opacity: 1;
+	}
+
+	.page-content {
+		width: calc(100% - 60px);
+	}
+
+	.accordion-menu .sub-menu {
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+
+	.page-sidebar-menu ul li .sub-menu a:before,
+	.page-sidebar-menu ul li .sub-menu a.active>a:before {
+		left: 15px;
+	}
+
+	.page-sidebar {
+		width: 60px;
+	}
+	.page-sidebar-menu>ul>li {
+		width: 60px;
+		position: relative;
+	}
+
+	.page-sidebar-menu>ul>li>a {
+		width: 60px;
+		position: relative;
+		border: 1px solid transparent;
+		padding: 17px 16px;
+	    margin: 0;
+		border-radius: 0;	
+	}
+
+	.page-sidebar-menu ul li .sub-menu,
+	.page-sidebar-menu ul li.active .sub-menu,
+	.page-sidebar-menu ul li.open .sub-menu {
+		display: none !important;
+		width: 200px;
+	}
+
+	.page-sidebar-menu ul li a span:not(.label) {
+		margin-left: 30px;
+	}
+
+	.page-sidebar-menu ul li a span,
+	.page-sidebar-menu ul li a i.accordion-icon {
+		display: none;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		position: absolute;
+		padding: 12px 0;
+		left: 39px;
+		z-index: 9999;
+		background: #ffffff;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		border-radius: 0 0 5px 5px;
+	}
+
+	.page-sidebar-menu ul li .sub-menu a {
+		opacity: 1;
+		padding: 6px 35px;
+		margin: 0;
+	}
+
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		padding-left: 30px;
+	}
+
+	.page-sidebar-menu ul li a:hover+.sub-menu,
+	.page-sidebar-menu ul li .sub-menu:hover,
+	.page-sidebar-menu ul li:hover a span,
+	.page-sidebar-menu ul li a:hover span {
+		display: inline !important;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		width: 259px;
+		color: #5c76fb;
+		border: 1px solid #eee;
+		background: #eef1ff;
+	    margin: 0;
+		border-radius: 5px 5px 0 5px;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a .adata-svg-icon g [fill] {
+		fill: #5c76fb;
+	}
+
+	.page-sidebar-menu>ul>li.active>a {
+		border: 1px solid #eee;
+		background: #eef1ff;
+	    margin: 0;
+		border-radius: 5px;		
+	}
+
+	.page-sidebar.fixed-sidebar-scroll:hover .slimScrollDiv {
+		width: 280px !important;
+	}
+
+	.page-sidebar-menu ul li.menu-label {
+		display: none;
+	}
+
+	.page-sidebar .slimScrollBar {
+		display: none !important;
+	}
+}
+
+.page-sidebar-collapsed:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
+	overflow: visible !important;
+	height: calc(100% - 83px) !important;
+}
+
+.page-sidebar-fixed.page-sidebar-collapsed .page-content {
+	margin-left: 60px;
+}
+
+.page-sidebar-collapsed.page-sidebar-fixed .page-sidebar {
+	height: 100%;
+}
+
+
+
+/*Dark Theme CSS*/
+body.dark-theme.page-sidebar-collapsed {	
+	.page-sidebar-menu ul li .sub-menu {
+		background-color: #1a233a;
+	}
+	
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		background-color: #212c48;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		border: 1px solid #212c48;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid #212c48;
+		border-right: 1px solid #212c48;
+		border-bottom: 1px solid #212c48;
+	}
+}
+
+body.dark-theme #collapsed-sidebar-toggle-button:hover {
+	background-color: #212c48;
+}

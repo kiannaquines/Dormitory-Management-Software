@@ -1,0 +1,68 @@
+{% extends 'includes/base.html' %}
+
+{% block title %}My Reservation{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+
+    <h2>My Reservations</h2>
+    
+    <div class="card mt-3">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <table id="resultTable" class="table table-bordered responsive nowrap">
+                        <thead>
+                            <tr>
+                                <th>Reserved Dorm</th>
+                                <th>Reserved Room</th>
+                                <th class="text-center">Reserved Status</th>
+                                <th>Your moved in date</th>
+                                <th>Date reserved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for my_reservation in my_reservations %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'client_edit_reservation' id=my_reservation.reservation_id %}">{{ my_reservation.dorm_id.dorm_name }}</a>
+                                </td>
+                                <td>
+                                    {{ my_reservation.room_id.room_name }}
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge badge-{% if my_reservation.reservation_status == 'ACCEPTED' %}success{% elif my_reservation.reservation_status == 'UNDER CHECKING'%}info{% elif my_reservation.reservation_status == 'DECLINED' %}danger{% else %}warning{% endif %}">
+                                        {% if my_reservation.reservation_status == None %}
+                                            No Status Yet 
+                                        {% else %}
+                                            {{ my_reservation.reservation_status }}
+                                        {% endif %}
+                                    </span>
+                                </td>
+                                <td>
+                                    {{ my_reservation.move_in_date }}
+                                </td>
+                                <td>
+                                    {{ my_reservation.date_reserved }}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Reserved Dorm</th>
+                                <th>Reserved Room</th>
+                                <th class="text-center">Reserved Status</th>
+                                <th>Your moved in date</th>
+                                <th>Date reserved</th>
+                            </tr>
+                        </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

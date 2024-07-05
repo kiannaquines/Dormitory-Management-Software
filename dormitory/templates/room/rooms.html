@@ -1,0 +1,182 @@
+{% extends 'includes/base.html' %}
+{% block title %}Room{% endblock %}
+{% load static %}
+
+{% block page_css %}
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/dataTable/datatables.min.css' %}">
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/dataTable/extensions/dataTables.jqueryui.min.css' %}">	  
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/chart.js/chart.min.css' %}"/>
+<link type="text/css" rel="stylesheet" href="{% static 'assets/plugins/daterangepicker/daterangepicker.css' %}"/>
+{% endblock %}
+
+{% block content %}
+    <div class="col-lg-12">
+    <h2>Room Page</h2>
+    {% for message in messages %}
+        <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    {% endfor %}
+    <div class="card">
+    <div class="inner-content">
+        <div class="custom-fieldset-style mg-b-30">
+            <div class="clearfix">
+                <div class="clearfix">
+                    <table id="resultTable" class="table table-bordered responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th>Room Name</th>
+                            <th>Dorm Name</th>
+                            <th>Capacity</th>
+                            <th>Room Beds</th>
+                            <th>Current Bed Available</th>
+                            <th>Room Location</th>
+                            <th>Room Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for room_info in room_north %}
+
+                        <tr>
+                            <td>
+                                <a href="{% url 'edit_room' id=room_info.id %}">
+                                    {{ room_info.room_name }}
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{% url 'edit_dormitory' id=room_info.dorm_id.dorm_id %}">{{ room_info.dorm_id.dorm_name }}</a>
+                            </td>
+                            <td>
+                                {{ room_info.room_capacity }}
+                            </td>
+                            <td>
+                                {{ room_info.room_beds }}
+                            </td>
+                            <td>
+                                {{ room_info.room_current_bed_available }}
+                            </td>
+                            <td>
+                                {{ room_info.room_location }}
+                            </td>
+                            <td>
+                                {{ room_info.room_availability }}
+                            </td>
+                        </tr>
+
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Room Name</th>
+                            <th>Dorm Name</th>
+                            <th>Capacity</th>
+                            <th>Room Beds</th>
+                            <th>Current Bed Available</th>
+                            <th>Room Location</th>
+                            <th>Room Availability</th>
+                        </tr>
+                    </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="card mt-5">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <table id="resultTable1" class="table table-bordered responsive nowrap">
+                        <thead>
+                            <tr>
+                                <th>Room Name</th>
+                                <th>Dorm Name</th>
+                                <th>Capacity</th>
+                                <th>Room Beds</th>
+                                <th>Current Bed Available</th>
+                                <th>Room Location</th>
+                                <th>Room Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for room_info in room_south %}
+    
+                            <tr>
+                                <td>
+                                    <a href="{% url 'edit_room' id=room_info.id %}">
+                                        {{ room_info.room_name }}
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'edit_dormitory' id=room_info.dorm_id.dorm_id %}">{{ room_info.dorm_id.dorm_name }}</a>
+                                </td>
+                                <td>
+                                    {{ room_info.room_capacity }}
+                                </td>
+                                <td>
+                                    {{ room_info.room_beds }}
+                                </td>
+                                <td>
+                                    {{ room_info.room_current_bed_available }}
+                                </td>
+                                <td>
+                                    {{ room_info.room_location }}
+                                </td>
+                                <td>
+                                    {{ room_info.room_availability }}
+                                </td>
+                            </tr>
+    
+                            {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Room Name</th>
+                                <th>Dorm Name</th>
+                                <th>Capacity</th>
+                                <th>Room Beds</th>
+                                <th>Current Bed Available</th>
+                                <th>Room Location</th>
+                                <th>Room Availability</th>
+                            </tr>
+                        </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block page_js %}
+<script src="{% static 'assets/plugins/dataTable/datatables.min.js' %}"></script>
+<script src="{% static 'assets/plugins/dataTable/responsive/dataTables.responsive.js' %}"></script>
+<script src="{% static 'assets/plugins/dataTable/extensions/dataTables.jqueryui.min.js' %}"></script>
+<script>
+    $('#resultTable').DataTable({
+        responsive: false,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        }
+    });
+
+    $('#resultTable1').DataTable({
+        responsive: false,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        }
+    });
+</script>
+<script src="{% static 'assets/plugins/chart.js/chart.min.js' %}"></script>
+<script src="{% static 'assets/plugins/daterangepicker/daterangepicker.js' %}"></script>
+<script src="{% static 'assets/lib/dashboard/analytic/dashboard-audience-init.js' %}"></script>
+{% endblock %}

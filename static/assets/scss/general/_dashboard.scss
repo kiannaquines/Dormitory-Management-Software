@@ -1,0 +1,549 @@
+/**********************************************************************
+***********************************************************************
+### Dashboard Global CSS
+*********************************************************************
+*********************************************************************/
+
+.header-bottom {
+	border-bottom: $bd-default;
+}
+
+.header-bottom .settings-dropdown {
+	width: 240px;
+	border: none;
+	border-radius: 3px;
+	border: $bd-default;
+}
+
+.header-bottom .settings-dropdown a.btn-custom-primary {
+	color: $color-white;
+}
+
+.header-bottom .settings-dropdown a.btn-custom-primary:hover {
+	color: $color-white;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.header-bottom .settings-dropdown a:hover,
+.header-bottom .settings-dropdown a:hover svg {
+	color: $color-primary;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.6s;
+	transition: all 0.5s;
+}
+
+.header-bottom #revenueDatePicker {
+	margin-top: 0;
+}
+
+.upcoming-event {
+	margin: 15px 0;
+}
+
+.upcoming-event-items {
+	display: block;
+	padding: 0 10px;
+	margin: 15px 0;
+	/*color: #1b2e4b;*/
+	transition: all 0.2s ease-in-out;
+}
+
+.my-calandar-event a {
+	width: 100%;
+	display: block;
+	padding: 0;
+	margin: 10px 0;
+	/*color: #1b2e4b;*/
+	transition: all 0.2s ease-in-out;
+}
+
+.upcoming-event a:hover,
+.my-calandar-event a:hover {
+	color: $color-primary;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.6s;
+	transition: all 0.5s;
+}
+
+.tui-full-calendar-layout {
+	min-height: 100%;
+}
+
+.tui-full-calendar-weekday-grid-line .tui-full-calendar-weekday-grid-date {
+	font-size: $font-size-default;
+}
+
+
+/* Daterangepicker CSS */
+
+.daterangepicker {
+	font-family: inherit;
+	border: $bd-default;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+	font-weight: $font-weight-medium;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.daterangepicker .ranges li {
+	font-size: 12px;
+	padding: 10px 15px;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+.daterangepicker .ranges li.active {
+	background-color: #f2f4f7;
+	color: $color-primary;
+}
+
+.daterangepicker .ranges li:hover {
+	background-color: #f2f4f7;
+	color: $color-primary;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.6s;
+	transition: all 0.5s;
+}
+
+.daterangepicker .drp-buttons .btn {
+	margin-left: 8px;
+	font-size: 12px;
+	font-weight: normal !important;
+	padding: 4px 8px;
+	border: $bd-default;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: $color-primary;
+	border-color: $color-primary;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+	color: #fff;
+	background-color: #e0e7fd;
+	border-color: #e0e7fd;
+}
+
+.applyBtn.btn-primary:hover {
+	color: #fff;
+	background-color: $color-primary;
+	border-color: $color-primary;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+	background-color: $color-primary;
+	border-color: transparent;
+	color: #fff;
+}
+
+.daterangepicker.show-ranges.ltr .drp-calendar.left {
+	border-left: $bd-default;
+}
+
+.daterangepicker .drp-buttons {
+	border-top: $bd-default;
+}
+
+.daterangepicker th.month {
+	width: auto;
+	font-weight: $font-weight-medium;
+	font-size: $font-size-default;
+	letter-spacing: 0.5px;
+	color: #011737;
+}
+
+.order-details-tab .nav-item a {
+	padding: 18px;
+	border-bottom: 1px solid transparent;
+}
+
+.order-details-tab .nav-item a.active,
+.order-details-tab .nav-item a:hover {
+	color: $color-primary;
+	border-bottom: 1px solid $color-primary;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.nav-fill.order-details-tab .nav-item {
+	display: grid;
+}
+
+.billing-shipping-details .table-bordered td,
+.billing-shipping-details .table-bordered th {
+	border-bottom: none;
+}
+
+.billing-shipping-details .table-bordered td:last-child,
+.billing-shipping-details .table-bordered th:first-child {
+	border-bottom: $bd-default;
+}
+
+
+/**********************************************************************
+***********************************************************************
+### Analytic Dashboard CSS
+*********************************************************************
+*********************************************************************/
+
+.audience-overview-tab a {
+	padding: 15px 15px;
+	border-top: 1px solid transparent;
+	display: block;
+}
+
+.audience-overview-tab a.active {
+	display: block;
+	border-top: 1px solid $color-primary;
+	background: #f3f6f9;
+}
+
+.audience-overview-tab a.active h2 {
+	color: $color-primary;
+}
+
+.audience-overview-tab .active h1 {
+	font-weight: $font-weight-normal;
+}
+
+.jvectormap-zoomin {
+	top: 0px;
+}
+
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+	width: 10px;
+	height: 10px;
+}
+
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback {
+	left: 0px;
+	background: #e0e7fd;
+	color: #3355ff;
+	line-height: 10px;
+}
+
+.jvectormap-zoomout {
+	top: 25px;
+}
+
+.jvectormap-label {
+	position: absolute;
+	display: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #292929;
+	color: white;
+	font-family: inherit !important;
+	font-size: smaller;
+	padding: 3px;
+	pointer-events: none;
+}
+
+.custom-btn-group .btn-default {
+	padding: 0;
+}
+
+.custom-btn-group .nav-item a {
+	padding: .35rem 1rem .35rem;
+	display: block;
+	text-transform: capitalize;
+	border-radius: 3px;
+}
+
+.custom-btn-group .nav-item a.active,
+.payment-info .nav-item a.active {
+	background-color: rgba(125, 145, 255, 0.15) !important;
+	color: $color-primary;
+}
+
+.audience-demographics .nav-tabs {
+	border-bottom: none;
+}
+
+.audience-demographics .nav-tabs {
+	border-right: $bd-default;
+}
+
+.audience-demographics .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.audience-demographics .nav-tabs .nav-item.show .nav-link,
+.audience-demographics .nav-tabs .nav-link.active {
+	color: $color-primary;
+	background-color: #fff;
+	border-color: #eee #fff #eee #eee;
+	margin-right: -1px;
+}
+
+.audience-demographics .nav-tabs .nav-link:hover {
+	border-color: #eee #fff #eee #eee;
+}
+
+.add-sidebar {
+	background: #fff;
+}
+
+.contact-add-sidebar .form-control {
+	padding: .575rem .75rem;
+}
+
+.contact-add-sidebar .form-group.birthday-select select {
+	padding: .375rem .75rem;
+	box-shadow: none;
+	font-size: $font-size-default;
+	border-color: #eee;
+	width: 32.33%;
+}
+
+.contact-add-sidebar .form-group.birthday-select select:focus {
+	padding: .375rem .75rem;
+	box-shadow: none;
+	border-color: $color-primary;
+	outline: none;
+}
+
+.flow-error {
+	display: none;
+}
+
+.flow-drop {
+	position: relative;
+	display: none;
+	width: 100%;
+	text-align: center;
+	border: 1px dashed $color-primary;
+}
+
+.flow-progress .progress-resume-link,
+.flow-progress .progress-pause-link {
+	display: none;
+}
+
+.default-style .flow-drop {
+	border: 3px dashed rgba(24, 28, 33, 0.06);
+}
+
+.material-style .flow-drop {
+	border: 3px dashed rgba(24, 28, 33, 0.06);
+}
+
+.setting-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.custom-switch {
+	padding-left: 2.25rem;
+}
+
+.custom-control {
+	position: relative;
+	display: block;
+	min-height: 1.5rem;
+	padding-left: 1.5rem;
+}
+
+.custom-control-label {
+	position: relative;
+	margin-bottom: 0;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.custom-switch.switch-primary .custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: $color-primary;
+	background-color: $color-primary;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: $color-primary;
+	background-color: $color-primary;
+}
+
+.custom-switch .custom-control-label::before {
+	left: -2.25rem;
+	width: 1.75rem;
+	pointer-events: all;
+	border-radius: .5rem;
+}
+
+.custom-file-label,
+.custom-file-label::after {
+	height: calc(2.5rem + 2px);
+	padding: .575rem .75rem;
+}
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.custom-control-label::before {
+	position: absolute;
+	top: .25rem;
+	left: -1.5rem;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	pointer-events: none;
+	content: "";
+	background-color: #fff;
+	border: solid 1px #c2d2e2;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+	background-color: #fff;
+	-webkit-transform: translateX(0.75rem);
+	transform: translateX(0.75rem);
+}
+
+.custom-switch .custom-control-label::after {
+	top: calc(.25rem + 2px);
+	left: calc(-2.25rem + 2px);
+	width: calc(1rem - 4px);
+	height: calc(1rem - 4px);
+	background-color: #c2d2e2;
+	border-radius: .5rem;
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+	transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+}
+
+.custom-control-label::after {
+	position: absolute;
+	top: .25rem;
+	left: -1.5rem;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	content: "";
+	background: no-repeat 50%/50% 50%;
+}
+
+/**********************************************************************
+***********************************************************************
+### Crypto Dashboard CSS
+*********************************************************************
+*********************************************************************/
+
+.cf-icon-style {
+	padding: 8px 15px;
+	border-radius: 50%;
+	font-size: 25px;
+}
+
+.cf-icon-style-bg-teal {
+	background-color: rgba(11, 123, 106, 0.07);
+}
+
+.cf-icon-style-bg-teal {
+	background-color: rgba(11, 123, 106, 0.07);
+}
+
+.cf-icon-style-bg-teal {
+	background-color: rgba(11, 123, 106, 0.07);
+}
+
+.cf-icon-style-bg-teal {
+	background-color: rgba(11, 123, 106, 0.07);
+}
+
+.card-progressbar {
+	display: flex;
+	align-items: center;
+}
+
+.card-progressbar .progress {
+	height: 3px;
+	flex: 1;
+	margin: 0 5px;
+}
+
+.calculator-block .cryptonatorwidget input,
+.calculator-block .cryptonatorwidget select {
+	height: 40px !important;
+	line-height: 40px !important;
+	margin-bottom: 10px;
+	border: none;
+	color: #50649c;
+	border: $bd-default;
+	outline: 0;
+	padding-left: 10px;
+	background-color: transparent;
+	font-family: $font-family-ibm-plex-sans !important;
+}
+
+.calculator-block .cryptonatorwidget {
+	border: none !important;
+	padding: 0 !important;
+}
+
+.calculator-block .cryptonatorwidget div:last-child {
+	display: none;
+}
+
+.exchange-form .input-group-append {
+	margin-left: 0;
+}
+
+.jctkr-wrapper {
+	height: 65px;
+}
+
+.jctkr-wrapper.jctkr-initialized ul {
+	padding: 15px;
+}
+
+.jctkr-label {
+	position: absolute;
+	background: #f2f4ff;
+	z-index: 999;
+	padding: 23px;
+	font-weight: $font-weight-bold;
+	color: $color-primary;
+}
+
+.crypto_video iframe {
+	width: 100%;
+	height: 440px;
+	border: 0;
+}
+
+.walletAddress .btn,
+.btn.btn-current {
+	background: #f3f6f9;
+	border: $bd-default;
+}

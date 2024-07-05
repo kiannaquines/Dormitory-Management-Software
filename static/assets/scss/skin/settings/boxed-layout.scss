@@ -1,0 +1,57 @@
+/**********************************************************************
+***********************************************************************
+### Boxed Style CSS
+*********************************************************************
+*********************************************************************/
+.page-container {
+	padding-right: 0;
+	padding-left: 0;
+	min-height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.page-container:not(.container) {
+	width: 100%;
+}
+
+.page-container.container {
+	padding-right: 0;
+	padding-left: 0;
+	min-height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	border: 1px solid #eee;
+	box-shadow: 0 0 10px #dce1ea;
+	
+	.page-inner-content .inner-sidebar {
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		overflow: hidden;
+		display: block;
+		padding: 30px;
+		border-left: 1px solid #eee;
+	}
+
+	.search-form input {
+		padding-left: 85px;
+	}
+
+	.tt-menu {	
+		left: 58px!important;
+	}
+
+	.search-form .twitter-typeahead, 
+	.search-form .tt-hint, 
+	.search-form .tt-input, 
+	.search-form .tt-menu {
+		width: 97.7%;
+	}	
+}

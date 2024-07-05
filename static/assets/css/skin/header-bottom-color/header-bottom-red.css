@@ -1,0 +1,22 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Red
+*********************************************************************
+*********************************************************************/
+body.header-bottom-color-red .page-header .header-bottom {
+  background-color: #d64d4e;
+  color: #fff; }
+  body.header-bottom-color-red .page-header .header-bottom .bg-soft-primary,
+  body.header-bottom-color-red .page-header .header-bottom .bg-soft-info {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important; }
+  body.header-bottom-color-red .page-header .header-bottom .bg-soft-light,
+  body.header-bottom-color-red .page-header .header-bottom .tx-dark {
+    color: #ffffff !important; }
+
+body.dark-theme.header-bottom-color-red .bd-r {
+  border-right: 1px solid #ffffff; }
+body.dark-theme.header-bottom-color-red .page-header .header-bottom {
+  background-color: #d64d4e; }
+
+/*# sourceMappingURL=header-bottom-red.css.map */

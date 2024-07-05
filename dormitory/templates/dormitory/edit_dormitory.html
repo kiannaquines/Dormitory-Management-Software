@@ -1,0 +1,28 @@
+{% extends 'includes/base.html' %}
+{% block title %}Edit Dormitory{% endblock %}
+
+{% block content %}
+    <div class="col-lg-12">
+        <h2>Edit dormitory information</h2>
+        <div class="mg-t-20">
+            <div class="card custom-fieldset-style mg-b-30">
+                <form method="POST" action="{% url 'edit_dormitory' id=dorm_id %}" data-parsley-validate>
+                    {% csrf_token %}
+                    <div class="clearfix">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label for="first_name">{{ dorm_form.dorm_name.label }} <span class="tx-danger">*</span> </label>
+                                {{ dorm_form.dorm_name }}
+                            </div>
+                        </div>    
+                        <div class="row mg-t-20">
+                            <div class="col-lg">
+                                <input type="submit" class="btn btn-primary btn-md" value="Update dormitory information">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+convert 123456789 (base 10) to binary (base 2) to get the flag.
+
+hint:
+Insert your answer in the flag format. For example, if your answer was '11111', you would submit 'CEIT{11111}' as the flag.

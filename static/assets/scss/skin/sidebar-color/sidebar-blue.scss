@@ -1,0 +1,237 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Sidebar Theme Blue
+*********************************************************************
+*********************************************************************/
+$sidebar-color-blue : #0360e4;
+
+/*Light Theme CSS*/
+body.sidebar-blue {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo a.logo-img img {
+		display: none;
+	}
+
+	.page-sidebar .logo {
+		background-color: $sidebar-color-blue;
+		border-right: 1px solid $sidebar-color-blue;
+		border-bottom: 1px solid $sidebar-color-blue;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #0153c7!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-blue!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #0168fa;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #0157d2;
+	}
+	
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid $sidebar-color-blue;
+	}
+}
+
+body.sidebar-blue.page-sidebar-collapsed {
+	.logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.page-sidebar .logo {
+		background-color: #0153c7;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-blue;
+		border-right: 1px solid $sidebar-color-blue;
+		border-bottom: 1px solid $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid $sidebar-color-blue;
+	}
+}
+
+
+/*Semi-Dark Theme CSS*/
+body.semi-dark-theme.sidebar-blue {
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: $sidebar-color-blue!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill] {
+		fill: $sidebar-color-blue!important;
+	}
+
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+}
+
+body.semi-dark-theme.sidebar-blue.page-sidebar-collapsed {
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid #1a233a;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #151d33!important;
+	}
+}
+
+
+/*Dark Theme CSS*/
+body.dark-theme.sidebar-blue {
+	.page-sidebar .logo {
+		background-color: $sidebar-color-blue;
+		border-right: 1px solid $sidebar-color-blue;
+		border-bottom: 1px solid $sidebar-color-blue;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #0153c7!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-blue!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #0168fa;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #0157d2;
+	}
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid $sidebar-color-blue;
+	}
+}
+
+body.dark-theme.sidebar-blue.page-sidebar-collapsed {
+	.page-sidebar .logo {
+		background-color: #0153c7;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-blue;
+		border-right: 1px solid $sidebar-color-blue;
+		border-bottom: 1px solid $sidebar-color-blue;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid $sidebar-color-blue;
+	}
+}

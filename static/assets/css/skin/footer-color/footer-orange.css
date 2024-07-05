@@ -1,0 +1,23 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Orange
+*********************************************************************
+*********************************************************************/
+body.footer-color-orange .page-footer {
+  background-color: #ffa117;
+  color: #fff; }
+  body.footer-color-orange .page-footer a {
+    color: #f2f4ff; }
+  body.footer-color-orange .page-footer a:hover {
+    color: #000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
+
+body.dark-theme.footer-color-orange .page-footer {
+  background-color: #ffa117;
+  color: #fff; }
+
+/*# sourceMappingURL=footer-orange.css.map */

@@ -1,0 +1,88 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Semi Dark Sidebar
+*********************************************************************
+*********************************************************************/
+body.semi-dark-theme {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo a.logo-img img {
+		display: none;
+	}
+	
+	.page-sidebar .logo {
+		background-color: #151d33;
+		border-right: 1px solid #232d46;
+		border-bottom: 1px solid #232d46;
+	}	
+	
+	.page-sidebar {
+		background-color: #1a233a;
+		border-right: 1px solid #232d46;
+	}	
+	
+	.page-sidebar .page-sidebar-menu ul li.menu-label,
+	.page-sidebar .accordion-menu .sub-menu .sub-menu-label {
+		color: #ffffff;
+	}
+	
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a,
+	.page-sidebar-menu ul li a:hover{
+		background: #151d33;
+	}
+	
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #151d33!important;
+	}
+	
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #1d2846;
+	}
+}
+
+
+body.semi-dark-theme.page-sidebar-collapsed {
+	 .logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.page-sidebar .logo {
+		background-color: #151d33;
+	}
+	
+	.page-sidebar {
+		background-color: #1a233a;
+		border-right: 1px solid #232d46;
+	}
+	
+	.page-sidebar .accordion-menu .sub-menu .sub-menu-label {
+		color: #ffffff;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: #151d33;
+	}
+	
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		border: 1px solid #253256;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		background: #1a233a;
+		border-left: 1px solid #253256;
+		border-right: 1px solid #253256;
+		border-bottom: 1px solid #253256;
+	}
+
+	.page-sidebar .accordion-menu .sub-menu .sub-menu-label {
+		padding: 5px 35px;
+	}
+}

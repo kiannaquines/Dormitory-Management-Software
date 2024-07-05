@@ -1,0 +1,122 @@
+{% extends 'includes/base.html' %}
+
+{% block title %}
+Edit User Information
+{% endblock %}
+{% block content %}
+<div class="col-lg-12">
+    <h2>Edit user information</h2>
+    <div class="mg-t-20">
+        <div class="card custom-fieldset-style mg-b-30">
+            <form method="POST" action="{% url 'edit_user' id=user_id %}" enctype="multipart/form-data" data-parsley-validate>
+                {% csrf_token %}
+                <div class="clearfix">
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.username.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.username }}
+                        </div>
+
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.password.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.password }}
+                        </div>
+                    </div> 
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.first_name.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.first_name }}
+                        </div>
+                    </div>  
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.last_name.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.last_name }}
+                        </div>
+                    </div> 
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.gender.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.gender }}
+                        </div>
+
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.contact_number.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.contact_number }}
+                        </div>
+
+                    </div> 
+                    
+                    
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.email.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.email }}
+                        </div>
+
+
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.image.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.image }}
+                        </div>
+                    </div> 
+
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.college.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.college }}
+                        </div>
+                    </div> 
+
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.department.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.department }}
+                        </div>
+                    </div> 
+
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.student_id.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.student_id }}
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.address.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.address }}
+                        </div>
+                    </div>
+
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ edit_form.date_joined.label }} <span class="tx-danger">*</span> </label>
+                            {{ edit_form.date_joined }}
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row mg-t-20">
+                        <div class="col-lg">
+                            <input type="submit" class="btn btn-primary btn-md" value="Update dormitory information">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,281 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block title %}View user{% endblock %}
+
+{% block content %}
+<div class="row row-xs">
+    <div class="col-lg-4 col-xl-3">
+       <div class="card mg-b-20">
+          <div class="card-body">
+             <div class="d-flex align-items-center mg-b-20">
+                <div class="profile-avatar-setting mr-3">
+                   <div class="avatar-wrapper">
+                     {% if user_info.image %}
+                        <img class="img-fluid rounded" src="{{ user_info.image.url }}" alt="{{ user_info.first_name }} {{ user_info.last_name }}" >
+                     {% else %}
+                        <img class="img-fluid rounded" src="{% static 'assets/images/default-profile.png' %}" alt="{{ user_info.first_name }} {{ user_info.last_name }}" >
+                     {% endif %}
+                   </div>
+                </div>
+                <div>
+                   <h2 class="tx-15"><a href="">{{ user_info.first_name }} {{ user_info.last_name }}</a></h2>
+                   <p class="tx-12 mb-0">Student/Lodgers</p>
+                </div>
+             </div>
+
+             <ul class="nav nav-pills flex-column tx-medium ac-setting-navi">
+                <li class="nav-item">
+                   <a class="nav-link d-flex align-items-center active" data-toggle="pill" href="#setting-account-info" aria-expanded="false">
+                   <i data-feather="user" class="wd-16 ht-16 mr-2"></i>
+                   <span>Account Information</span>
+                   </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-student-info" aria-expanded="false">
+                    <i data-feather="radio" class="wd-16 ht-16 mr-2"></i>
+                    <span>Student information</span>
+                    </a>
+                 </li>
+                <li class="nav-item">
+                   <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-emergency-info" aria-expanded="false">
+                   <i data-feather="radio" class="wd-16 ht-16 mr-2"></i>
+                   <span>Emergency information</span>
+                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-payment-info" aria-expanded="false">
+                  <i data-feather="radio" class="wd-16 ht-16 mr-2"></i>
+                  <span>Payments informations</span>
+                  </a>
+               </li>
+             </ul>
+          </div>
+       </div>
+    </div>
+    <div class="col-lg-8 col-xl-9">
+       <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="setting-account-info">
+             <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                   <h6 class="mb-0">Account Information</h6>
+                </div>
+                <div class="card-body">
+                   <form novalidate="">
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> First Name:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter First Name" value="{{ user_info.first_name }}" readonly>
+                         </div>
+                      </div>
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Last Name:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter Last Name" value="{{ user_info.last_name }}" readonly>
+                         </div>
+                      </div>
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Username:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter User Name" value="{{ user_info.username }}" readonly>
+                         </div>
+                      </div>
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Email:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="email" class="form-control" placeholder="Enter Email" value="{{ user_info.email }}" readonly>
+                         </div>
+                      </div>
+
+                      <div class="row mg-t-20">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Last login:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <input type="email" class="form-control" placeholder="Last login" value="{{ user_info.last_login }}" readonly>
+                        </div>
+                     </div>
+
+                     <div class="row mg-t-20">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Date joined:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <input type="email" class="form-control" placeholder="Date joined" value="{{ user_info.date_joined }}" readonly>
+                        </div>
+                     </div>
+                   </form>
+                </div>
+             </div>
+          </div>
+          <div class="tab-pane fade" id="setting-emergency-info" role="tabpanel">
+             <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                   <h6 class="mb-0">Emergency Information</h6>
+                </div>
+                <div class="card-body">
+                  {% if emergency_info == None %}
+                     <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        Please remind this student/boarder to add his/her emergency informations.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                  {% endif %}
+                   <form>                      
+                      <div class="row">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent name:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <div class="input-group mb-3">
+                               <input type="text" class="form-control" placeholder="Parent name" value="{{ emergency_info.emergency_detail_name }}" readonly>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent middlename:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <div class="input-group mb-3">
+                               <input type="text" class="form-control" placeholder="Parent middlename" value="{{ emergency_info.emergency_detail_middlename }}" readonly>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent lastname:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Parent lastname" value="{{ emergency_info.emergency_detail_lastname }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent mobile number:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Parent lastname" value="{{ emergency_info.emergency_detail_mobile_number }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                  
+
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Relation:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" rows="3" class="form-control" placeholder="{{ emergency_info.emergency_detail_relation }}" value="{{ emergency_info.emergency_detail_relation }}" readonly/>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Address:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <textarea type="text" class="form-control" rows="3" placeholder="{{ emergency_info.emergency_detail_address }}" readonly>{{ emergency_info.emergency_detail_address }}</textarea>
+                           </div>
+                        </div>
+                     </div>
+                   </form>
+                </div>
+             </div>
+          </div>
+          <div class="tab-pane fade" id="setting-student-info" role="tabpanel">
+            <div class="card">
+               <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                  <h6 class="mb-0">Student Information</h6>
+               </div>
+               <div class="card-body">
+                  <form>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Student ID:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="21-xxxxxx" value="{{ user_info.student_id }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">College:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="{{ user_info.college }}" value="{{ user_info.college }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Department:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="{{ user_info.department }}" value="{{ user_info.department }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Gender:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="{{ user_info.gender }}" value="{% if user_info.gender == 'M' %} Male {% else %} Female {% endif %}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Address:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <textarea type="text" class="form-control" rows="3" placeholder="{{ user_info.address }}" readonly>{{ user_info.address }}</textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="tab-pane fade" id="setting-payment-info" role="tabpanel">
+            <div class="card">
+               <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                  <h6 class="mb-0">Student Payments Information</h6>
+               </div>
+               <div class="card-body">
+                  <table id="hoverTable" class="table table-bordered responsive nowrap">
+                     <thead>
+                        <tr>
+                           <th>Name</th>
+                           <th>Amount</th>
+                           <th>Valid as until</th>
+                           <th>Date paid</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {% for boarder_payment in boarder_payments %}
+                        <tr>
+                           <td>{{ boarder_payment.user_id.first_name }} {{ boarder_payment.user_id.last_name }}</td>
+                           <td>{{ boarder_payment.amount_paid }}</td>
+                           <td>{{ boarder_payment.payment_as_of }} - {{ boarder_payment.payment_to }}</td>
+                           <td>{{ boarder_payment.date_paid }}</td>
+                        </tr>
+                        {% endfor %}
+                     </tbody>
+                     <tfoot>
+                        <tr>
+                           <th>Name</th>
+                           <th>Amount</th>
+                           <th>Valid as until</th>
+                           <th>Date paid</th>
+                        </tr>
+                     </tfoot>
+                  </table>
+               </div>
+            </div>
+         </div>
+       </div>
+    </div>
+ </div>
+{% endblock %}
+
+
+{% block per_page_js %}
+    <script>
+      $('#hoverTable').DataTable({
+         responsive: true,
+         language: {
+             searchPlaceholder: 'Search...',
+             sSearch: ''
+         }
+     });
+    </script>
+{% endblock %}

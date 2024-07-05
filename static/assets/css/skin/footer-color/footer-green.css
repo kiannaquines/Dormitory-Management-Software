@@ -1,0 +1,23 @@
+/**********************************************************************
+***********************************************************************
+### Header Top Color Name : Green
+*********************************************************************
+*********************************************************************/
+body.footer-color-green .page-footer {
+  background-color: #7ab339;
+  color: #fff; }
+  body.footer-color-green .page-footer a {
+    color: #f2f4ff; }
+  body.footer-color-green .page-footer a:hover {
+    color: #000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
+
+body.dark-theme.footer-color-green .page-footer {
+  background-color: #7ab339;
+  color: #fff; }
+
+/*# sourceMappingURL=footer-green.css.map */

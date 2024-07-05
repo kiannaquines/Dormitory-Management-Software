@@ -1,0 +1,127 @@
+/**********************************************************************
+***********************************************************************
+### Tables CSS
+*********************************************************************
+*********************************************************************/
+
+.table-bordered {
+	border: $bd-default;
+}
+
+.table-bordered thead td,
+.table-bordered thead th {
+	border-bottom-width: 1px;
+}
+
+table.dataTable {
+	width: 100% !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.table.table-dark td,
+.table.table-striped.table-dark td,
+.table.table-dark th,
+.table.table-striped.table-dark th,
+.table.table-dark thead th,
+.table.table-striped.table-dark thead th {
+	border: 1px solid #2c3135;
+}
+
+.table.table-dark thead th,
+.table.table-striped.table-dark thead th {
+	border-top: 1px solid #2c3135;
+	border-bottom: 1px solid #2c3135;
+}
+
+.table.table-sm td,
+.table.table-sm th,
+.table.table-sm thead th {
+	padding: 0.1rem;
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+	padding: 10px;
+	font-size: 12px;
+	font-weight: $font-weight-medium;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+	border: 1px solid #c5c5c5;
+	background: #f2f4ff;
+}
+
+.dataTables_wrapper .dataTables_paginate .fg-button {
+	padding: 0.5em 0.7rem;
+	margin-left: 0;
+	border: $bd-default;
+}
+
+table.dataTable.no-footer {
+	border-bottom: $bd-default;
+}
+
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover,
+table.dataTable.display tbody tr.odd>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+	background-color: #f2f4ff;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-ms-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+table.dataTable.display tbody tr:hover>.sorting_1,
+table.dataTable.order-column.hover tbody tr:hover>.sorting_1 {
+	background-color: #e8ebf9;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-ms-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.no-styled-table .ui-state-default,
+.no-styled-table .ui-widget-content .ui-state-default,
+.no-styled-table .ui-widget-header .ui-state-default,
+.no-styled-table .ui-button,
+html .no-styled-table .ui-button.ui-state-disabled:hover,
+html .no-styled-table .ui-button.ui-state-disabled:active {
+	border: none;
+	background: #fff;
+}
+
+table.dataTable tbody td.sorting_1 {
+	background-color: #f6f7fc;
+}
+
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td {
+	border-top: $bd-default;
+}
+
+.footable-page-arrow a,
+.footable-page a {
+	display: block;
+	padding: 5px 12px;
+	border: $bd-default;
+}
+
+.footable-page.active a {
+	border: 1px solid $color-white;
+	color: #b8b8b8;
+}

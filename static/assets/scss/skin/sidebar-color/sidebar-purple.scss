@@ -1,0 +1,250 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Sidebar Theme Purple
+*********************************************************************
+*********************************************************************/
+$sidebar-color-purple : #5a6ae0;
+
+/*Light Theme CSS*/
+body.sidebar-purple {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo a.logo-img img {
+		display: none;
+	}
+
+	.page-sidebar .logo {
+		background-color: $sidebar-color-purple;
+		border-right: 1px solid $sidebar-color-purple;
+		border-bottom: 1px solid $sidebar-color-purple;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #4756c5!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-purple!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #6777ef;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #4f5ecc;
+	}
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #5868dc;
+	}
+}
+
+body.sidebar-purple.page-sidebar-collapsed {
+	.logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.page-sidebar .logo {
+		background-color: #4756c5;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-purple;
+		border-right: 1px solid $sidebar-color-purple;
+		border-bottom: 1px solid $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid $sidebar-color-purple;
+	}
+}
+
+
+/*Semi-Dark Theme CSS*/
+body.semi-dark-theme.sidebar-purple {
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: $sidebar-color-purple!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill] {
+		fill: $sidebar-color-purple!important;
+	}
+
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+}
+
+body.semi-dark-theme.sidebar-purple.page-sidebar-collapsed {
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid #1a233a;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #151d33!important;
+	}
+}
+
+
+/*Dark Theme CSS*/
+body.dark-theme.sidebar-purple {
+	.page-sidebar .logo {
+		background-color: $sidebar-color-purple;
+		border-right: 1px solid $sidebar-color-purple;
+		border-bottom: 1px solid $sidebar-color-purple;
+	}
+	
+	
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #5868dc;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #4756c5!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-purple!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #6777ef;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #4f5ecc;
+	}
+	
+	#collapsed-sidebar-toggle-button:hover {
+		background-color: $sidebar-color-purple;
+	}
+}
+
+
+body.dark-theme.sidebar-purple.page-sidebar-collapsed {
+	.page-sidebar .logo {
+		background-color: #4756c5;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-purple;
+		border-right: 1px solid $sidebar-color-purple;
+		border-bottom: 1px solid $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		border: 1px solid $sidebar-color-purple;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		background-color: $sidebar-color-purple;
+	}
+}

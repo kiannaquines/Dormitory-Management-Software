@@ -1,0 +1,82 @@
+{% extends 'includes/base.html' %}
+{% block title %}Edit Reservation{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+    <h2>Edit reservation information</h2>
+    <div class="mg-t-20">
+        <div class="card custom-fieldset-style mg-b-30">
+            <form method="POST" action="{% url 'reservation_edit' id=reservation_id %}" enctype="multipart/form-data" data-parsley-validate>
+                {% csrf_token %}
+                <div class="clearfix">
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ reservation_form.user_id.label }} <span class="tx-danger">*</span> </label>
+                            {{ reservation_form.user_id }}
+                        </div>
+                    </div> 
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ reservation_form.dorm_id.label }} <span class="tx-danger">*</span> </label>
+                            {{ reservation_form.dorm_id }}
+                        </div>
+                    </div> 
+
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ reservation_form.room_id.label }} <span class="tx-danger">*</span> </label>
+                            {{ reservation_form.room_id }}
+                        </div>
+                    </div>
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="{{ reservation_form.move_in_date.id_for_label }}">{{ reservation_form.reservation_fee.label }} <span class="tx-danger">*</span></label>
+                            <div class="form mb-3">
+                                {{ reservation_form.reservation_fee }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ reservation_form.move_in_date.label }} <span class="tx-danger">*</span> </label>
+                            {{ reservation_form.move_in_date }}
+                        </div>
+                    </div>
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ reservation_form.reservation_status.label }} <span class="tx-danger">*</span> </label>
+                            {{ reservation_form.reservation_status }}
+                        </div>
+                    </div> 
+
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ reservation_form.decline_reason.label }} </label>
+                            {{ reservation_form.decline_reason }}
+                        </div>
+                    </div> 
+                    
+                    <div class="row mg-t-10 mg-t-20">
+                        <div class="col-lg">
+                            <input type="submit" class="btn btn-primary btn-md" value="Update account information">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block per_page_js %}
+<script>
+    $('#id_move_in_date').datepicker();
+</script>
+{% endblock %}

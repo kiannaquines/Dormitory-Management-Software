@@ -1,0 +1,95 @@
+{% extends 'includes/base.html' %}
+
+{% block title %}Edit My Payment{% endblock %}
+{% load custom_filter %}
+{% block content %}
+<div class="col-lg-12">
+
+    <h2>Edit my payment</h2>
+    
+    <div class="card mt-3">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <form action="{% url 'edit_payments' id=account_id%}" enctype="multipart/form-data" method="post" data-parsely-validate>
+                            {% csrf_token %}
+                            <div class="row mg-t-10">
+
+                                <div class="col-lg mg-t-10 mg-lg-t-0">
+                                    <label for="ref_code">{{ account_form.billing_id.label }} <span class="tx-danger">*</span> </label>
+                                    <div class="form-group mg-b-0">
+                                        {{ account_form.billing_id }}
+                                        <small>Select the billing date you want to pay.</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg mg-t-10 mg-lg-t-0">
+                                    <label for="ref_code">{{ account_form.ref_code.label }} <span class="tx-danger">*</span> </label>
+                                    <div class="form-group mg-b-0">
+                                        {{ account_form.ref_code }}
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="row mg-t-10">
+                                <div class="col-lg mg-t-10 mg-lg-t-0">
+                                    <label for="ref_code">{{ account_form.amount_paid.label }} <span class="tx-danger">*</span> </label>
+                                    <div class="form-group mg-b-0">
+                                        {{ account_form.amount_paid }}
+                                        <small>Enter the amount you need to pay.</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg mg-t-10 mg-lg-t-0">
+                                    <label for="ref_code">{{ account_form.payment_type.label }} <span class="tx-danger">*</span> </label>
+                                    <div class="form-group mg-b-0">
+                                        {{ account_form.payment_type }}
+                                        <small>Select type of your payment</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mg-t-10">
+                                <div class="col-lg mg-t-10 mg-lg-t-0">
+                                    <label for="ref_code">{{ account_form.payment_receipt_image.label }} <span class="tx-danger">*</span> </label>
+                                    <div class="form-group mg-b-0">
+                                        {{ account_form.payment_receipt_image }}
+                                        {% if account_form.payment_receipt_image is not None %}
+                                        <small>
+                                            <a href="{{ account_form.payment_receipt_image.value.url }}" target="_blank" rel="noopener noreferrer">{{ account_form.payment_receipt_image.value }}</a>
+                                        </small>
+                                        {% else %}
+                                        <small>Upload your receipt image</small>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>    
+                    
+                            <div class="form-group mg-t-10">
+                                <div class="form-group mg-t-10">
+                                    {% check_if_already_approved request.user.id account_form.billing_id.value as result %}
+                                    {% if result > 0%}
+                                    <input type="submit" value="Save changes to reservation" class="btn btn-primary">
+                                    <a href="{% url 'delete_payment' id=account_id %}" class="btn btn-danger">Mark as Deleted</a>
+                                    {% else %}
+                                    <input type="button" value="Your payment is already verified" class="btn btn-success">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block per_page_js %}
+<script>
+    $("#id_payment_as_of").datepicker()
+    $("#id_payment_to").datepicker()
+</script>
+{% endblock %}

@@ -1,0 +1,248 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Sidebar Theme Red
+*********************************************************************
+*********************************************************************/
+$sidebar-color-red :#d64d4e;
+
+/*Light Theme CSS*/
+body.sidebar-red {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo a.logo-img img {
+		display: none;
+	}
+
+	.page-sidebar .logo {
+		background-color: $sidebar-color-red;
+		border-right: 1px solid $sidebar-color-red;
+		border-bottom: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #bd3e3f!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-red!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #ea5455;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #b1393a;
+	}
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #bb3e3f;
+	}
+}
+
+body.sidebar-red.page-sidebar-collapsed {
+	.page-sidebar .logo {
+		background-color: #bd3e3f;
+	}
+
+	.logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-red;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-red;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-red;
+		border-right: 1px solid $sidebar-color-red;
+		border-bottom: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid $sidebar-color-red;
+	}
+}
+
+
+/*Semi-Dark Theme CSS*/
+body.semi-dark-theme.sidebar-red {
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: $sidebar-color-red!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill] {
+		fill: $sidebar-color-red!important;
+	}
+
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+}
+
+body.semi-dark-theme.sidebar-red.page-sidebar-collapsed {
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid #1a233a;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #151d33!important;
+	}
+}
+
+
+/*Dark Theme CSS*/
+body.dark-theme.sidebar-red {
+	.page-sidebar .logo {
+		background-color: $sidebar-color-red;
+		border-right: 1px solid $sidebar-color-red;
+		border-bottom: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #bd3e3f!important;
+	}
+
+	body.sidebar-red .page-sidebar-menu ul li ul.sub-menu li.active>a,
+	body.sidebar-red .page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-red!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #ea5455;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #b1393a;
+	}	
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #bb3e3f;
+	}
+
+	#collapsed-sidebar-toggle-button:hover {
+		background-color: $sidebar-color-red;
+	}	
+} 
+
+
+body.dark-theme.sidebar-red.page-sidebar-collapsed {
+	.page-sidebar .logo {
+		background-color: #bd3e3f;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-red;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-red;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-red;
+		border-right: 1px solid $sidebar-color-red;
+		border-bottom: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		border: 1px solid $sidebar-color-red;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		background-color: $sidebar-color-red;
+	}
+}

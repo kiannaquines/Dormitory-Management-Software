@@ -1,0 +1,137 @@
+/**********************************************************************
+***********************************************************************
+### App Calander CSS
+*********************************************************************
+*********************************************************************/
+
+
+/**  custom bootstrap - start */
+
+.calendar-page-inner {
+	height: calc(100vh - 60px);
+}
+
+.calendar-wrapper {
+	display: block;
+	height: 100%;
+}
+
+.calendar-wrapper .calendar-sidebar .box {
+	border-bottom: $bd-default;
+	padding: 15px 15px 15px 30px;
+}
+
+.bg-turquoise {
+	background-color: #1abc9c !important;
+	color: #fff;
+}
+
+.bg-peter-river {
+	background-color: #3498db !important;
+	color: #fff;
+}
+
+.bg-amethyst {
+	background-color: #9b59b6 !important;
+	color: #fff;
+}
+
+.bg-sun-flower {
+	background-color: #f1c40f !important;
+	color: #fff;
+}
+
+.bg-pomegranate {
+	background-color: #c0392b !important;
+	color: #fff;
+}
+
+.bg-wisteria {
+	background-color: #8e44ad !important;
+	color: #fff;
+}
+
+.bg-alizarin {
+	background-color: #e74c3c !important;
+	color: #fff;
+}
+
+.bg-green-sea {
+	background-color: #16a085 !important;
+	color: #fff;
+}
+
+.bg-wet-asphalt {
+	background-color: #34495e !important;
+	color: #fff;
+}
+
+.bg-carrot {
+	background-color: #e67e22 !important;
+	color: #fff;
+}
+
+.calendar-wrapper #external-events .fc-event {
+	padding: 10px 15px;
+	border-radius: 2px;
+	cursor: move;
+	margin-bottom: 5px;
+}
+
+.calendar-wrapper .fc-event {
+	border: transparent;
+}
+
+.calendar-wrapper .fc .fc-button-group>*,
+.calendar-wrapper .fc .fc-toolbar>*>* {
+	background: #fff;
+	box-shadow: none;
+	text-transform: uppercase;
+	color: #858e96;
+}
+
+.calendar-wrapper .fc-button {
+	font-size: 12px;
+	letter-spacing: 0.3px;
+	padding: 15px;
+	line-height: 0;
+	border: $bd-default;
+}
+
+.calendar-wrapper .fc-center h2 {
+	font-size: 20px;
+}
+
+.calendar-wrapper .fc button .fc-icon {
+	top: -0.5em;
+}
+
+.calendar-wrapper .fc-unthemed th,
+.calendar-wrapper .fc-unthemed td,
+.calendar-wrapper .fc-unthemed thead,
+.calendar-wrapper .fc-unthemed tbody,
+.calendar-wrapper .fc-unthemed .fc-divider,
+.calendar-wrapper .fc-unthemed .fc-row,
+.calendar-wrapper .fc-unthemed .fc-content,
+.calendar-wrapper .fc-unthemed .fc-popover,
+.calendar-wrapper .fc-unthemed .fc-list-view,
+.calendar-wrapper .fc-unthemed .fc-list-heading td {
+	border-color: #eee;
+}
+
+.calendar-wrapper .fc-unthemed th {
+	font-weight: $font-weight-bold;
+}
+
+.calendar-wrapper .fc-day-grid-event .fc-content {
+	white-space: nowrap;
+	overflow: hidden;
+	color: #fff;
+	padding: 8px;
+}
+
+.calendar-wrapper .fc-time-grid-event .fc-time,
+.calendar-wrapper .fc-time-grid-event .fc-title {
+	padding: 5px;
+	color: #fff;
+}

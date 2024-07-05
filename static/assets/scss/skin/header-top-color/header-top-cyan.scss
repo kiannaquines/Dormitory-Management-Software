@@ -1,0 +1,23 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Cyan
+*********************************************************************
+*********************************************************************/
+body.header-top-color-cyan .page-header {
+	.navbar-default {
+		background-color: #3dc7be;
+	}
+
+	.navbar-default .adata-svg-icon g [fill],
+	.navbar-default a.dropdown-icon .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+
+	.navbar-default a.dropdown-icon:hover .adata-svg-icon g [fill] {
+		fill: #7c94e0;
+	}
+}
+
+body.dark-theme.header-top-color-cyan .page-header .navbar-default {
+    background-color: #3dc7be;
+}

@@ -1,0 +1,112 @@
+/**********************************************************************
+***********************************************************************
+### Fixed CSS
+*********************************************************************
+*********************************************************************/
+.page-header-fixed {
+	.logo {
+		position: fixed;
+		top: 0;
+	}
+
+	.page-header {
+		position: fixed;
+		z-index: 99;
+		left: 250px;
+		right: 0;
+		top: 0;
+	}
+
+	.page-container.container .page-header {
+		padding-left: 250px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	.page-sidebar{
+		width: 265px;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-transition: .3s ease;
+		transition: .5s ease;
+		padding-top: 60px;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	}
+
+	.page-inner {
+		margin-top: 118px;
+	}	
+
+
+	.page-inner-content {
+		width: 100%;
+		overflow: hidden;
+		font-weight: normal;
+		font-size: 14px;
+		margin-top: 118px;
+	}
+
+	.page-inner-content .inner-content {
+		padding: 30px 30px;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		clear: both;
+	}
+
+	.page-inner-content .inner-sidebar {
+		/*position: fixed;*/
+		width: 240px;
+		top: 118px;
+		bottom: 0px;
+		overflow: hidden;
+		display: block;
+		padding: 30px 15px 60px;
+		border-left: 1px solid #eee;
+		height: auto!important;
+	}
+	 
+	.page-container.container .page-inner-content .inner-sidebar {
+		position: fixed;
+		top: 118px;
+		bottom: 0px;
+		overflow: hidden;
+		display: block;
+		padding: 30px;
+		border-left: 1px solid #eee;
+	}
+}
+
+
+body.mailbox.page-header-fixed .page-inner,
+body.chat.page-header-fixed .page-inner,
+body.calendar.page-header-fixed .page-inner,
+body.file-manager.page-header-fixed .page-inner {
+	margin-top: 60px;
+}
+
+.page-header-fixed.page-sidebar-collapsed .page-container.container .page-header {
+	padding-right: 0px;
+	padding-left: 59px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.page-sidebar-collapsed.page-header-fixed .page-header {
+	left: 60px;
+}
+
+.page-sidebar-fixed.page-header-fixed .page-sidebar {
+	padding-top: 60px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}

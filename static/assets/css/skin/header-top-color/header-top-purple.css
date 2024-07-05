@@ -1,0 +1,17 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Purple
+*********************************************************************
+*********************************************************************/
+body.header-top-color-purple .page-header .navbar-default {
+  background-color: #6777ef; }
+body.header-top-color-purple .page-header .navbar-default .adata-svg-icon g [fill],
+body.header-top-color-purple .page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill] {
+  fill: #ffffff !important; }
+body.header-top-color-purple .page-header .navbar-default a.dropdown-icon:hover .adata-svg-icon g [fill] {
+  fill: #7c94e0; }
+
+body.dark-theme.header-top-color-purple .page-header .navbar-default {
+  background-color: #6777ef; }
+
+/*# sourceMappingURL=header-top-purple.css.map */

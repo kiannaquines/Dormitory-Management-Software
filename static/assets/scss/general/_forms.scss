@@ -1,0 +1,379 @@
+/**********************************************************************
+***********************************************************************
+### Forms CSS
+*********************************************************************
+*********************************************************************/
+
+.custom-select.is-warning,
+.form-control.is-warning {
+	border-color: #ffa117;
+}
+
+.custom-select.is-warning,
+.form-control.is-warning {
+	border-color: #ffa117;
+}
+
+.custom-select.is-warning:focus,
+.form-control.is-warning:focus {
+	border-color: #ffa117;
+	box-shadow: 0 0 0 0.2rem rgba(255, 161, 23, 0.25);
+}
+
+.custom-fieldset-style {
+	border: $bd-default;
+	padding: 15px;
+}
+
+.custom-fieldset-style label.custom-label {
+	border: $bd-default;
+	padding: 6px 10px;
+	background: #fff;
+	margin-top: -30px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	width: 100px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: $font-weight-medium;
+	letter-spacing: 0.7px;
+	text-align: center;
+}
+
+.valid-tooltip,
+.invalid-tooltip {
+	padding: 0.1rem .5rem;
+	font-size: 10px;
+	border-radius: 2px;
+}
+
+.bootstrap-tagsinput {
+	min-width: 100%;
+	margin: 10px 0;
+	border: $bd-default;
+	box-shadow: none;
+	padding: 6px;
+}
+
+.tag.label.label-info {
+	background: #26bbce;
+	font-size: 12px;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.form-layout-2 .form-group,
+.form-layout-3 .form-group {
+	position: relative;
+	border: $bd-default;
+	padding: 20px 20px;
+	margin-bottom: 0;
+	height: 100%;
+	transition: all .2s ease-in-out;
+}
+
+.was-validated .form-control:invalid,
+.was-validated .dataTables_filter input:required,
+.dataTables_filter .was-validated input:invalid,
+.form-control.is-invalid,
+.dataTables_filter input.is-invalid,
+.dataTables_filter input.parsley-error,
+input.form-control.parsley-error,
+textarea.form-control.parsley-error,
+.was-validated .custom-select:invalid,
+.custom-select.is-invalid,
+input.custom-select.parsley-error,
+textarea.custom-select.parsley-error {
+	border-color: #dc3545 !important;
+}
+
+.was-validated .form-control:valid,
+.was-validated .dataTables_filter input:valid,
+.dataTables_filter .was-validated input:valid,
+.form-control.is-valid,
+.dataTables_filter input.is-valid,
+.dataTables_filter input.parsley-success,
+input.form-control.parsley-success,
+textarea.form-control.parsley-success,
+.was-validated .custom-select:valid,
+.custom-select.is-valid,
+input.custom-select.parsley-success,
+textarea.custom-select.parsley-success {
+	border-color: #23bf08 !important;
+}
+
+.parsley-errors-list {
+	color: #dc3545;
+	list-style: none;
+	font-size: 10px;
+	padding: 0;
+	margin-top: 5px;
+}
+
+.parsley-checkbox.parsley-success {
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #23bf08;
+}
+
+.parsley-checkbox.parsley-error {
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #dc3545;
+}
+
+.parsley-success select.select2 {
+	border: 1px solid #23bf08 !important;
+}
+
+.parsley-error select.select2 {
+	border: 1px solid #dc3545 !important;
+}
+
+.parsley-style-1 .parsley-errors-list.filled {
+	background: #f44;
+	color: $color-white;
+	padding: 5px 10px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.wizard-tab>.content,
+.wizard-tab>.actions {
+	padding: 15px;
+}
+
+.sw-theme-default>ul.step-anchor>li>a {
+	margin-left: 45px;
+}
+
+.sw-theme-default>ul.step-anchor>li {
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.sw-theme-default>ul.step-anchor>li {
+	position: relative;
+	margin-right: 0px;
+}
+
+.tab-content .step-content {
+	padding: 15px 20px;
+}
+
+.sw-theme-default>ul.step-anchor>li.active>a span {
+	border-color: $color-primary;
+	margin-left: 25px;
+	color: $color-primary;
+}
+
+.sw-theme-default .sw-number,
+.sw-theme-default .sw-icon,
+.sw-theme-default .sw-done-icon {
+	border-color: #eee;
+	margin-left: 25px;
+}
+
+.sw-theme-default .sw-number,
+.sw-theme-default .sw-icon,
+.sw-theme-default .sw-done-icon {
+	position: absolute;
+	color: #b4bdce;
+	top: 50%;
+	left: 0;
+	margin-top: -1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 2px solid #b4bdce;
+	border-radius: 50%;
+	text-align: center;
+	line-height: calc(2.5rem - 4px);
+}
+
+.sw-theme-default .step-anchor li>a {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+	/*padding: 0 2rem 0 3.75rem;*/
+	min-height: 2.5rem;
+	outline: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+	text-decoration: none;
+	font-weight: $font-weight-medium;
+	cursor: default;
+}
+
+.sw-theme-default {
+	border: $bd-default;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.sw-theme-default .step-anchor li.done .sw-done-icon {
+	display: block;
+	border-color: #5cb85c;
+	color: #5cb85c;
+}
+
+.sw-theme-default .sw-done-icon {
+	display: none;
+}
+
+.sw-theme-default .step-anchor li.done .sw-done-icon~.sw-number,
+.sw-theme-default .step-anchor li.done .sw-done-icon~.sw-icon {
+	display: none;
+}
+
+@media (min-width: 576px) {
+	.ui-datepicker-inline {
+		max-width: 270px;
+	}
+}
+
+.ui-datepicker {
+	background-color: $color-white;
+	border: $bd-default;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 10px;
+	margin: 1px 0 0;
+	display: none;
+	width: auto !important;
+	z-index: 5 !important;
+	border-radius: 0.25rem;
+}
+
+.ui-widget-header {
+	border: none;
+	background: #fff;
+	color: #6a729c;
+	font-weight: $font-weight-bold;
+}
+
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: $font-weight-bold;
+	border: 0;
+	color: #6a729c;
+}
+
+.ui-widget-content {
+	color: inherit;
+}
+
+.ui-widget.ui-widget-content {
+	border: $bd-default;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a,
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a:hover,
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a:focus {
+	background-color: $color-primary;
+	color: $color-white;
+}
+
+.ui-datepicker .ui-datepicker-calendar td span,
+.ui-datepicker .ui-datepicker-calendar td a {
+	transition: all 0.2s ease-in-out;
+	color: #6a729c;
+	padding: 5px 8px;
+	display: block;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-default;
+	border: $bd-default;
+	border-radius: 1px;
+	background: #fff;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid $color-primary;
+	background: $color-white;
+	color: $color-primary;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next:before {
+	right: 6px;
+	content: "\f105";
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:before {
+	left: 5px;
+	content: "\f104";
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next::before,
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev::before {
+	font-size: 16px;
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: -3px;
+	text-indent: 0;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	cursor: pointer;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+	border: $bd-default;
+	background: #fff;
+	font-weight: $font-weight-normal;
+	color: $color-primary;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+	border: $bd-default;
+	margin-right: 5px;
+	padding: 3px;
+	font-family: inherit;
+	font-size: 10px;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+	font-size: inherit;
+	font-family: inherit;
+	border: $bd-default;
+	padding: 10px 20px;
+	background: $color-primary;
+	color: #fff;
+	opacity: 1;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	cursor: pointer;
+	width: auto;
+	overflow: visible;
+	font-size: inherit;
+	font-family: inherit;
+	border: $bd-default;
+	padding: 10px 20px;
+	background: $color-primary;
+	color: #fff;
+	font-weight: $font-weight-normal;
+}

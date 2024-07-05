@@ -1,0 +1,64 @@
+{% extends 'includes/base.html' %}
+
+{% block title %}Edit Client Reservation{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+    <h2>Edit my reservation</h2>
+    <div class="card mt-3">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <form action="{% url 'client_edit_reservation' id=reservation_id%}" method="post" data-parsely-validate>
+                            {% csrf_token %}
+
+                            {{ reservation_form.user_id }}
+
+                            <div class="form-group mg-t-10">
+                                <div class="form-group mg-t-10">
+                                    <label for="">{{ reservation_form.dorm_id.label }} <span class="text-danger">*</span></label>
+                                    {{ reservation_form.dorm_id }}
+                                </div>
+                            </div>
+                            <div class="form-group mg-t-10">
+                                <div class="form-group mg-t-10">
+                                    <label for="">{{ reservation_form.room_id.label }} <span class="text-danger">*</span></label>
+                                    {{ reservation_form.room_id }}
+                                </div>
+                            </div>
+
+                            <div class="form-group mg-t-10">
+                                <div class="form-group mg-t-10">
+                                    <label for="">{{ reservation_form.reservation_fee.label }} <span class="text-danger">*</span></label>
+                                    {{ reservation_form.reservation_fee }}
+                                </div>
+                            </div>
+
+                            <div class="form-group mg-t-10">
+                                <div class="form-group mg-t-10">
+                                    <label for="">{{ reservation_form.move_in_date.label }} <span class="text-danger">*</span></label>
+                                    {{ reservation_form.move_in_date }}
+                                </div>
+                            </div>
+                            <div class="form-group mg-t-10">
+                                <div class="form-group mg-t-10">
+                                    <input type="submit" value="Save changes to reservation" class="btn btn-primary">
+                                    <a href="{% url 'client_delete_reservation' id=reservation_id%}" class="btn btn-danger">Mark as Deleted</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block per_page_js %}
+<script>
+    $("#id_move_in_date").datepicker()
+</script>
+{% endblock %}

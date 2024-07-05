@@ -1,0 +1,12 @@
+$(function () {
+	'use strict';
+
+	// Dual Listbox Example 
+   $('#duallistbox-example').bootstrapDualListbox({
+	 nonSelectedListLabel: 'Non-selected',
+	 selectedListLabel: 'Selected',
+	 preserveSelectionOnMove: 'moved',
+	 moveOnSelect: false
+   });
+   
+})

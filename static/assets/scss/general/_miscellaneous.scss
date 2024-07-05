@@ -1,0 +1,145 @@
+/**********************************************************************
+***********************************************************************
+### Miscellaneous CSS
+*********************************************************************
+*********************************************************************/
+
+#red,
+#green,
+#blue {
+	margin: 10px;
+	display: inline-block;
+	height: 200px;
+}
+
+#colorpicker {
+	height: 240px;
+	width: 310px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #BFBFBF;
+}
+
+#result {
+	margin: 60px 26px;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	color: #7f7f7f;
+	background: #7f7f7f;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px;
+}
+
+#red .noUi-connect {
+	background: #c0392b;
+}
+
+#green .noUi-connect {
+	background: #27ae60;
+}
+
+#blue .noUi-connect {
+	background: #2980b9;
+}
+
+.example-val {
+	display: block;
+	margin: 10px 0;
+}
+
+.example-val:before {
+	content: "Value: ";
+	font: 700 12px Arial;
+}
+
+#input-select,
+#input-number {
+	padding: 7px;
+	margin: 15px 5px 5px;
+	width: 70px;
+}
+
+.c-1-color {
+	background: #6777ef;
+}
+
+.c-2-color {
+	background: #3dc7be;
+}
+
+.c-3-color {
+	background: #5b1bcc;
+}
+
+.c-4-color {
+	background: #7ab339;
+}
+
+.c-5-color {
+	background: #ffa117;
+}
+
+
+/*sotablejs css*/
+
+.tinted {
+	background-color: $color-primary;
+	color: #fff;
+	border: 1px solid #7b8ff3 !important;
+}
+
+.list-group-item .handle {
+	cursor: move;
+}
+
+.grid-square {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border: solid 1px #eee;
+	padding: 10px;
+	margin: 12px;
+	background-color: #f2f7ff;
+}
+
+.blue-background-class {
+	background-color: #C8EBFB;
+}
+
+.sw-theme-dots>ul.step-anchor:before {
+	top: 60px;
+}
+
+.note-editor.note-airframe .note-editing-area .note-editable,
+.note-editor.note-frame .note-editing-area .note-editable {
+	color: $brand-color;
+}
+
+.note-editor.note-airframe,
+.note-editor.note-frame {
+	border: $bd-default;
+}
+
+.note-air-popover {
+	left: 0 !important;
+	top: 0 !important;
+}
+
+.note-btn.dropdown-toggle::after {
+	border-top: none;
+	border-right: none;
+	border-bottom: 0;
+	border-left: none;
+}
+
+.note-popover .popover-content .note-dropdown-menu,
+.note-toolbar .note-dropdown-menu {
+	min-width: 230px;
+}
+
+.sw-theme-dots>ul.step-anchor>li>a:after {
+	left: 46%;
+	bottom: 3px;
+}

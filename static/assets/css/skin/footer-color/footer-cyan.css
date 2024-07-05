@@ -1,0 +1,23 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Cyan
+*********************************************************************
+*********************************************************************/
+body.footer-color-cyan .page-footer {
+  background-color: #3db9b1;
+  color: #fff; }
+  body.footer-color-cyan .page-footer a {
+    color: #f2f4ff; }
+  body.footer-color-cyan .page-footer a:hover {
+    color: #000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
+
+body.dark-theme.footer-color-cyan .page-footer {
+  background-color: #3db9b1;
+  color: #fff; }
+
+/*# sourceMappingURL=footer-cyan.css.map */

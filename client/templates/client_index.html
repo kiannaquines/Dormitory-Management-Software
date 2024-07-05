@@ -1,0 +1,168 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% load custom_filter %}
+{% block title %}Client Dashboard{% endblock %}
+
+{% block content %}
+<div class="row row-xs">
+     <div class="col-12">
+
+        
+        {% for message in messages %}
+            <div class="alert alert-{% if message.tags == 'success' %}success{% elif message.tags == 'error' %}danger{% endif %} alert-dismissible fade show" role="alert">
+               
+                {{ message }}
+                
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        {% endfor %}
+
+
+      <div class="card mg-b-20">
+         <div class="card-body">
+            <div class="mb-2">
+               <h4 class="tx-15 mb-0 tx-normal">Your upcoming billings in dormitory</h4>
+            </div>  
+            
+            {% if  count_already_reserved > 0%}
+            <table id="latest_payment_of_you" class="table table-bordered responsive nowrap">
+                <thead>
+                   <tr>
+                      <th>Billing in Month of</th>
+                      <th>Amount to pay</th>
+                      <th>Due Date</th>
+                      <th>Billing Date Added</th>
+                      <th class="text-center">Action</th>
+                   </tr>
+                </thead>
+                <tbody>
+                   {% for billing in billing_list %}
+                         <tr>
+                             <td>
+                                 <a href="#">{{ billing.month | date:"F, Y" }}</a>
+                             </td>
+                             <td>
+                                 {{ billing.amount }}
+                             </td>
+                             <td>
+                                 {{ billing.due_date }}
+                             </td>
+                             <td>
+                                 {{ billing.date_added }}
+ 
+                                 {{ billing.billing_id }}
+                             </td>
+                             <td class="text-center">
+                                 {% check_if_already_paid request.user.id billing.id as result %}
+ 
+                                 {% if result > 0 %}
+
+                                    {% check_if_already_paid_but_pending request.user.id billing.id as result_two %}
+                                    {% if result_two == 0 %}
+                                    <input type="button" class="btn btn-success btn-sm" value="Already Paid">
+                                    {% else %}
+                                    <a class="btn btn-primary btn-sm" href="{% url 'my_payments' %}">
+                                        Edit Pay Bill Here
+                                    </a>
+                                    {% endif %}
+                                {% else %}
+                                    <a class="btn btn-primary btn-sm" href="{% url 'add_payments' %}?billing={{ billing.id }}">
+                                        Pay Bill
+                                    </a>
+                                 {% endif %}
+                     
+                             </td>
+                         </tr>
+                         {% endfor %}
+                </tbody>
+                <tfoot>
+                   <tr>
+                     <th>Billing in Month of</th>
+                     <th>Amount to pay</th>
+                     <th>Due Date</th>
+                     <th>Billing Date Added</th>
+                     <th class="text-center">Action</th>
+                   </tr>
+                </tfoot>
+             </table>
+
+            {% else %}
+            <table id="latest_payment_of_you" class="table table-bordered responsive nowrap">
+                <thead>
+                   <tr>
+                      <th>Billing in Month of</th>
+                      <th>Amount to pay</th>
+                      <th>Due Date</th>
+                      <th>Billing Date Added</th>
+                      <th class="text-center">Action</th>
+                   </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                   <tr>
+                     <th>Billing in Month of</th>
+                     <th>Amount to pay</th>
+                     <th>Due Date</th>
+                     <th>Billing Date Added</th>
+                     <th class="text-center">Action</th>
+                   </tr>
+                </tfoot>
+             </table>
+            {% endif %}
+         </div>
+      </div>
+     </div>
+</div>
+
+<div class="modal fade" id="pay_modal" tabindex="-1" role="dialog" aria-labelledby="ModalComponents" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalComponents">Pay your monthly billing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="" method="post">
+                
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary waves-effect">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+{% block page_js %}
+<script src="{% static 'assets/plugins/dataTable/datatables.min.js' %}"></script>
+<script src="{% static 'assets/plugins/dataTable/responsive/dataTables.responsive.js' %}"></script>
+<script src="{% static 'assets/plugins/dataTable/extensions/dataTables.jqueryui.min.js' %}"></script>
+<script>
+    $('#latest_payment_of_you').DataTable({
+        responsive: true,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        },
+        order: []
+    });
+
+    $(document).ready(function(){
+        $(document).on("click","#paybill",function(event){
+            event.preventDefault();
+
+            $("#pay_modal").modal("show")
+        })
+    });
+</script>
+<script src="{% static 'assets/plugins/chart.js/chart.min.js' %}"></script>
+<script src="{% static 'assets/plugins/daterangepicker/daterangepicker.js' %}"></script>
+<script src="{% static 'assets/lib/dashboard/analytic/dashboard-audience-init.js' %}"></script>
+{% endblock %}

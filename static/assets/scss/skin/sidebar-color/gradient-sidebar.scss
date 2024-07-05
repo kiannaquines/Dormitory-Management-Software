@@ -1,0 +1,121 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Gradient Sidebar CSS
+*********************************************************************
+*********************************************************************/
+body.gradient-theme {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo a.logo-img img {
+		display: none;
+	} 
+	
+	.page-sidebar .logo {
+		background-image: linear-gradient(to right, #4761e9, #5971ef, #6b81f4, #7c91f9, #8da1fd)!important;
+		border-right: 1px solid #6b81f4!important;
+		border-bottom: 1px solid #6b81f4!important;
+	}
+
+	.adata-svg-icon g [fill] {
+		fill: #8da1fd!important;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid #6b81f4!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+	
+	.page-sidebar-menu ul li.active>a,
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-collapsed .page-sidebar-menu ul li.active>a,
+	.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+	.page-sidebar-collapsed .open:not(.active)>a {
+		background: #8da1fd!important;
+	}
+
+	.page-sidebar,
+	.page-sidebar-inner .accordion-menu .sub-menu,
+	.page-sidebar-menu ul li ul.sub-menu,
+	.header-right .top-message-area .top-message-heading>span,
+	.header-right .top-notifications-area .notifications-heading>span,
+	.btn-scroll-top,
+	.page-inner-content .inner-sidebar .section-nav .nav-link.active::after {
+		background-image: linear-gradient(to right, #4761e9, #5971ef, #6b81f4, #7c91f9, #8da1fd)!important;
+	}
+
+	.page-sidebar .page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #ffffff!important;
+	}
+
+	.page-sidebar .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill],
+	.open:not(.active)>a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+	
+	.page-sidebar .open:not(.active)>a {
+		background: #8da1fd!important;
+	}
+
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:before {
+		background: #ffffff!important;
+		border: 1px solid #ffffff!important;
+	}
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #6980f4!important;
+	}
+
+	.header-right .user-profile-area .dropdown-item:hover {
+		border-left: 1px solid #8da1fd!important;
+	}
+	
+	.btn-scroll-top {
+		border: none!important;
+	}
+}
+
+
+body.gradient-theme.page-sidebar-collapsed {
+	.logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.page-sidebar .logo {
+		background-color: #bd3e3f!important;
+	}
+	
+	.page-sidebar-menu ul li ul.sub-menu {
+		background-image: linear-gradient(to right, #4761e9, #5971ef, #6b81f4, #7c91f9, #8da1fd)!important;
+	}
+	
+	.page-sidebar-menu>ul>li:hover>a {
+		background: #8da1fd!important;
+	}
+	
+	.page-sidebar-menu>ul>li.active>a,
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu ul li .sub-menu,
+	.page-sidebar-menu>ul>li>a {
+		border: none!important;
+	}
+}

@@ -1,0 +1,301 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Blue
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.theme-blue .logo a.logo-img {
+  background-image: url(../../../images/logos/logo-blue.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-blue .logo a.logo-img img {
+  display: none; }
+body.theme-blue a:hover,
+body.theme-blue .tx-primary,
+body.theme-blue .custom-btn-group .nav-item a:hover,
+body.theme-blue .btn-outline-brand,
+body.theme-blue .btn-outline-primary,
+body.theme-blue .btn-default:hover,
+body.theme-blue .header-bottom .settings-dropdown a:hover,
+body.theme-blue .header-bottom .settings-dropdown a:hover svg,
+body.theme-blue .header-right .notifications-box a:hover h3,
+body.theme-blue .daterangepicker .ranges li.active,
+body.theme-blue .daterangepicker .ranges li:hover,
+body.theme-blue .header-right .message-box a:hover h3,
+body.theme-blue .header-right .top-message-area .top-message-footer a,
+body.theme-blue .header-right .top-notifications-area .notifications-footer a,
+body.theme-blue .header-right .languages-dropdown li a:hover,
+body.theme-blue .header-right .user-profile-area .dropdown-item:hover,
+body.theme-blue .page-sidebar-menu ul li.active > a,
+body.theme-blue .page-sidebar-menu ul li .sub-menu a:hover,
+body.theme-blue .page-sidebar-menu ul li.active > a i,
+body.theme-blue .page-sidebar-menu ul li.active > a i.accordion-icon,
+body.theme-blue .page-sidebar-menu ul li.open > a i.accordion-icon,
+body.theme-blue .page-sidebar-menu ul li a:hover i.accordion-icon,
+body.theme-blue .page-sidebar-menu ul li a:hover,
+body.theme-blue .open:not(.active) > a,
+body.theme-blue .custom-btn-group .nav-item a.active,
+body.theme-blue .payment-info .nav-item a.active,
+body.theme-blue .audience-overview-tab a.active h2,
+body.theme-blue .audience-demographics .nav-tabs .nav-item.show .nav-link,
+body.theme-blue .audience-demographics .nav-tabs .nav-link.active,
+body.theme-blue .mailbox-mini-sidebar .mail-menu li:hover a,
+body.theme-blue .mailbox-mini-sidebar .mail-menu li:hover a span svg,
+body.theme-blue .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-blue .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-blue .mailbox-list-sidebar .mailbox-mail-list a.active .messages-name,
+body.theme-blue .mailbox-list-sidebar .mailbox-mail-list a:hover .messages-name,
+body.theme-blue .chat-list-sidebar .chat-contact-list a.active .messages-name,
+body.theme-blue .chat-list-sidebar .chat-contact-list a:hover .messages-name,
+body.theme-blue .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-blue .chat-details .chat-details-header .chat-right-icons a:hover,
+body.theme-blue .chat-details .middle .normal:hover a,
+body.theme-blue .chat-details .middle .flex-row-reverse:hover a,
+body.theme-blue .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+body.theme-blue .file-manager-sidebar .file-manager-menu ul li:hover a,
+body.theme-blue .file-manager-content .file-manager-file-list .card:hover .card-body a.tx-dark,
+body.theme-blue .page-inner-content .inner-sidebar .section-nav .nav-link:hover,
+body.theme-blue .page-inner-content .inner-sidebar .section-nav .nav-link.active,
+body.theme-blue .ui-accordion-header.ui-state-active,
+body.theme-blue .ui-accordion .ui-accordion-header:hover,
+body.theme-blue .icons-list > div i,
+body.theme-blue .icons-list > div svg,
+body.theme-blue .settingPanelToggle {
+  color: #0168fa; }
+body.theme-blue .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.theme-blue .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.theme-blue .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill],
+body.theme-blue .page-header .navbar-default .adata-svg-icon g [fill],
+body.theme-blue .page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill],
+body.theme-blue .adata-svg-icon g [fill] {
+  fill: #0168fa; }
+body.theme-blue .btn-primary,
+body.theme-blue .btn-custom-primary,
+body.theme-blue .btn-outline-brand:hover,
+body.theme-blue .btn-outline-primary:hover,
+body.theme-blue .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-blue .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-blue .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-blue .tooltip-primary .tooltip-inner,
+body.theme-blue .header-right .top-message-area .top-message-heading > span,
+body.theme-blue .header-right .top-notifications-area .notifications-heading > span,
+body.theme-blue .show > .btn-primary.dropdown-toggle,
+body.theme-blue .daterangepicker td.active,
+body.theme-blue .daterangepicker td.active:hover,
+body.theme-blue .applyBtn.btn-primary:hover,
+body.theme-blue .selectgroup-input-radio:focus + .selectgroup-button,
+body.theme-blue .selectgroup-input-radio:checked + .selectgroup-button,
+body.theme-blue .accordion-menu .sub-menu li a:hover:before,
+body.theme-blue .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-blue .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-blue .badge-primary,
+body.theme-blue .selectize-control.contacts .selectize-input > div,
+body.theme-blue .tui-full-calendar-confirm,
+body.theme-blue .tui-datepicker .tui-is-selectable.tui-is-selected,
+body.theme-blue .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected,
+body.theme-blue .tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator,
+body.theme-blue .page-inner-content .inner-sidebar .section-nav .nav-link.active::after,
+body.theme-blue .nav-pills .nav-link.active,
+body.theme-blue .nav-pills .show > .nav-link,
+body.theme-blue .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-blue .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-blue .custom-list-group .list-group-item.active,
+body.theme-blue .custom-scrollbar .custom-scrollbar-color > .ps__rail-y > .ps__thumb-y,
+body.theme-blue .irs--flat .irs-bar,
+body.theme-blue .irs--flat .irs-from,
+body.theme-blue .irs--flat .irs-to,
+body.theme-blue .irs--flat .irs-single,
+body.theme-blue .irs--flat .irs-handle > i:first-child,
+body.theme-blue .irs--flat .irs-handle.state_hover > i:first-child,
+body.theme-blue .irs--flat .irs-handle:hover > i:first-child,
+body.theme-blue .checkbox label::after,
+body.theme-blue .sk-plane,
+body.theme-blue .sk-chase-dot:before,
+body.theme-blue .sk-bounce-dot,
+body.theme-blue .sk-wave-rect,
+body.theme-blue .sk-pulse,
+body.theme-blue .sk-flow-dot,
+body.theme-blue .sk-swing-dot,
+body.theme-blue .sk-circle-dot:before,
+body.theme-blue .sk-circle-fade-dot:before,
+body.theme-blue .sk-grid-cube,
+body.theme-blue .sk-fold-cube:before,
+body.theme-blue .sk-wander-cube,
+body.theme-blue .btn-scroll-top {
+  background-color: #0168fa; }
+body.theme-blue .bg-primary,
+body.theme-blue .header-color .accordion-title.bg-primary {
+  background-color: #0168fa !important; }
+body.theme-blue .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-blue .bg-soft-color .ui-widget-content.ui-accordion-content-active {
+  background: rgba(1, 104, 250, 0.1); }
+body.theme-blue .page-sidebar-menu ul li.active > a,
+body.theme-blue .page-sidebar-menu ul li a:hover,
+body.theme-blue .open:not(.active) > a,
+body.theme-blue .page-sidebar-collapsed .page-sidebar-menu ul li.active > a,
+body.theme-blue .page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.theme-blue .page-sidebar-collapsed .open:not(.active) > a {
+  background: #e5efff; }
+body.theme-blue .selectize-control.contacts .selectize-input > div {
+  background: #0168fa;
+  background: -moz-linear-gradient(top, #0168fa 0%, #0168fa 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0168fa), color-stop(100%, #0168fa));
+  background: -webkit-linear-gradient(top, #0168fa 0%, #0168fa 100%);
+  background: -o-linear-gradient(top, #0168fa 0%, #0168fa 100%);
+  background: -ms-linear-gradient(top, #0168fa 0%, #0168fa 100%);
+  background: linear-gradient(to bottom, #0168fa 0%, #0168fa 100%); }
+body.theme-blue .btn-primary,
+body.theme-blue .btn-custom-primary,
+body.theme-blue .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-blue .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-blue .btn-outline-brand,
+body.theme-blue .btn-outline-primary,
+body.theme-blue .btn-outline-primary:hover,
+body.theme-blue .btn-default:hover,
+body.theme-blue .show > .btn-primary.dropdown-toggle,
+body.theme-blue .header-right .user-profile-area .dropdown-item:hover,
+body.theme-blue .applyBtn.btn-primary:hover,
+body.theme-blue .accordion-menu .sub-menu li a:hover:before,
+body.theme-blue .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-blue .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-blue input:focus,
+body.theme-blue .custom-file:focus,
+body.theme-blue .custom-select:focus,
+body.theme-blue .form-control:focus,
+body.theme-blue .selectize-control.contacts .selectize-input > div,
+body.theme-blue .selectize-control.contacts .selectize-input.dropdown-active,
+body.theme-blue .tui-full-calendar-popup-section-item:focus,
+body.theme-blue .tui-full-calendar-popup-section-item:hover,
+body.theme-blue .tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+body.theme-blue .tui-full-calendar-button:hover,
+body.theme-blue .flow-drop,
+body.theme-blue .border-color .accordion-title.bd-primary,
+body.theme-blue .border-color .ui-widget-content.bd-primary,
+body.theme-blue .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-blue .bg-soft-color .ui-widget-content.ui-accordion-content-active,
+body.theme-blue .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-blue .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-blue .custom-list-group .list-group-item.active,
+body.theme-blue .contact-add-sidebar .form-group.birthday-select select:focus,
+body.theme-blue .btn-scroll-top {
+  border-color: #0168fa; }
+body.theme-blue .tui-full-calendar-month-creation-guide {
+  border-color: #0168fa !important; }
+body.theme-blue .audience-overview-tab a.active {
+  border-top: 1px solid #0168fa; }
+body.theme-blue .irs--flat .irs-from:before,
+body.theme-blue .irs--flat .irs-to:before,
+body.theme-blue .irs--flat .irs-single:before {
+  border-top-color: #0168fa; }
+body.theme-blue .mailbox-mini-sidebar .mail-menu li:hover,
+body.theme-blue .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-blue .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-blue .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-blue .file-manager-sidebar .file-manager-menu ul li:hover a {
+  border-left: 1px solid #0168fa; }
+body.theme-blue .bg-soft-primary,
+body.theme-blue .custom-btn-group .nav-item a.active {
+  background-color: rgba(1, 104, 250, 0.15) !important;
+  color: #0168fa !important; }
+body.theme-blue .btn-primary:hover,
+body.theme-blue .btn-secondary:hover,
+body.theme-blue .btn-warning:hover,
+body.theme-blue .btn-success:hover,
+body.theme-blue .btn-danger:hover,
+body.theme-blue .btn-info:hover,
+body.theme-blue .btn-dark:hover,
+body.theme-blue .btn-custom-primary:hover,
+body.theme-blue .btn-outline-brand:hover,
+body.theme-blue .btn-outline-primary:hover,
+body.theme-blue .tooltip-primary .tooltip-inner,
+body.theme-blue .header-color .ui-accordion-header.ui-state-active,
+body.theme-blue .header-color .ui-accordion-header,
+body.theme-blue .header-color .ui-accordion-header:hover,
+body.theme-blue .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-blue .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-blue .btn-scroll-top {
+  color: #ffffff !important; }
+body.theme-blue .tooltip-primary.bs-tooltip-top .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #0168fa; }
+body.theme-blue .tooltip-primary.bs-tooltip-bottom .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #0168fa; }
+body.theme-blue .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #0168fa; }
+body.theme-blue .tooltip-primary.bs-tooltip-right .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before,
+body.theme-blue .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #0168fa; }
+body.theme-blue .order-details-tab .nav-item a.active,
+body.theme-blue .order-details-tab .nav-item a:hover {
+  color: #0168fa;
+  border-bottom: 1px solid #0168fa; }
+
+body.theme-blue.page-sidebar-collapsed .logo a.logo-img img.small-logo {
+  background-image: url(../../../images/logos/small-logo-blue.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-blue.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  color: #0168fa; }
+body.theme-blue.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a .adata-svg-icon g [fill] {
+  fill: #0168fa; }
+
+body.theme-blue.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background-color: #0168fa; }
+
+body.dark-sidebar.theme-blue .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li.active > a,
+body.dark-sidebar.theme-blue .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li a:hover,
+body.dark-sidebar.theme-blue .page-sidebar .page-sidebar-inner .open:not(.active) > a {
+  background: #0168fa; }
+
+/*Dark Theme CSS*/
+body.dark-theme.theme-blue a:hover {
+  color: #0168fa; }
+body.dark-theme.theme-blue .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-blue .open:not(.active) > a,
+body.dark-theme.theme-blue .page-sidebar-menu ul li.active > a {
+  color: #6eaaff;
+  background-color: #204a90; }
+body.dark-theme.theme-blue input:focus,
+body.dark-theme.theme-blue .custom-file:focus,
+body.dark-theme.theme-blue .custom-select:focus,
+body.dark-theme.theme-blue .form-control:focus,
+body.dark-theme.theme-blue .calculator-block .cryptonatorwidget input:focus,
+body.dark-theme.theme-blue .calculator-block .cryptonatorwidget select:focus,
+body.dark-theme.theme-blue .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #0168fa; }
+
+body.dark-theme.theme-blue.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-blue.page-sidebar-collapsed .open:not(.active) > a,
+body.dark-theme.theme-blue.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  color: #6eaaff;
+  background-color: #204a90; }
+
+/*Semi Dark Theme CSS*/
+body.semi-dark-theme.theme-blue .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-blue .open:not(.active) > a,
+body.semi-dark-theme.theme-blue .page-sidebar-menu ul li.active > a {
+  color: #6eaaff;
+  background-color: #204a90; }
+body.semi-dark-theme.theme-blue input:focus,
+body.semi-dark-theme.theme-blue .custom-file:focus,
+body.semi-dark-theme.theme-blue .custom-select:focus,
+body.semi-dark-theme.theme-blue .form-control:focus,
+body.semi-dark-theme.theme-blue .calculator-block .cryptonatorwidget input:focus,
+body.semi-dark-theme.theme-blue .calculator-block .cryptonatorwidget select:focus,
+body.semi-dark-theme.theme-blue .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #0168fa; }
+
+body.semi-dark-theme.theme-blue.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-blue.page-sidebar-collapsed .open:not(.active) > a,
+body.semi-dark-theme.theme-blue.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  color: #6eaaff;
+  background-color: #204a90; }
+
+/*# sourceMappingURL=theme-blue.css.map */

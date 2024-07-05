@@ -1,0 +1,516 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block title %}View Profile{% endblock %}
+
+{% block content %}
+<div class="row row-xs">
+    <div class="col-lg-4 col-xl-3">
+       <div class="card mg-b-20">
+          <div class="card-body">
+             <div class="d-flex align-items-center mg-b-20">
+                <div class="profile-avatar-setting mr-2">
+                   <div class="avatar-wrapper">
+                     {% if user_info.image %}
+                        <img class="img-fluid rounded wd-90 ht-90" src="{{ user_info.image.url }}" alt="{{ user_info.first_name }} {{ user_info.last_name }}" >
+                     {% else %}
+                        <img class="img-fluid rounded wd-90 ht-90" src="{% static 'assets/images/default-profile.png' %}" alt="{{ user_info.first_name }} {{ user_info.last_name }}" >
+                     {% endif %}
+                   </div>
+                </div>
+                <div>
+                   <h2 class="tx-15"><a href="">{{ user_info.first_name }} {{ user_info.last_name }}</a></h2>
+                   <p class="tx-12 mb-0">Student/Lodgers</p>
+                </div>
+             </div>
+
+             <ul class="nav nav-pills flex-column tx-medium ac-setting-navi">
+                <li class="nav-item">
+                   <a class="nav-link d-flex align-items-center active" data-toggle="pill" href="#setting-account-info" aria-expanded="false">
+                   <i data-feather="clipboard" class="wd-16 ht-16 mr-2"></i>
+                   <span>Account Information</span>
+                   </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-student-info" aria-expanded="false">
+                    <i data-feather="clipboard" class="wd-16 ht-16 mr-2"></i>
+                    <span>Student information</span>
+                    </a>
+                 </li>
+                <li class="nav-item">
+                   <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-emergency-info" aria-expanded="false">
+                   <i data-feather="clipboard" class="wd-16 ht-16 mr-2"></i>
+                   <span>Emergency information</span>
+                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-payment-info" aria-expanded="false">
+                  <i data-feather="clipboard" class="wd-16 ht-16 mr-2"></i>
+                  <span>Payments informations</span>
+                  </a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-update-info" aria-expanded="false">
+                    <i data-feather="feather" class="wd-16 ht-16 mr-2"></i>
+                    <span>Update informations</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" data-toggle="pill" href="#setting-security-info" aria-expanded="false">
+                    <i data-feather="shield" class="wd-16 ht-16 mr-2"></i>
+                    <span>Account Security</span>
+                    </a>
+                </li>
+             </ul>
+          </div>
+       </div>
+    </div>
+    <div class="col-lg-8 col-xl-9">
+       <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="setting-account-info">
+             <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                   <h6 class="mb-0">Account Information</h6>
+                </div>
+                <div class="card-body">
+                   <form novalidate="">
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> First Name:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter First Name" value="{{ user_info.first_name }}" readonly>
+                         </div>
+                      </div>
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Last Name:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter Last Name" value="{{ user_info.last_name }}" readonly>
+                         </div>
+                      </div>
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Username:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter User Name" value="{{ user_info.username }}" readonly>
+                         </div>
+                      </div>
+                      <div class="row mg-t-20">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Email:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="email" class="form-control" placeholder="Enter Email" value="{{ user_info.email }}" readonly>
+                         </div>
+                      </div>
+
+                      <div class="row mg-t-20">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Last login:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <input type="email" class="form-control" placeholder="Last login" value="{{ user_info.last_login }}" readonly>
+                        </div>
+                     </div>
+
+                     <div class="row mg-t-20">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> Date joined:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <input type="email" class="form-control" placeholder="Date joined" value="{{ user_info.date_joined }}" readonly>
+                        </div>
+                     </div>
+                   </form>
+                </div>
+             </div>
+          </div>
+          <div class="tab-pane fade" id="setting-emergency-info" role="tabpanel">
+             <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                   <h6 class="mb-0">Emergency Information</h6>
+                </div>
+                <div class="card-body">
+                  {% if emergency_info == None %}
+                     <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        Please add your emergency information.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                  {% endif %}
+
+                  {% for message in messages %}
+                    <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}success{% endif %} fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" date-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="mdi mdi-close tx-16"></i>
+                            </span>
+                        </button>
+                    </div>
+                {% endfor %}
+                
+                   <form action="{% url 'myprofile' %}" method="POST">    
+                     {% csrf_token %}                  
+                      <div class="row">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent name:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <div class="input-group mb-3">
+                              <input type="hidden"  name="user_id" value="{{ request.user.id }}">
+                               <input type="text" class="form-control" name="emergency_detail_name" placeholder="Parent name" value="{% if emergency_info.emergency_detail_name %}{{ emergency_info.emergency_detail_name }}{% endif %}">
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                         <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent middlename:</label>
+                         <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <div class="input-group mb-3">
+                               <input type="text" class="form-control" placeholder="Parent middlename" name="emergency_detail_middlename" value="{% if emergency_info.emergency_detail_middlename %}{{ emergency_info.emergency_detail_middlename }}{% endif %}" >
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent lastname:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Parent lastname" name="emergency_detail_lastname" value="{% if emergency_info.emergency_detail_lastname %}{{ emergency_info.emergency_detail_lastname }}{% endif %}">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Parent mobile number:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Parent lastname" name="emergency_detail_mobile_number" value="{% if emergency_info.emergency_detail_mobile_number %}{{ emergency_info.emergency_detail_mobile_number}}{% endif %}">
+                           </div>
+                        </div>
+                     </div>
+                  
+
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Relation:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" rows="3" name="emergency_detail_relation" class="form-control" placeholder="{% if emergency_info.emergency_detail_relation %}{{ emergency_info.emergency_detail_relation }}{% endif %}" value="{% if emergency_info.emergency_detail_relation %}{{ emergency_info.emergency_detail_relation }}{% endif %}"/>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Address:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <textarea name="emergency_detail_address" type="text" class="form-control" rows="3" placeholder="{% if emergency_info.emergency_detail_address %}{{ emergency_info.emergency_detail_address }}{% endif %}">{% if emergency_info.emergency_detail_address %}{{ emergency_info.emergency_detail_address }}{% endif %}</textarea>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label" style="color: white;">Address:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="submit" value="Submit" name="{% if emergency_info == None %}add_emerg_info{% else %}update_emerg_info{% endif %}" class="btn btn-primary">
+                           </div>
+                        </div>
+                     </div>
+
+                     
+                   </form>
+                </div>
+             </div>
+          </div>
+          <div class="tab-pane fade" id="setting-student-info" role="tabpanel">
+            <div class="card">
+               <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                  <h6 class="mb-0">Student Information</h6>
+               </div>
+               <div class="card-body">
+                  <form>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Student ID:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="21-xxxxxx" value="{{ user_info.student_id }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">College:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="{{ user_info.college }}" value="{{ user_info.college }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Department:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="{{ user_info.department }}" value="{{ user_info.department }}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Gender:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="{{ user_info.gender }}" value="{% if user_info.gender == 'M' %} Male {% else %} Female {% endif %}" readonly>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label">Address:</label>
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                           <div class="input-group mb-3">
+                              <textarea type="text" class="form-control" rows="3" placeholder="{{ user_info.address }}" readonly>{{ user_info.address }}</textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="tab-pane fade" id="setting-payment-info" role="tabpanel">
+            <div class="card">
+               <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                  <h6 class="mb-0">Student Payments Information</h6>
+               </div>
+               <div class="card-body">
+                  <table id="hoverTable" class="table table-bordered responsive nowrap">
+                     <thead>
+                        <tr>
+                           <th>Name</th>
+                           <th>Amount</th>
+                           <th>Refference Code</th>
+                           <th>Payment Type</th>
+                           <th>Date paid</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {% for list_payment  in list_payments %}
+                        <tr>
+                           <td>{{ list_payment.user_id.first_name }} {{ list_payment.user_id.last_name }}</td>
+                           <td>{{ list_payment.amount_paid }}</td>
+                           <td>{{ list_payment.ref_code }}</td>
+                           <td>{{ list_payment.payment_type }}</td>
+                           <td>{{ list_payment.date_paid }}</td>
+                        </tr>
+                        {% endfor %}
+                     </tbody>
+                     <tfoot>
+                        <tr>
+                           <th>Name</th>
+                           <th>Amount</th>
+                           <th>Refference Code</th>
+                           <th>Payment Type</th>
+                           <th>Date paid</th>
+                        </tr>
+                     </tfoot>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="tab-pane fade" id="setting-update-info" role="tabpanel">
+            <div class="card">
+               <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                  <h6 class="mb-0">Update Student Information</h6>
+               </div>
+               <div class="card-body">
+                 <form action="{% url 'myprofile' %}" method="post" enctype="multipart/form-data" data-parsley-validate novalidate>
+                    {% csrf_token %}
+                    <h5 class="mg-b-10">Student Information</h5>
+
+                    <div class="row mg-t-20">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.username.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.username }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.gender.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.gender }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.email.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.email }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.first_name.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.first_name }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.last_name.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.last_name }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.image.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+
+                            {{ current_user_form.image }}
+                            {% if current_user_form.image.value %}
+                                <small>
+                                 <a href="{{ current_user_form.image.value.url }}" target="_blank" rel="noopener noreferrer">{{ current_user_form.image.value }}</a>
+                                </small>
+                            {% else %}
+                                <span style="font-size: 10px; font-style: normal;">Upload your profile image (Image path will be reflected here after you upload your image)</span>
+                            {% endif %}
+                           </div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="mg-t-10">Additional Information</h5>
+                    
+
+                    <div class="row mg-t-20">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.contact_number.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.contact_number }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.student_id.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.student_id }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.college.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.college }}
+                           </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.department.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.department }}
+                           </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <label class="col-lg-2 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ current_user_form.address.label }}</label>
+                        <div class="col-lg-10 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ current_user_form.address }}
+                           </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="submit" value="Save Changes" name="update_info" class="btn btn-primary">
+                        </div>
+                     </div>
+                 </form>
+               </div>
+            </div>
+         </div>
+
+         <div class="tab-pane fade" id="setting-security-info" role="tabpanel">
+            <div class="card">
+               <div class="card-header d-flex align-items-center justify-content-between pd-15">
+                  <h6 class="mb-0">Password Security</h6>
+               </div>
+               <div class="card-body">
+
+                {% for message in messages %}
+                    <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}success{% endif %} fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" date-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="mdi mdi-close tx-16"></i>
+                            </span>
+                        </button>
+                    </div>
+                {% endfor %}
+
+                 <form action="{% url 'myprofile' %}" method="post" data-parsley-validate novalidate>
+                    {% csrf_token %}
+                    <h5 class="mg-b-10">Password Security</h5>
+
+                
+                    <div class="row mg-t-20">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span>{{ password_form.old_password.label_tag }}</label>
+                        <div class="col-lg-9 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ password_form.old_password }}
+                           </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ password_form.new_password1.label_tag }}</label>
+                        <div class="col-lg-9 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ password_form.new_password1 }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-3 form-control-label tx-left tx-lg-right form-label"><span class="tx-danger">*</span> {{ password_form.new_password2.label_tag }}</label>
+                        <div class="col-lg-9 mg-t-10 mg-sm-t-0">
+                           <div class="form-group mb-3">
+                            {{ password_form.new_password2 }}
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mg-t-10 mg-sm-t-0">
+                            <input type="submit" value="Save Changes" name="password_change" class="btn btn-primary">
+                        </div>
+                     </div>
+                 </form>
+               </div>
+            </div>
+         </div>
+
+       </div>
+    </div>
+ </div>
+{% endblock %}
+
+
+{% block per_page_js %}
+    <script>
+      $('#hoverTable').DataTable({
+         responsive: true,
+         language: {
+             searchPlaceholder: 'Search...',
+             sSearch: ''
+         }
+     });
+    </script>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'includes/base.html' %}
+
+
+{% block title %}Edit Student Emergency Information{% endblock %}
+
+
+{% block content %}
+<div class="col-lg-12">
+    <h2>Edit student emergency information</h2>
+    <div class="mg-t-20">
+        <div class="card custom-fieldset-style mg-b-30">
+            <form method="POST" action="{% url 'edit_emergency_info' id=emergency_id %}" data-parsley-validate>
+                {% csrf_token %}
+                <div class="clearfix">
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.user_id.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.user_id }}
+                        </div>
+                    </div> 
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_name.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_name }}
+                        </div>
+                    </div>  
+                    
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_middlename.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_middlename }}
+                        </div>
+                    </div>  
+
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_lastname.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_lastname }}
+                        </div>
+                    </div>  
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_mobile_number.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_mobile_number }}
+                        </div>
+                    </div>  
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_gender.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_gender }}
+                        </div>
+                    </div>  
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_relation.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_relation }}
+                        </div>
+                    </div>  
+                    <div class="row mg-t-10">
+                        <div class="col-lg">
+                            <label for="first_name">{{ emergency_info_form.emergency_detail_address.label }} <span class="tx-danger">*</span> </label>
+                            {{ emergency_info_form.emergency_detail_address }}
+                        </div>
+                    </div>  
+                    <div class="row mg-t-20">
+                        <div class="col-lg">
+                            <input type="submit" class="btn btn-primary btn-md" value="Update dormitory information">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

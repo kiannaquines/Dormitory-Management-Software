@@ -1,0 +1,249 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Sidebar Theme Green
+*********************************************************************
+*********************************************************************/
+$sidebar-color-green : #6fa531;
+
+/*Light Theme CSS*/
+body.sidebar-green {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo a.logo-img img {
+		display: none;
+	}
+
+	.page-sidebar .logo {
+		background-color: $sidebar-color-green;
+		border-right: 1px solid $sidebar-color-green;
+		border-bottom: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #65982a!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-green!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #7ab339;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #5d9022;
+	}
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid #639825;
+	}
+}
+
+body.sidebar-green.page-sidebar-collapsed {
+	.logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-white.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.page-sidebar .logo {
+		background-color: #65982a;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-green;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-green;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-green;
+		border-right: 1px solid $sidebar-color-green;
+		border-bottom: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid $sidebar-color-green;
+	}
+}
+
+
+/*Semi-Dark Theme CSS*/
+body.semi-dark-theme.sidebar-green {
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: $sidebar-color-green!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill] {
+		fill: $sidebar-color-green!important;
+	}
+
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+}
+
+body.semi-dark-theme.sidebar-green.page-sidebar-collapsed {
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a {
+		border: 1px solid #1a233a;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #151d33!important;
+	}
+}
+
+
+/*Dark Theme CSS*/
+body.dark-theme.sidebar-green {
+	.page-sidebar .logo {
+		background-color: $sidebar-color-green;
+		border-right: 1px solid $sidebar-color-green;
+		border-bottom: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar {
+		border-right: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.page-sidebar-menu ul li a,
+	.page-sidebar-menu ul li a i.accordion-icon,
+	.accordion-menu .sub-menu .sub-menu-label {
+		color: #f1f1ff!important;
+	}
+
+	.page-sidebar-menu ul li a:hover,
+	.page-sidebar-menu ul li.active>a,
+	.open:not(.active)>a {
+		color: #ffffff!important;
+		background: #65982a!important;
+	}
+
+	.page-sidebar-menu ul li ul.sub-menu li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover {
+		color: #ffffff!important;
+		background: transparent!important;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.accordion-menu .sub-menu li a:before {
+		border: 1px solid #f1f1ff;
+	}
+
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:hover:before {
+		border: 1px solid $sidebar-color-green!important;
+		background: #ffffff!important;
+	}
+
+	.page-sidebar {
+		background: #7ab339;
+	}
+
+	.page-sidebar-inner .accordion-menu .sub-menu {
+		background: #5d9022;
+	}
+
+	.accordion-menu .sub-menu li.divider-border {
+		border-top: 1px solid $sidebar-color-green;
+	}
+
+
+	#collapsed-sidebar-toggle-button:hover {
+		background-color: $sidebar-color-green;
+	}
+}
+
+
+body.dark-theme.sidebar-green.page-sidebar-collapsed {
+	.page-sidebar .logo {
+		background-color: #65982b;
+	}
+
+	.page-sidebar {
+		background: $sidebar-color-green;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a {
+		background: $sidebar-color-green;
+	}
+
+	.page-sidebar-menu ul li .sub-menu {
+		border-left: 1px solid $sidebar-color-green;
+		border-right: 1px solid $sidebar-color-green;
+		border-bottom: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar-menu>ul>li>a,
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		border: 1px solid $sidebar-color-green;
+	}
+
+	.page-sidebar-menu>ul>li:hover>a,
+	.page-sidebar-menu>ul>li.active>a {
+		background-color: $sidebar-color-green;
+	}
+}

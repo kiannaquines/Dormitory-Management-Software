@@ -1,0 +1,76 @@
+{% extends 'includes/base.html' %}
+{% block title %}Accounts{% endblock %}
+
+
+{% block content %}
+<div class="col-lg-12">
+    
+{% for message in messages %}
+    <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+    </div>
+{% endfor %}
+
+<h2>Boarders Account Page</h2>
+
+<div class="card mt-3">
+    <div class="inner-content">
+        <div class="custom-fieldset-style mg-b-30">
+            <div class="clearfix">
+                <div class="clearfix">
+                    <table id="resultTable" class="table table-bordered responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th>Paid by</th>
+                            <th>Amount Paid</th>
+                            <th>Billing As Of</th>
+                            <th>Billing Due Date</th>
+                            <th>Payment Verification</th>
+                            <th>Payment type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for account_info in accounts_info %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'account_edit' id=account_info.id %}">{{ account_info.user_id.first_name }}  {{ account_info.user_id.last_name }}</a>
+                            </td>
+                            <td>
+                                {{ account_info.amount_paid }}
+                            </td>
+                            <td>
+                                {{ account_info.billing_id.month | date:"F" }}
+                            </td>
+                            <td>
+                                {{ account_info.billing_id.due_date }}
+                            </td>
+                            <td>
+                                <span class="text-white badge badge-{% if account_info.payment_status == 'VERIFIED' %}primary{% elif account_info.payment_status == 'PENDING'%}warning{% else %}danger{% endif %}">{{ account_info.payment_status }}</span>
+                            </td>
+                            <td>
+                                <span class="badge badge-{% if account_info.payment_type == 'GCASH' %}primary{% else %}success{% endif %}">{{ account_info.payment_type }}</span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Paid by</th>
+                            <th>Amount Paid</th>
+                            <th>Billing As Of</th>
+                            <th>Billing Due Date</th>
+                            <th>Payment Verification</th>
+                            <th>Payment type</th>
+                        </tr>
+                    </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

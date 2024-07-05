@@ -1,0 +1,309 @@
+/**********************************************************************
+***********************************************************************
+### Sidebar CSS
+*********************************************************************
+*********************************************************************/
+
+.page-sidebar {
+	width: 265px;
+	background: $color-white;
+	min-height: 100%;
+	float: left;
+	z-index: 100;
+	position: relative;
+	border-right: $bd-default;
+	font-family: $font-family-pt-sans-caption;
+}
+
+.page-sidebar-fixed .page-sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	height: 100% !important;
+}
+
+body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
+	height: auto !important;
+}
+
+.page-sidebar-fixed .page-sidebar {
+	padding-top: 60px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.page-sidebar .logo {
+	position: absolute;
+	z-index: 30;
+	top: 0;
+	left: 0;
+	width: 265px;
+	background-color: $color-white;
+	text-align: center;
+	height: 60px;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+	padding: 0 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-right: $bd-default;
+	border-bottom: $bd-default;
+}
+
+.logo a.logo-img img {
+	max-height: 60px;
+	width: auto;
+}
+
+.logo a.logo-img {
+	width: 100%;
+	height: 100%;
+}
+
+.logo a.logo-img img.small-logo {
+	display: none;
+	max-height: 28px;
+	margin-top: 15px;
+}
+
+.page-sidebar-menu {
+	margin: 10px 0;
+}
+
+.page-sidebar-fixed .page-sidebar .accordion-menu {
+	margin: -11px 0 15px 0;
+}
+
+.page-sidebar-menu ul {
+	padding: 0;
+	margin: 0;
+}
+
+.page-sidebar-menu ul li {
+	list-style-type: none;
+	position: relative;
+	border-left: none;
+}
+
+.page-sidebar-menu ul li.open a {
+	border-radius: 5px 5px 0 0
+}
+
+.page-sidebar-menu ul li.open ul.sub-menu {
+	border-radius: 0 0 5px 5px;
+	background: #f3f5fb;
+}
+
+.page-sidebar-menu ul li.menu-label {
+	display: block;
+	color: #abaebe;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	margin: 40px 20px 10px;
+}
+
+.page-sidebar-menu ul li a {
+	display: block;
+	font-size: $font-size-default;
+	margin: 0 20px;
+	padding: 11px 15px;
+	border-radius: 3px;
+	position: relative;
+	letter-spacing: 0;
+	line-height: 1.5 !important;
+	font-family: $font-family-pt-sans-caption;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: all 0.35s ease !important;
+	transition: all 0.35s ease !important;
+}
+
+.page-sidebar-menu ul li a i {
+	margin-top: 4px;
+}
+
+.page-sidebar-menu ul li.active>a i,
+.page-sidebar-menu ul li.active>a i.accordion-icon,
+.page-sidebar-menu ul li.open>a i.accordion-icon,
+.page-sidebar-menu ul li a:hover i.accordion-icon {
+	color: $color-primary;
+}
+
+.page-sidebar-menu ul li.active>a {
+	color: $color-primary;
+	background: #eef1ff;
+}
+
+.page-sidebar-menu ul li a:link {
+	text-decoration: none;
+}
+
+.page-sidebar-menu>ul>li>a span.badge-warning,
+.page-sidebar-menu>ul>li.open span.badge-warning {
+	color: #000;
+}
+
+.page-sidebar-menu>ul>li>a:hover i.accordion-icon {
+	text-decoration: none;
+}
+
+.page-sidebar-menu ul li a i.menu-icon {
+	margin-right: 10px;
+	font-size: 17px;
+	vertical-align: middle;
+	line-height: 22px;
+}
+
+.page-sidebar-menu ul li a:hover {
+	color: $color-primary;
+	background: #eef1ff;
+}
+
+.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill] {
+	fill: $color-primary;
+}
+
+.page-sidebar-menu ul li.menu-divider {
+	display: block;
+	width: 100%;
+	height: 1px;
+	border: $bd-default;
+	margin: 0;
+}
+
+.page-sidebar-menu ul li a svg {
+	margin-right: 10px;
+	height: 22px;
+	width: 22px;
+}
+
+.navbar-header ul li a svg,
+.header-right .list-inline-item .dropdown-icon svg {
+	height: 22px;
+	width: 22px;
+}
+
+.adata-svg-icon g [fill] {
+	fill: $color-primary;
+}
+
+.page-sidebar-menu ul li a i.accordion-icon {
+	float: right;
+	font-size: 15px;
+	vertical-align: text-top;
+	color: #586777;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.page-sidebar-menu ul li.open a i.accordion-icon {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3)*/
+}
+
+.page-sidebar-menu ul li .sub-menu a:hover {
+	color: $color-primary;
+	padding-left: 45px;
+}
+
+.accordion-menu .sub-menu {
+	padding: 15px 0;
+	margin: 0 20px;
+}
+
+.accordion-menu .sub-menu .sub-menu-label {
+	padding: 5px 50px;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: #babfd6;
+}
+
+.accordion-menu .sub-menu li.divider-border {
+	border-top: 1px solid #f3f3f5;
+	margin: 10px 25px;
+}
+
+.page-sidebar-fixed .page-content {
+	width: 100%;
+}
+
+.accordion-menu .sub-menu li.animation a {
+	opacity: 1;
+	-webkit-transition: all 0.35s ease !important;
+	transition: all 0.35s ease !important;
+}
+
+.accordion-menu .sub-menu li a {
+	border-top: 0;
+	padding: 5px 20px;
+	font-size: $font-size-default;
+	padding-left: 50px;
+	background: transparent !important;
+	margin: 0px;
+}
+
+.accordion-menu .sub-menu li a:before,
+.page-sidebar-menu ul li ul li.active>a:before {
+	top: 12px;
+	left: 25px;
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: transparent;
+	border: 1px solid #9facba;
+	position: absolute;
+}
+
+.accordion-menu .sub-menu li a:hover:before,
+.page-sidebar-menu ul li ul li.active>a:before {
+	top: 12px;
+	left: 25px;
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: $color-primary;
+	border: 1px solid $color-primary;
+	position: absolute;
+	-webkit-transition: all .7s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.accordion-menu .sub-menu li a.active {
+	color: #000;
+}
+
+.accordion-menu .sub-menu li a.active:hover {
+	color: #000 !important;
+}
+
+.page-sidebar .slimScrollBar {
+	background: #b3bac1 !important;
+	z-index: inherit !important;
+}
+
+#latestProducts .slimScrollBar,
+#featureProducts .slimScrollBar,
+#topSellingProducts .slimScrollBar,
+#reviewScroll .slimScrollBar {
+	z-index: inherit !important;
+}

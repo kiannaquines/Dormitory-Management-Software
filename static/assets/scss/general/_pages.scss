@@ -1,0 +1,627 @@
+/**********************************************************************
+***********************************************************************
+### Pages CSS
+*********************************************************************
+*********************************************************************/
+
+.profile-cover-photo {
+	background-image: url(../images/gallery/city1.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding: 15px;
+	height: 350px;
+	color: #fff;
+}
+
+.profile-avatar {
+	width: 150px;
+}
+
+.avatar-wrapper {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+}
+
+.avatar-wrapper:hover {
+	cursor: pointer;
+}
+
+.avatar-wrapper:hover .profile-pic {
+	opacity: .5;
+}
+
+.avatar-wrapper .profile-pic {
+	height: 100%;
+	width: 100%;
+}
+
+.avatar-wrapper .profile-pic:after {
+	font-family: FontAwesome;
+	content: "\f007";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-size: 65px;
+	background: #f2f4ff;
+	color: $color-primary;
+	text-align: center;
+}
+
+.avatar-wrapper .upload-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.upload-button .fa-camera {
+	position: absolute;
+	font-size: 234px;
+	top: -17px;
+	left: 0;
+	text-align: center;
+	opacity: 0;
+	transition: all .3s ease;
+	color: #34495e;
+}
+
+.upload-button .fa-camera {
+	position: absolute;
+	font-size: 16px;
+	background: #fff;
+	padding: 42px;
+	top: 0;
+	left: 0%;
+	text-align: center;
+	opacity: 0;
+	color: #34495e;
+}
+
+.upload-button:hover .fa-camera {
+	opacity: .9;
+}
+
+.profile-avatar-setting {
+	width: 100px;
+}
+
+.profile-summary {
+	margin-top: -100px;
+}
+
+.cover-main-pic-change {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	border: $bd-default;
+	padding: 5px 10px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.profile-cover-photo:hover .cover-main-pic-change {
+	opacity: 1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.profile-main-pic-change {
+	position: absolute;
+	left: 135px;
+	bottom: 20px;
+	background: $color-primary;
+	color: #fff;
+	padding: 4px 6px;
+	border-radius: 50%;
+	font-size: 10px;
+	border: 3px solid #fff;
+	cursor: pointer;
+}
+
+.ac-setting-navi.nav-pills .nav-link {
+	color: #8690af;
+	padding: .575rem .75rem;
+}
+
+.ac-setting-navi.nav-pills .nav-link.active,
+.ac-setting-navi.nav-pills .show>.nav-link {
+	color: #fff;
+	padding: .575rem .75rem;
+}
+
+.form-label {
+	padding-top: calc(.65rem + 1px);
+	padding-bottom: calc(.65rem + 1px);
+}
+
+.search-result a:hover {
+	color: $color-primary;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.search-result-tab a.nav-link {
+	border-bottom: 1px solid transparent;
+}
+
+.search-result-tab a.nav-link.active {
+	border-bottom: 1px solid #5a74f9;
+	color: #5a74f9;
+	font-weight: $font-weight-medium;
+}
+
+.search-result-tab a.nav-link.active svg {
+	color: #5a74f9;
+}
+
+.hover-shadow:hover {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.search-result-map #marker-map {
+	height: 600px !important;
+	width: 100% !important;
+}
+
+.video-duration {
+	border-top-left-radius: 2px;
+	bottom: 0;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 1px 5px;
+	position: absolute;
+	right: 16px;
+	text-align: right;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+
+
+/*pricing tables css*/
+
+.basic-pricing .card {
+	border: none;
+	border-radius: 1rem;
+	transition: all 0.2s;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.basic-pricing hr {
+	margin: 1.5rem 0;
+}
+
+.basic-pricing .card-title {
+	margin: 0.5rem 0;
+	font-size: 0.9rem;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+}
+
+.basic-pricing .card-price {
+	color: #000;
+	font-weight: $font-weight-bold;
+}
+
+.basic-pricing .card-price .period {
+	font-size: 0.8rem;
+}
+
+.basic-pricing ul li {
+	margin-bottom: 1rem;
+	color: $brand-color;
+}
+
+.basic-pricing .text-muted {
+	opacity: 0.7;
+}
+
+.basic-pricing .btn {
+	font-size: 80%;
+	border-radius: 5rem;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	padding: 1rem;
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+
+.basic-pricing .btn-primary {
+	background-color: $color-primary;
+	border-color: #4d67e8;
+}
+
+.basic-pricing .btn-primary:hover,
+.basic-pricing .btn-primary:focus {
+	background-color: $color-primary;
+	border-color: #4d67e8;
+}
+
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+	.basic-pricing .card:hover {
+		margin-top: -.25rem;
+		margin-bottom: .25rem;
+		box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+	}
+	.basic-pricing .card:hover .btn {
+		opacity: 1;
+	}
+}
+
+#pricing .padd-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#pricing .section-title {
+	margin-bottom: 0px;
+}
+
+#pricing .block-pricing {
+	background: #fff;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.19);
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+#pricing .block-pricing .table {
+	margin-bottom: 0;
+	padding: 30px 15px;
+	max-width: 100%;
+	width: 100%;
+}
+
+#pricing .block-pricing .table h4 {
+	padding-bottom: 30px;
+}
+
+#pricing h4 {
+	color: #000;
+	font-size: $font-size-default;
+	font-weight: $font-weight-bold;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	line-height: 2;
+}
+
+#pricing .block-pricing h2 {
+	margin-bottom: 30px;
+}
+
+#pricing h2 {
+	color: #000;
+	font-weight: $font-weight-bold;
+}
+
+#pricing .block-pricing ul {
+	list-style: outside none none;
+	margin: 10px auto;
+	max-width: 240px;
+	padding: 0;
+}
+
+#pricing .block-pricing ul li {
+	border-bottom: $bd-default;
+	padding: 12px 0;
+	text-align: center;
+}
+
+#pricing li {
+	color: $brand-color;
+	font-size: $font-size-default;
+	font-weight: $font-weight-normal;
+	letter-spacing: 0.5px;
+	line-height: 30px;
+	text-transform: capitalize;
+}
+
+#pricing .block-pricing .table .table_btn a {
+	background: #ff7361;
+	color: #fff;
+	margin: 0;
+	display: inline-block;
+}
+
+#pricing .btn {
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: $font-weight-bold;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+
+#headerColor .price-table {
+	-webkit-transition: 0.3s ease;
+}
+
+#headerColor .price-table:hover .lis-bg-light,
+#headerColor .price-table:hover .btn,
+#headerColor .price-table:hover .h2 {
+	color: #fff !important;
+	background-color: $color-primary;
+	-webkit-transition: 0.3s ease;
+}
+
+#headerColor .lis-brd-light {
+	border: $bd-default !important;
+}
+
+#headerColor .lis-rounded-top {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#headerColor .lis-bg-light {
+	background-color: #f2f4ff;
+}
+
+#headerColor .pb-4,
+#headerColor .py-4 {
+	padding-bottom: 1.5rem !important;
+}
+
+#headerColor .lis-latter-spacing-2 {
+	letter-spacing: 0.5px;
+}
+
+#headerColor .text-uppercase {
+	text-transform: uppercase !important;
+}
+
+#headerColor .lis-font-weight-500 {
+	font-weight: $font-weight-medium;
+}
+
+#headerColor .price-table sup {
+	top: -1.5em;
+}
+
+#headerColor .price-table sup,
+#headerColor .price-table small {
+	font-size: 1.25rem;
+}
+
+#headerColor .price-table small {
+	font-size: 1.25rem;
+}
+
+#headerColor sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+}
+
+#headerColor .lis-brd-light {
+	border-color: #eee !important;
+}
+
+#headerColor .bg-white {
+	background-color: #fff !important;
+}
+
+#headerColor .py-5 {
+	padding-bottom: 3rem !important;
+}
+
+#headerColor .lis-line-height-3 {
+	line-height: 3 !important;
+}
+
+#headerColor .list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+#headerColor .lis-line-height-3 {
+	line-height: 3 !important;
+}
+
+#headerColor .btn-primary-outline {
+	font-size: $font-size-default;
+	background-color: transparent;
+	color: $color-primary !important;
+	border-color: #eee;
+}
+
+#headerColor .btn {
+	color: #fff;
+	padding: 0.7rem 1.3rem;
+	word-wrap: break-word;
+}
+
+#headerColor .lis-rounded-circle-50 {
+	border-radius: 50px;
+}
+
+#headerColor .pl-2,
+#headerColor .px-2 {
+	padding-right: 0.5rem !important;
+}
+
+#headerColor .btn-primary-outline:hover,
+#headerColor .btn-primary-outline:focus {
+	background-color: $color-primary;
+	border-color: #eee;
+	color: #fff !important;
+}
+
+#headerColor .lis-bg-primary {
+	background-color: $color-primary;
+}
+
+#headerColor .price-table.active {
+	transform: scale(1.045);
+	-webkit-transform: scale(1.045);
+}
+
+#headerColor .price-table {
+	-webkit-transition: 0.3s ease;
+}
+
+#headerColor .lis-rounded-bottom {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#card-pricing .card-pricing:hover {
+	border: 1px solid $color-primary;
+}
+
+#card-pricing .card-pricing.popular,
+#card-pricing .card-pricing:hover.popular {
+	border: 1px solid $color-primary;
+}
+
+#card-pricing .rounded-lg {
+	border-radius: 10px;
+}
+
+#card-pricing .shadow,
+#card-pricing .subscription-wrapper {
+	box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1) !important;
+}
+
+#card-pricing .hover-bg-primary::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background: linear-gradient(134deg, #00a4db 0%, #00269e 100%);
+	z-index: -1;
+	opacity: 0;
+}
+
+#card-pricing .hover-bg-primary:hover {
+	background: transparent;
+}
+
+#card-pricing .hover-bg-primary:hover:before {
+	opacity: 1;
+}
+
+#card-pricing .pricing-table:before,
+#card-pricing .hover-bg-primary::before,
+#card-pricing .card-border-bottom:after {
+	transition: ease 0.3s;
+}
+
+#card-pricing .hover-bg-primary:hover * {
+	color: #fff !important;
+}
+
+#card-pricing .hover-bg-primary:hover * {
+	color: #fff !important;
+}
+
+#card-pricing .btn-outline-primary {
+	color: #007ac7;
+	border: 2px solid #eee;
+}
+
+#card-pricing .btn {
+	font-size: $font-size-default;
+	text-transform: capitalize;
+	padding: 10px 30px;
+	border-radius: 45px;
+	font-weight: $font-weight-medium;
+	border: 1px solid;
+	position: relative;
+	z-index: 1;
+	transition: .3s ease-in;
+	overflow: hidden;
+}
+
+#card-pricing .hover-bg-primary .btn {
+	transition: unset;
+}
+
+#card-pricing .btn-outline-primary:hover {
+	color: #fff !important;
+	background: none;
+	border: 2px solid #eee;
+}
+
+.help-center-container {
+	margin: 0 100px;
+}
+
+.page-header-full-width {
+	position: fixed;
+	z-index: 999;
+	left: 0px;
+	right: 0;
+	top: 0;
+	background: #fff;
+}
+
+.search__container {
+	position: relative;
+}
+
+.search__title {
+	font-size: 30px;
+	font-weight: $font-weight-bolder;
+	text-align: center;
+	color: #ff8b88;
+}
+
+.search__input {
+	width: 100%;
+	padding: 15px;
+	background-color: transparent;
+	transition: transform 250ms ease-in-out;
+	font-size: $font-size-default;
+	line-height: 18px;
+	color: #575756;
+	border-radius: 50px;
+	border: $bd-default;
+}
+
+.search__input::placeholder {
+	color: #575756;
+}
+
+.search__input:hover,
+.search__input:focus {
+	outline: 0;
+}
+
+.search-btn {
+	position: absolute;
+	margin-left: -90px;
+	background: $color-primary;
+	padding: 15px 21px;
+	color: #fff;
+	border-radius: 0 40px 40px 0;
+}
+
+.search-btn:hover {
+	color: #fff;
+}

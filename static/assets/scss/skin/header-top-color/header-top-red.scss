@@ -1,0 +1,23 @@
+/**********************************************************************
+***********************************************************************
+### Header Top Color Name : Red
+*********************************************************************
+*********************************************************************/
+body.header-top-color-red .page-header {
+	.navbar-default {
+		background-color: #ea5455;
+	}
+
+	.navbar-default .adata-svg-icon g [fill],
+	.navbar-default a.dropdown-icon .adata-svg-icon g [fill] {
+		fill: #ffffff!important;
+	}
+
+	.navbar-default a.dropdown-icon:hover .adata-svg-icon g [fill] {
+		fill: #7c94e0;
+	}
+}
+
+body.dark-theme.header-top-color-red .page-header .navbar-default {
+    background-color: #ea5455;
+}

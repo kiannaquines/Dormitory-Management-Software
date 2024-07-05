@@ -1,0 +1,63 @@
+{% extends 'includes/base_auth.html' %}
+{% block title %}Sign up{% endblock %}
+
+
+{% block content %}
+      <div class="ht-100v text-center">
+        <div class="row no-gutters pd-0 mg-0">
+           <div class="col-lg-5 bg-gray-100">
+              <div class="ht-100v d-flex align-items-center justify-content-center">
+                 <div class="wd-400 mg-t-25">
+
+                     {% for message in messages %}
+                        <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %} alert-dismissible fade show" role="alert">
+                           {{ message }}
+                        </div>
+                     {% endfor %}
+
+
+                    <h3 class="mg-b-3 tx-left">Create New Account</h3>
+                    <p class="tx-12 mg-b-20 tx-left">Please signup to continue.</p>
+                     <form action="{% url 'register' %}" method="post" data-parsley-validate>
+                           {% csrf_token %}
+                           <div class="form-group tx-left">
+                              <label class="mg-b-5">Email address</label>
+                              <input type="email" name="email" class="form-control" placeholder="yourname@yourmail.com" required>
+                           </div>
+                           <div class="form-group tx-left">
+                              <label class="mg-b-5">Username</label>
+                              <input type="text" name="username" class="form-control" placeholder="Juana" pattern="^[a-zA-Z0-9@/./+/-/_]{1,150}$" required>
+                           </div>
+                           <div class="form-group tx-left">
+                              <div class="d-flex justify-content-between mg-b-5">
+                                 <label class="mg-b-0">Password</label>
+                              </div>
+                              <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+                           </div>
+                           <div class="form-group tx-left">
+                              <div class="d-flex justify-content-between mg-b-5">
+                                 <label class="mg-b-0">First Name</label>
+                              </div>
+                              <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                           </div>
+                           <div class="form-group tx-left">
+                              <div class="d-flex justify-content-between mg-b-5">
+                                 <label class="mg-b-0">Last Name</label>
+                              </div>
+                              <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                           </div>
+                           
+                           <div class="form-group pd-y-5">
+                              <input type="submit" class="btn btn-md btn-primary rounded-pill btn-block waves-effect" value="Create Account">
+                           </div>
+                     </form>
+                     <div class="pd-y-5 tx-uppercase ">or</div>
+                    <div class="tx-15 mg-t-2 tx-center ">Already have an account? <a href="{% url 'login' %}">Sign In</a></div>
+                 </div>
+              </div>
+           </div>
+           <div class="col-lg-7 bg-image hidden-sm">
+           </div>
+        </div>
+     </div>
+{% endblock %}

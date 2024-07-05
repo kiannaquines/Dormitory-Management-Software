@@ -1,0 +1,506 @@
+
+.wizard {
+	border: 1px solid #eee;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.wizard>.steps {
+	padding: 10px 15px;
+}
+
+@media (min-width: 768px) {
+	.wizard>.steps {
+		padding: 15px 20px;
+	}
+}
+
+.wizard>.steps>ul {
+	padding: 0;
+	margin-bottom: 0;
+	display: flex;
+}
+
+.wizard>.steps>ul li {
+	float: none;
+	display: block;
+	width: auto;
+}
+
+.wizard>.steps>ul li .current-info {
+	display: none;
+}
+
+.wizard>.steps>ul li .title {
+	margin-left: 5px;
+	white-space: nowrap;
+	transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wizard>.steps>ul li .title {
+		transition: none;
+	}
+}
+
+@media (min-width: 576px) {
+	.wizard>.steps>ul li .title {
+		display: none;
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wizard>.steps>ul li .title {
+		display: inline-block;
+	}
+}
+
+.wizard>.steps>ul li+li {
+	margin-left: 10px;
+	position: relative;
+}
+
+@media (min-width: 576px) {
+	.wizard>.steps>ul li+li {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 992px) {
+	.wizard>.steps>ul li+li {
+		margin-left: 40px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.wizard>.steps>ul li+li::before {
+		display: block;
+	}
+}
+
+.wizard>.steps a,
+.wizard>.steps a:hover,
+.wizard>.steps a:active {
+	color: #1c273c;
+	font-weight: 600;
+	font-size: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+}
+
+@media (min-width: 1200px) {
+	.wizard>.steps a,
+	.wizard>.steps a:hover,
+	.wizard>.steps a:active {
+		justify-content: flex-start;
+	}
+}
+
+.wizard>.steps a .number,
+.wizard>.steps a:hover .number,
+.wizard>.steps a:active .number {
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
+	border: 2px solid #7987a1;
+	border-radius: 100%;
+}
+
+@media (min-width: 768px) {
+	.wizard>.steps a .number,
+	.wizard>.steps a:hover .number,
+	.wizard>.steps a:active .number {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+.wizard>.steps .disabled a,
+.wizard>.steps .disabled a:hover,
+.wizard>.steps .disabled a:active {
+	color: #97a3b9;
+}
+
+.wizard>.steps .disabled a .number,
+.wizard>.steps .disabled a:hover .number,
+.wizard>.steps .disabled a:active .number {
+	color: #97a3b9;
+	border-color: #b4bdce;
+}
+
+.wizard>.steps .disabled .title {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.wizard>.steps .disabled .title {
+		display: inline-block;	
+		line-height: initial;
+	}
+}
+
+.wizard>.steps .current a,
+.wizard>.steps .current a:hover,
+.wizard>.steps .current a:active {
+	color: #5c76fb;
+}
+
+.wizard>.steps .current a .title,
+.wizard>.steps .current a:hover .title,
+.wizard>.steps .current a:active .title {
+	display: inline-block;
+    line-height: initial;
+}
+
+.wizard>.steps .current a .number,
+.wizard>.steps .current a:hover .number,
+.wizard>.steps .current a:active .number {
+	border-color: #5c76fb;
+	background-color: #5c76fb;
+	color: #fff;
+}
+
+.wizard>.steps .done a,
+.wizard>.steps .done a:hover,
+.wizard>.steps .done a:active {
+	color: #10b759;
+}
+
+.wizard>.steps .done a .title,
+.wizard>.steps .done a:hover .title,
+.wizard>.steps .done a:active .title {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title {
+		display: inline-block;	
+		line-height: initial;
+	}
+}
+
+.wizard>.steps .done a .number,
+.wizard>.steps .done a:hover .number,
+.wizard>.steps .done a:active .number {
+	border-color: #10b759;
+	background-color: #10b759;
+	color: #fff;
+}
+
+.wizard>.content {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	min-height: 150px;
+	padding: 20px;
+	font-size: inherit;
+}
+
+@media (min-width: 768px) {
+	.wizard>.content {
+		padding: 20px;
+	}
+}
+
+.wizard>.content>.title {
+	font-size: 15px;
+	color: #1c273c;
+	margin-bottom: 30px;
+	display: none;
+}
+
+.wizard>.content>.title.current {
+	display: block;
+}
+
+.wizard>.content>.body {
+	float: none;
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+.wizard>.content>.body input.parsley-error {
+	border-color: #dc3545;
+}
+
+.wizard>.content>.body input.parsley-error+ul {
+	list-style: none !important;
+}
+
+.wizard>.content input,
+.wizard>.content textarea,
+.wizard>.content select {
+	font-size: inherit;
+}
+
+.wizard>.actions {
+	padding: 10px 15px;
+}
+
+@media (min-width: 768px) {
+	.wizard>.actions {
+		padding: 15px 20px;
+	}
+}
+
+.wizard>.actions>ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wizard>.actions>ul>li:last-child a {
+	background-color: #10b759;
+}
+
+.wizard>.actions a,
+.wizard>.actions a:hover,
+.wizard>.actions a:active {
+	display: block;
+	background-color: #5c76fb;
+	padding: 9px 20px;
+	line-height: 1.539;
+	color: #fff;
+	border-radius: 0.25rem;
+}
+
+.wizard>.actions .disabled a,
+.wizard>.actions .disabled a:hover,
+.wizard>.actions .disabled a:active {
+	background-color: #97a3b9;
+}
+
+.wizard.vertical>.steps {
+	padding: 15px 20px;
+}
+
+@media (min-width: 576px) {
+	.wizard.vertical>.steps {
+		float: left;
+		width: 20%;
+	}
+}
+
+@media (min-width: 768px) {
+	.wizard.vertical>.steps {
+		width: 15%;
+	}
+}
+
+@media (min-width: 992px) {
+	.wizard.vertical>.steps {
+		width: 30%;
+	}
+}
+
+@media (min-width: 576px) {
+	.wizard.vertical>.steps ul {
+		flex-direction: column;
+	}
+}
+
+.wizard.vertical>.steps ul li+li {
+	margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+	.wizard.vertical>.steps ul li+li {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.wizard.vertical>.steps ul li+li {
+		margin-top: 20px;
+	}
+}
+
+
+.wizard.vertical>.steps ul li .title {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.wizard.vertical>.steps ul li .title {
+		display: block;
+	}
+}
+
+@media (min-width: 992px) {
+	.wizard.vertical>.steps a {
+		justify-content: flex-start;
+	}
+}
+
+.wizard.vertical>.steps .current a .title {
+	display: inline-block;
+}
+
+@media (min-width: 576px) {
+	.wizard.vertical>.steps .current a .title {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.wizard.vertical>.steps .current a .title {
+		display: inline-block;
+	}
+}
+
+.wizard.vertical>.content {
+	margin: 0;
+	padding: 20px;
+}
+
+@media (min-width: 576px) {
+	.wizard.vertical>.content {
+		border-top-width: 0;
+		border-bottom-width: 0;
+		width: 80%;
+		float: right;
+		border-left: 1px solid #eee;
+	}
+}
+
+@media (min-width: 768px) {
+	.wizard.vertical>.content {
+		width: 85%;
+	}
+}
+
+@media (min-width: 992px) {
+	.wizard.vertical>.content {
+		width: 70%;
+	}
+}
+
+.wizard.vertical>.actions {
+	padding: 10px 15px;
+}
+
+@media (min-width: 576px) {
+	.wizard.vertical>.actions {
+		width: 80%;
+		float: right;
+		border-left: 1px solid #eee;
+		padding: 15px 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wizard.vertical>.actions {
+		width: 85%;
+		border-top: 1px solid #eee;
+	}
+}
+
+@media (min-width: 992px) {
+	.wizard.vertical>.actions {
+		width: 70%;
+	}
+}
+
+.wizard.vertical>.actions ul {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wizard-tab {
+	border-width: 0;
+}
+
+.wizard-tab>.steps {
+	padding: 0;
+	border-bottom-width: 0;
+	margin-bottom: 20px;
+}
+
+.wizard-tab>.steps>ul {
+	width: 100%;
+}
+
+.wizard-tab>.steps>ul>li {
+	flex: 1;
+	width: auto;
+	float: none;
+}
+
+.wizard-tab>.steps>ul>li+li {
+	margin-left: 1px;
+}
+
+.wizard-tab>.steps a {
+	padding: 7px 10px;
+}
+
+@media (min-width: 768px) {
+	.wizard-tab>.steps a {
+		padding: 10px 20px;
+	}
+}
+
+.wizard-tab>.steps .current a,
+.wizard-tab>.steps .current a:hover,
+.wizard-tab>.steps .current a:focus,
+.wizard-tab>.steps .done a,
+.wizard-tab>.steps .done a:hover,
+.wizard-tab>.steps .done a:focus {
+	color: #fff;
+}
+
+.wizard-tab>.steps .current a .number,
+.wizard-tab>.steps .current a:hover .number,
+.wizard-tab>.steps .current a:focus .number,
+.wizard-tab>.steps .done a .number,
+.wizard-tab>.steps .done a:hover .number,
+.wizard-tab>.steps .done a:focus .number {
+	border-color: #fff;
+	color: #fff;
+}
+
+.wizard-tab>.steps .current a {
+	background-color: #5c76fb;
+}
+
+.wizard-tab>.steps .done a {
+	background-color: #10b759;
+}
+
+.wizard-tab>.steps .disabled a {
+	background-color: #c0ccda;
+}
+
+.wizard-tab>.steps .first a {
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+}
+
+.wizard-tab>.steps .last a {
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}
+
+.wizard-tab>.content {
+	padding: 0;
+	border: 0;
+}
+
+.wizard-tab>.actions {
+	border-top: 1px solid #eee;
+	padding: 15px 0 0;
+}

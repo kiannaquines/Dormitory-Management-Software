@@ -1,0 +1,594 @@
+/**********************************************************************
+***********************************************************************
+### Theme Dark/Light Switcher CSS
+*********************************************************************
+*********************************************************************/
+body.dark-theme {
+  background-color: #1a233a; }
+  body.dark-theme a,
+  body.dark-theme .tx-dark {
+    color: #ffffff; }
+  body.dark-theme a:hover {
+    color: #5c76fb; }
+  body.dark-theme a.selectgroup-button {
+    color: #323e5d; }
+  body.dark-theme .page-header .navbar-default,
+  body.dark-theme .search-form input,
+  body.dark-theme .header-right .dropdown-menu,
+  body.dark-theme .list-group-item,
+  body.dark-theme .settingPanelToggle,
+  body.dark-theme .header-right .top-notifications-area .top-message-heading,
+  body.dark-theme .header-right .top-message-area .top-message-heading,
+  body.dark-theme .page-sidebar,
+  body.dark-theme .tt-menu,
+  body.dark-theme .header-right .notifications-box .notifications-date,
+  body.dark-theme .header-right .message-box .messages-date,
+  body.dark-theme .header-right .dropdown-item.active,
+  body.dark-theme .page-sidebar .logo,
+  body.dark-theme .page-footer,
+  body.dark-theme .header-right .user-profile-area .user-profile-heading,
+  body.dark-theme .table,
+  body.dark-theme table tr,
+  body.dark-theme .custom-fieldset,
+  body.dark-theme .custom-fieldset label,
+  body.dark-theme .custom-fieldset-style label.custom-label,
+  body.dark-theme pre[class*="language-"],
+  body.dark-theme .font-select .fs-search input,
+  body.dark-theme .settingSidebar-body .bg-gray-100,
+  body.dark-theme .settingSidebar,
+  body.dark-theme .dropdown-menu,
+  body.dark-theme .product-details,
+  body.dark-theme .modal-content,
+  body.dark-theme .add-sidebar,
+  body.dark-theme .card,
+  body.dark-theme .daterangepicker,
+  body.dark-theme .ui-widget-header,
+  body.dark-theme table.dataTable tbody tr,
+  body.dark-theme .bg-white,
+  body.dark-theme .ui-widget-content,
+  body.dark-theme .ui-state-default.ui-accordion-header-active .daterangepicker td.in-range,
+  body.dark-theme .daterangepicker td.off,
+  body.dark-theme .daterangepicker td.off.in-range,
+  body.dark-theme .daterangepicker td.off.start-date,
+  body.dark-theme .daterangepicker td.off.end-date,
+  body.dark-theme .popover-details.popover,
+  body.dark-theme .popover-details.popover-body,
+  body.dark-theme .ql-snow .ql-picker-options,
+  body.dark-theme .mail-compose-sidebar,
+  body.dark-theme .selectize-control.contacts .selectize-dropdown-content,
+  body.dark-theme .chat-details .chat-details-header,
+  body.dark-theme .chat-details .chat-content-bottom,
+  body.dark-theme .chat-details .attachment,
+  body.dark-theme .foo-accordion tr td ul.pagination li a:hover,
+  body.dark-theme .foo-accordion tr td ul.pagination li.active a,
+  body.dark-theme .calandar-left-sidebar,
+  body.dark-theme .tui-full-calendar-vlayout-container,
+  body.dark-theme .tui-full-calendar-popup-container,
+  body.dark-theme .tui-timepicker,
+  body.dark-theme .tui-timepicker option,
+  body.dark-theme .tui-datepicker.tui-rangepicker .tui-is-selected-range,
+  body.dark-theme .icons-list > div,
+  body.dark-theme .md-editor > textarea,
+  body.dark-theme .flatpickr-calendar,
+  body.dark-theme .grid,
+  body.dark-theme .swal2-popup,
+  body.dark-theme .select2-dropdown,
+  body.dark-theme .dragula-container > div,
+  body.dark-theme .gu-mirror,
+  body.dark-theme .note-editor.note-airframe .note-editing-area .note-editable,
+  body.dark-theme .note-editor.note-frame .note-editing-area .note-editable,
+  body.dark-theme .sw-theme-circles > ul.step-anchor:before,
+  body.dark-theme .sw-theme-dots > ul.step-anchor,
+  body.dark-theme .sw-theme-dots > ul.step-anchor:before {
+    background-color: #1a233a; }
+  body.dark-theme .page-sidebar-menu ul li.open ul.sub-menu {
+	background: #232f4c;}
+  body.dark-theme .search-form input,
+  body.dark-theme .blockMsg,
+  body.dark-theme .th-search-form .tt-input {
+    background-color: #1a233a !important; }
+  body.dark-theme .page-sidebar .logo,
+  body.dark-theme .page-sidebar-menu ul li a:hover,
+  body.dark-theme .open:not(.active) > a,
+  body.dark-theme .page-sidebar-menu ul li.active > a,
+  body.dark-theme #search-button:hover,
+  body.dark-theme .font-select > span,
+  body.dark-theme .font-select .fs-drop,
+  body.dark-theme .tt-selectable:hover,
+  body.dark-theme .header-right .list-inline-item:hover,
+  body.dark-theme .header-right .dropdown-menu-right .header-service a:hover,
+  body.dark-theme .header-right .languages-dropdown li:hover,
+  body.dark-theme .dropdown-item:hover,
+  body.dark-theme .page-header .header-bottom,
+  body.dark-theme .header-right .user-profile-area .user-profile-heading,
+  body.dark-theme .table,
+  body.dark-theme table tr:hover,
+  body.dark-theme .daterangepicker .ranges li:hover,
+  body.dark-theme .daterangepicker .ranges li.active,
+  body.dark-theme input,
+  body.dark-theme optgroup,
+  body.dark-theme option,
+  body.dark-theme select,
+  body.dark-theme textarea,
+  body.dark-theme .select,
+  body.dark-theme .label,
+  body.dark-theme .custom-file,
+  body.dark-theme .custom-select,
+  body.dark-theme .custom-file-label,
+  body.dark-theme .custom-file-label::after,
+  body.dark-theme .form-control,
+  body.dark-theme .bg-gray-100,
+  body.dark-theme .bg-gray-200,
+  body.dark-theme .bg-gray-300,
+  body.dark-theme .bootstrap-tagsinput,
+  body.dark-theme .page-item .page-link,
+  body.dark-theme .img-thumbnail,
+  body.dark-theme .audience-overview-tab a.active,
+  body.dark-theme table.dataTable thead th.ui-state-default,
+  body.dark-theme table.dataTable tfoot th.ui-state-default,
+  body.dark-theme table.dataTable tbody td.sorting_1,
+  body.dark-theme .ui-state-default,
+  body.dark-theme .ui-widget-content .ui-state-default,
+  body.dark-theme .ui-widget-header .ui-state-default,
+  body.dark-theme .ui-button,
+  body.dark-theme html .ui-button.ui-state-disabled:hover,
+  body.dark-theme html .ui-button.ui-state-disabled:active,
+  body.dark-theme .jctkr-label,
+  body.dark-theme .calendar-table,
+  body.dark-theme .audience-demographics .nav-tabs .nav-item.show .nav-link,
+  body.dark-theme .audience-demographics .nav-tabs .nav-link.active,
+  body.dark-theme .selectize-control.contacts .selectize-input,
+  body.dark-theme .selectize-control.contacts .selectize-dropdown [data-selectable]:hover,
+  body.dark-theme .selectize-control.contacts .selectize-dropdown [data-selectable].active,
+  body.dark-theme .mailbox-mini-sidebar .mail-menu li:hover,
+  body.dark-theme .mailbox-mini-sidebar .label-menu li:hover a,
+  body.dark-theme .mailbox-mini-sidebar .tag-menu li:hover a,
+  body.dark-theme .mailbox-list-sidebar .mailbox-mail-list .messages-date,
+  body.dark-theme .mailbox-mail-list .list-group-item.active,
+  body.dark-theme .mailbox-list-sidebar .mailbox-mail-list .messages-load-more,
+  body.dark-theme .mailbox-mail-list .list-group-item.active,
+  body.dark-theme .mailbox-mini-sidebar .compose-mail,
+  body.dark-theme .mailbox-list-sidebar .search-mini,
+  body.dark-theme .mailbox-details .mailbox-details-header,
+  body.dark-theme .chat-list-sidebar .search-mini,
+  body.dark-theme .chat-list-sidebar .chat-contact-list .chat-contact-load-more,
+  body.dark-theme .chat-contact-list nav.chat-channel-list a:hover,
+  body.dark-theme .chat-contact-list .chat-date,
+  body.dark-theme .chat-details .flex-row-reverse,
+  body.dark-theme .chat-details .normal,
+  body.dark-theme .chat-contact-list .list-group-item.active,
+  body.dark-theme .chat-details .chat-details-header,
+  body.dark-theme .contact-add-sidebar .form-group.birthday-select select,
+  body.dark-theme .lnb-new-schedule,
+  body.dark-theme #menu,
+  body.dark-theme .tui-full-calendar-button,
+  body.dark-theme .tui-full-calendar-button:active,
+  body.dark-theme .tui-full-calendar-open .tui-full-calendar-dropdown-menu,
+  body.dark-theme .tui-full-calendar-popup-section-item input.tui-full-calendar-content,
+  body.dark-theme .tui-calendar,
+  body.dark-theme .tui-calendar .tui-calendar-title-today,
+  body.dark-theme .tui-datepicker .tui-is-selectable:hover,
+  body.dark-theme .tui-calendar-btn,
+  body.dark-theme .file-manager-sidebar .upload-button,
+  body.dark-theme .file-manager-content .file-manager-content-header,
+  body.dark-theme .file-manager-sidebar .file-manager-menu ul li:hover a,
+  body.dark-theme .nav-tabs .nav-item.show .nav-link,
+  body.dark-theme .nav-tabs .nav-link.active,
+  body.dark-theme .icons-list > div:hover,
+  body.dark-theme .icons-list > div:hover span,
+  body.dark-theme .input-group-text,
+  body.dark-theme .wizard,
+  body.dark-theme .sw-theme-default .step-content,
+  body.dark-theme .sw-theme-default .sw-toolbar,
+  body.dark-theme .ui-datepicker select.ui-datepicker-month,
+  body.dark-theme .ui-datepicker select.ui-datepicker-year,
+  body.dark-theme table.dataTable.stripe tbody tr.odd,
+  body.dark-theme table.dataTable.display tbody tr.odd,
+  body.dark-theme table.dataTable.hover tbody tr:hover,
+  body.dark-theme table.dataTable.display tbody tr:hover,
+  body.dark-theme table.dataTable.display tbody tr.odd > .sorting_1,
+  body.dark-theme table.dataTable.order-column.stripe tbody tr.odd > .sorting_1,
+  body.dark-theme table.dataTable.display tbody tr.even > .sorting_1,
+  body.dark-theme table.dataTable.order-column.stripe tbody tr.even > .sorting_1,
+  body.dark-theme .daterangepicker select.hourselect,
+  body.dark-theme .daterangepicker select.minuteselect,
+  body.dark-theme .daterangepicker select.secondselect,
+  body.dark-theme .daterangepicker select.ampmselect,
+  body.dark-theme .daterangepicker select.monthselect,
+  body.dark-theme .daterangepicker select.yearselect,
+  body.dark-theme .md-editor .md-footer,
+  body.dark-theme .md-editor > .md-header,
+  body.dark-theme .md-editor > .md-preview,
+  body.dark-theme .multiselect-container .input-group-addon,
+  body.dark-theme .select2-container--default .select2-selection--single,
+  body.dark-theme .select2-container--default.select2-container--focus .select2-selection--multiple,
+  body.dark-theme .select2-container--default .select2-selection--multiple,
+  body.dark-theme .dragula-container,
+  body.dark-theme .dragula-container:nth-child(odd),
+  body.dark-theme .note-popover .popover-content,
+  body.dark-theme .note-toolbar,
+  body.dark-theme .note-editor.note-airframe .note-statusbar,
+  body.dark-theme .note-editor.note-frame .note-statusbar,
+  body.dark-theme .sw-theme-arrows .step-content,
+  body.dark-theme .sw-theme-arrows > ul.step-anchor,
+  body.dark-theme .sw-theme-circles > ul.step-anchor,
+  body.dark-theme .sw-theme-circles .sw-toolbar,
+  body.dark-theme .sw-theme-circles .step-content,
+  body.dark-theme .sw-theme-dots > ul.step-anchor,
+  body.dark-theme .sw-theme-dots .sw-toolbar,
+  body.dark-theme .sw-theme-dots .step-content,
+  body.dark-theme .grid-square {
+    background-color: #293658; }
+  body.dark-theme .bg-light,
+  body.dark-theme .btn-light,
+  body.dark-theme .btn-default {
+    background-color: #293658 !important; }
+  body.dark-theme .slimScrollBar {
+    background-color: #ffffff !important; }
+  body.dark-theme .calendar-wrapper .fc .fc-button-group > *, 
+  body.dark-theme .calendar-wrapper .fc .fc-toolbar > * > * {
+    background: transparent; }
+  body.dark-theme .search-form,
+  body.dark-theme .header-right .dropdown-menu,
+  body.dark-theme .page-container.container,
+  body.dark-theme .settingPanelToggle,
+  body.dark-theme .custom-fieldset,
+  body.dark-theme .custom-fieldset label,
+  body.dark-theme .custom-fieldset-style,
+  body.dark-theme .custom-fieldset-style label.custom-label,
+  body.dark-theme pre[class*="language-"],
+  body.dark-theme .selectgroup-button,
+  body.dark-theme .font-select > span,
+  body.dark-theme .font-select .fs-search input,
+  body.dark-theme .font-select .fs-drop,
+  body.dark-theme .card,
+  body.dark-theme .table-bordered,
+  body.dark-theme .table-bordered td,
+  body.dark-theme .table-bordered th,
+  body.dark-theme .header-bottom .settings-dropdown,
+  body.dark-theme .product-details .bootstrap-tagsinput,
+  body.dark-theme .btn-light,
+  body.dark-theme .btn-light:not(:disabled):not(.disabled).active,
+  body.dark-theme .btn-light:not(:disabled):not(.disabled):active,
+  body.dark-theme .show > .btn-light.dropdown-toggle,
+  body.dark-theme .btn-default,
+  body.dark-theme .bd,
+  body.dark-theme input,
+  body.dark-theme optgroup,
+  body.dark-theme option,
+  body.dark-theme select,
+  body.dark-theme textarea,
+  body.dark-theme .select,
+  body.dark-theme .custom-file,
+  body.dark-theme .custom-select,
+  body.dark-theme .custom-file-label,
+  body.dark-theme .custom-file-label::after,
+  body.dark-theme .form-control,
+  body.dark-theme .dropdown-menu,
+  body.dark-theme .daterangepicker,
+  body.dark-theme .ql-toolbar.ql-snow,
+  body.dark-theme .ql-container.ql-snow,
+  body.dark-theme .ql-toolbar.ql-snow .ql-picker-label,
+  body.dark-theme .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label,
+  body.dark-theme .ql-snow .ql-picker-options .ql-picker-item,
+  body.dark-theme .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options,
+  body.dark-theme .page-item .page-link,
+  body.dark-theme .img-thumbnail,
+  body.dark-theme .dataTables_wrapper .dataTables_paginate .fg-button,
+  body.dark-theme .calculator-block .cryptonatorwidget input,
+  body.dark-theme .calculator-block .cryptonatorwidget select,
+  body.dark-theme .input-group-text,
+  body.dark-theme .ui-accordion .ui-accordion-header,
+  body.dark-theme .ui-widget-content,
+  body.dark-theme .custom-btn-group .nav-item a,
+  body.dark-theme .daterangepicker .calendar-table,
+  body.dark-theme .daterangepicker .drp-buttons .btn,
+  body.dark-theme .popover,
+  body.dark-theme .popover-details.popover,
+  body.dark-theme .popover-details.popover-body,
+  body.dark-theme .selectize-control.contacts .selectize-input,
+  body.dark-theme .chat-contact-list .list-group-item.active,
+  body.dark-theme .foo-accordion tr td ul.pagination li a,
+  body.dark-theme .contact-add-sidebar .form-group.birthday-select select,
+  body.dark-theme .tui-full-calendar-popup-container,
+  body.dark-theme .lnb-new-schedule,
+  body.dark-theme .tui-full-calendar-button,
+  body.dark-theme .tui-full-calendar-dropdown-menu,
+  body.dark-theme .tui-datepicker,
+  body.dark-theme .tui-full-calendar-popup-section-item,
+  body.dark-theme .tui-full-calendar-section-end-date:focus .tui-datepicker,
+  body.dark-theme .tui-full-calendar-section-end-date:focus .tui-full-calendar-popup-section-item,
+  body.dark-theme .tui-full-calendar-section-end-date:hover .tui-datepicker,
+  body.dark-theme .tui-full-calendar-section-end-date:hover .tui-full-calendar-popup-section-item,
+  body.dark-theme .tui-full-calendar-section-start-date:focus .tui-datepicker,
+  body.dark-theme .tui-full-calendar-section-start-date:focus .tui-full-calendar-popup-section-item,
+  body.dark-theme .tui-full-calendar-section-start-date:hover .tui-datepicker,
+  body.dark-theme .tui-full-calendar-section-start-date:hover .tui-full-calendar-popup-section-item,
+  body.dark-theme .bd-highlight,
+  body.dark-theme .form-layout-2 .form-group,
+  body.dark-theme .form-layout-3 .form-group,
+  body.dark-theme .wizard,
+  body.dark-theme .sw-theme-default,
+  body.dark-theme .ui-datepicker .ui-datepicker-calendar td span,
+  body.dark-theme .ui-datepicker .ui-datepicker-calendar td a,
+  body.dark-theme .ui-datepicker select.ui-datepicker-month,
+  body.dark-theme .ui-datepicker select.ui-datepicker-year,
+  body.dark-theme .footable-page-arrow a,
+  body.dark-theme .footable-page a,
+  body.dark-theme .daterangepicker select.hourselect,
+  body.dark-theme .daterangepicker select.minuteselect,
+  body.dark-theme .daterangepicker select.secondselect,
+  body.dark-theme .daterangepicker select.ampmselect,
+  body.dark-theme .daterangepicker select.monthselect,
+  body.dark-theme .daterangepicker select.yearselect,
+  body.dark-theme .md-editor,
+  body.dark-theme .checkbox label::before,
+  body.dark-theme .radio label::before,
+  body.dark-theme .multiselect-container .input-group-addon,
+  body.dark-theme .bootstrap-tagsinput,
+  body.dark-theme .dd-handle,
+  body.dark-theme .dd-content,
+  body.dark-theme .select2-container--default .select2-selection--single,
+  body.dark-theme .select2-container--default.select2-container--focus .select2-selection--multiple,
+  body.dark-theme .select2-container--default .select2-selection--multiple,
+  body.dark-theme .select2-dropdown,
+  body.dark-theme .note-editor.note-airframe,
+  body.dark-theme .note-editor.note-frame,
+  body.dark-theme .sw-theme-arrows,
+  body.dark-theme .grid-square,
+  body.dark-theme #colorpicker,
+  body.dark-theme .mailbox-mail-list .list-group-item,
+  body.dark-theme .calendar-wrapper .fc-button,
+  body.dark-theme .flatpickr-calendar {
+    border: 1px solid #323e5d; }
+  body.dark-theme .calendar-wrapper .fc-unthemed td  {
+    border-color: #323e5d; }
+  body.dark-theme .daterangepicker,
+  body.dark-theme .search-form input:focus,
+  body.dark-theme .border {
+    border: 1px solid #293658 !important; }
+  body.dark-theme input:focus,
+  body.dark-theme .custom-file:focus,
+  body.dark-theme .custom-select:focus,
+  body.dark-theme .form-control:focus,
+  body.dark-theme .calculator-block .cryptonatorwidget input:focus,
+  body.dark-theme .calculator-block .cryptonatorwidget select:focus,
+  body.dark-theme .contact-add-sidebar .form-group.birthday-select select:focus,
+  body.dark-theme .tui-full-calendar-popup-section-item:focus,
+  body.dark-theme .tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+  body.dark-theme .tui-full-calendar-button:hover,
+  body.dark-theme .tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-menu {
+    border: 1px solid #5c76fb; }
+  body.dark-theme .header-right .notifications-box .list-group-item,
+  body.dark-theme .header-right .message-box .list-group-item,
+  body.dark-theme .header-right .top-message-area .top-message-footer,
+  body.dark-theme .header-right .top-notifications-area .notifications-footer,
+  body.dark-theme .card-footer,
+  body.dark-theme .page-footer,
+  body.dark-theme hr,
+  body.dark-theme .bd-t,
+  body.dark-theme .accordion-menu .sub-menu li.divider-border,
+  body.dark-theme .table td,
+  body.dark-theme .table th,
+  body.dark-theme .table thead th,
+  body.dark-theme .dropdown-divider,
+  body.dark-theme .product-content,
+  body.dark-theme .list-item,
+  body.dark-theme .daterangepicker .drp-buttons,
+  body.dark-theme .chat-details .chat-content-bottom,
+  body.dark-theme .tui-datepicker-footer .tui-timepicker,
+  body.dark-theme .tui-full-calendar-month-dayname-item,
+  body.dark-theme .modal-footer,
+  body.dark-theme .icons-list,
+  body.dark-theme .wizard.vertical > .actions,
+  body.dark-theme .wizard-tab > .actions,
+  body.dark-theme table.dataTable.row-border tbody th,
+  body.dark-theme table.dataTable.row-border tbody td,
+  body.dark-theme table.dataTable.display tbody th,
+  body.dark-theme table.dataTable.display tbody td,
+  body.dark-theme .md-editor > textarea,
+  body.dark-theme .flatpickr-calendar.showTimeInput.hasTime .flatpickr-time,
+  body.dark-theme .swal2-footer,
+  body.dark-theme .note-editor.note-airframe .note-statusbar,
+  body.dark-theme .note-editor.note-frame .note-statusbar,
+  body.dark-theme .flatpickr-innerContainer + .flatpickr-time  {
+    border-top: 1px solid #293658; }
+  body.dark-theme .header-bottom,
+  body.dark-theme .search-form input,
+  body.dark-theme .header-right .top-notifications-area .notifications-heading,
+  body.dark-theme .header-right .top-message-area .top-message-heading,
+  body.dark-theme .card-header,
+  body.dark-theme .font-select .fs-search,
+  body.dark-theme .billing-shipping-details .table-bordered td:last-child,
+  body.dark-theme .billing-shipping-details .table-bordered th:first-child,
+  body.dark-theme .modal-header,
+  body.dark-theme table.dataTable.no-footer,
+  body.dark-theme .table thead th,
+  body.dark-theme .nav-tabs,
+  body.dark-theme .icons-list > div,
+  body.dark-theme .md-editor > textarea,
+  body.dark-theme .calendar-wrapper .calendar-sidebar .box {
+    border-bottom: 1px solid #293658; }
+  body.dark-theme .mailbox-mini-sidebar .compose-mail,
+  body.dark-theme .mailbox-list-sidebar .search-mini,
+  body.dark-theme .mailbox-details .mailbox-details-header,
+  body.dark-theme .chat-list-sidebar .search-mini,
+  body.dark-theme .chat-details .chat-details-header,
+  body.dark-theme .file-manager-sidebar .upload-button,
+  body.dark-theme .file-manager-content .file-manager-content-header {
+    border-bottom: 1px solid #323f61; }
+  body.dark-theme .settingSidebar,
+  body.dark-theme .daterangepicker.show-ranges.ltr .drp-calendar.left,
+  body.dark-theme .icons-list {
+    border-left: 1px solid #293658; }
+  body.dark-theme .mailbox-list-sidebar .search-mini,
+  body.dark-theme .chat-list-sidebar .search-mini,
+  body.dark-theme .wizard.vertical > .content,
+  body.dark-theme .wizard.vertical > .actions {
+    border-left: 1px solid #323f61; }
+  body.dark-theme .bd-l,
+  body.dark-theme .page-inner-content .inner-sidebar,
+  body.dark-theme .page-header-fixed .page-inner-content .inner-sidebar,
+  body.dark-theme .page-header-fixed .page-container.container .page-inner-content .inner-sidebar {
+    border-left: 1px solid #293658 !important; }
+  body.dark-theme .page-sidebar,
+  body.dark-theme .audience-demographics .nav-tabs,
+  body.dark-theme .calandar-left-sidebar,
+  body.dark-theme .file-manager-sidebar,
+  body.dark-theme .icons-list > div {
+    border-right: 1px solid #404e73; }
+  body.dark-theme .mailbox-list-sidebar,
+  body.dark-theme .chat-list-sidebar {
+    border-right: 1px solid #323f61; }
+  body.dark-theme .page-sidebar .logo {
+    border-right: 1px solid #293658;
+    border-bottom: 1px solid #293658; }
+  body.dark-theme .page-sidebar-menu ul li.menu-label,
+  body.dark-theme .search-form input,
+  body.dark-theme .search-form #close-search,
+  body.dark-theme .page-navigation-menu,
+  body.dark-theme .font-select .fs-search input,
+  body.dark-theme .accordion-menu .sub-menu .sub-menu-label,
+  body.dark-theme .btn-outline-brand:hover,
+  body.dark-theme .settings-dropdown h2,
+  body.dark-theme input,
+  body.dark-theme .custom-file,
+  body.dark-theme .custom-select,
+  body.dark-theme .form-control,
+  body.dark-theme .modal-header .modal-title,
+  body.dark-theme .ui-state-default,
+  body.dark-theme .ui-widget-content .ui-state-default,
+  body.dark-theme .ui-widget-header .ui-state-default,
+  body.dark-theme .ui-button,
+  body.dark-theme html .ui-button.ui-state-disabled:hover,
+  body.dark-theme html .ui-button.ui-state-disabled:active,
+  body.dark-theme .daterangepicker .drp-buttons .btn.btn-primary,
+  body.dark-theme .daterangepicker th.month,
+  body.dark-theme .nav-tabs .nav-item.show .nav-link,
+  body.dark-theme .nav-tabs .nav-link.active,
+  body.dark-theme .input-group-text,
+  body.dark-theme .custom-file-label,
+  body.dark-theme .custom-file-label::after,
+  body.dark-theme .tx-gray-500,
+  body.dark-theme .tx-gray-800,
+  body.dark-theme .tx-gray-900,
+  body.dark-theme .wizard > .content > .title,
+  body.dark-theme li.multiselect-group label b,
+  body.dark-theme span.flatpickr-weekday,
+  body.dark-theme .flatpickr-weekwrapper span.flatpickr-day,
+  body.dark-theme .flatpickr-weekwrapper span.flatpickr-day:hover,
+  body.dark-theme .dd-item > button:before,
+  body.dark-theme .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #ffffff; }
+  body.dark-theme .btn,
+  body.dark-theme .btn-primary:hover,
+  body.dark-theme .btn-outline-primary:hover,
+  body.dark-theme .btn-custom-primary:hover,
+  body.dark-theme .dropdown-menu > li > a,
+  body.dark-theme .tui-full-calendar-layout *,
+  body.dark-theme .btn-outline-light,
+  body.dark-theme .sw-theme-default > ul.step-anchor > li.done > a {
+    color: #ffffff !important; }
+  body.dark-theme .header-right .dropdown-menu:before,
+  body.dark-theme .header-right .dropdown-menu:after {
+    border: 10px solid #293658;
+    border-color: transparent transparent #293658 transparent; }
+  body.dark-theme .bd-b {
+    border-bottom: 1px solid #293658; }
+  body.dark-theme .bd-r {
+    border-right: 1px solid #293658; }
+  body.dark-theme .header-right .top-message-area .top-message-heading .heading-title h6,
+  body.dark-theme .top-notifications-area .notifications-heading .heading-title h6,
+  body.dark-theme .dropdown-item,
+  body.dark-theme .header-right .user-profile-area .profile-text h6,
+  body.dark-theme code[class*="language-"],
+  body.dark-theme pre[class*="language-"],
+  body.dark-theme .custom-btn-group .nav-item a,
+  body.dark-theme .daterangepicker .drp-buttons .btn,
+  body.dark-theme .tx-gray-700,
+  body.dark-theme .bootstrap-select .dropdown-header span.text {
+    color: #868DAA; }
+  body.dark-theme .header-right .user-profile-area .user-profile-heading {
+    background-image: none; }
+  body.dark-theme .bg-soft-light {
+    background-color: #313f69;
+    color: #ffffff !important; }
+  body.dark-theme .audience-demographics .nav-tabs .nav-item.show .nav-link,
+  body.dark-theme .audience-demographics .nav-tabs .nav-link.active,
+  body.dark-theme .audience-demographics .nav-tabs .nav-link:hover {
+    border-color: #323e5d #1a233a #323e5d #323e5d; }
+  body.dark-theme .nav-tabs .nav-item.show .nav-link,
+  body.dark-theme .nav-tabs .nav-link.active,
+  body.dark-theme .nav-tabs .nav-link:focus,
+  body.dark-theme .nav-tabs .nav-link:hover {
+    border-color: #323e5d #323e5d #1a233a #323e5d; }
+  body.dark-theme .daterangepicker:before {
+    top: -7px;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid #2a365a; }
+  body.dark-theme .daterangepicker:after {
+    top: -6px;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #2a365a;
+    border-left: 6px solid transparent; }
+  body.dark-theme .chat-details {
+    background-image: url(../../../images/bg/chat-bg-dark.png); }
+  body.dark-theme .tui-full-calendar-popup-delete,
+  body.dark-theme .tui-full-calendar-popup-edit {
+    color: #ffffff !important;
+    background-color: #5c76fb !important;
+    border: 1px solid #5c76fb; }
+  body.dark-theme .token.function,
+  body.dark-theme .token.punctuation,
+  body.dark-theme .token.operator,
+  body.dark-theme .flatpickr-time .flatpickr-time-separator,
+  body.dark-theme .flatpickr-time .flatpickr-am-pm {
+    color: inherit; }
+  body.dark-theme .bd-2 {
+    border-width: 2px;
+    border-color: #3b4e7f; }
+  body.dark-theme .bd-3 {
+    border-width: 3px; }
+  body.dark-theme .bd-4 {
+    border-width: 4px; }
+  body.dark-theme .bd-5 {
+    border-width: 5px; }
+  body.dark-theme .wizard > .content,
+  body.dark-theme .sw-theme-default .sw-container {
+    border-top: 1px solid #384873;
+    border-bottom: 1px solid #384873; }
+  body.dark-theme .flatpickr-day.flatpickr-disabled,
+  body.dark-theme .flatpickr-day.flatpickr-disabled:hover,
+  body.dark-theme .flatpickr-day.prevMonthDay,
+  body.dark-theme .flatpickr-day.nextMonthDay,
+  body.dark-theme .flatpickr-day.notAllowed,
+  body.dark-theme .flatpickr-day.notAllowed.prevMonthDay,
+  body.dark-theme .flatpickr-day.notAllowed.nextMonthDay {
+    color: rgba(147, 148, 156, 0.3); }
+  body.dark-theme .flatpickr-day.inRange,
+  body.dark-theme .flatpickr-weekwrapper .flatpickr-weeks {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  body.dark-theme .mailbox-mail-list .list-group-item.active {
+    border: 1px solid #323e5d; }
+  body.dark-theme .mailbox-details {
+    border-left: 1px solid #323e5d; }
+  body.dark-theme .tui-full-calendar-popup-section-item {
+    background: #293658; }
+  body.dark-theme .tui-full-calendar-month-dayname,
+  body.dark-theme .tui-full-calendar-weekday-border {
+    border-top: 1px solid #293658 !important; }
+  body.dark-theme .tui-full-calendar-weekday-grid-line {
+    border-right: 1px solid #293658 !important; }
+  body.dark-theme .basic-pricing .card-price,
+  body.dark-theme #pricing h2 {
+    color: #ffffff; }
+  body.dark-theme #pricing .block-pricing ul li {
+    border-bottom: 1px solid #263250; }
+  body.dark-theme #headerColor .bg-white {
+    background-color: #0f162f !important; }
+  body.dark-theme #headerColor .lis-brd-light {
+    border-color: #141c34 !important; }
+
+/*# sourceMappingURL=theme-dark-light.css.map */

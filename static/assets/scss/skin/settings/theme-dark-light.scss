@@ -1,0 +1,690 @@
+/**********************************************************************
+***********************************************************************
+### Theme Dark/Light Switcher CSS
+*********************************************************************
+*********************************************************************/
+$theme-primary-color: #5c76fb;
+$dark-theme-brand-color: #1a233a;
+$dark-theme-primary-color: #293658;
+$dark-theme-secondary-color: #323e5d;
+$dark-theme-light-color: #ffffff;
+
+body.dark-theme {
+	a,
+	.tx-dark {
+		color: $dark-theme-light-color;
+	}
+	
+	a:hover {
+		color: $theme-primary-color;
+	}
+	
+	a.selectgroup-button {
+		color: $dark-theme-secondary-color;
+	}	
+
+	background-color: $dark-theme-brand-color;	
+	.page-header .navbar-default,
+	.search-form input,
+	.header-right .dropdown-menu,
+	.list-group-item,
+	.settingPanelToggle,
+	.header-right .top-notifications-area .top-message-heading,
+	.header-right .top-message-area .top-message-heading,
+	.page-sidebar,
+	.tt-menu,
+	.header-right .notifications-box .notifications-date,
+	.header-right .message-box .messages-date,
+	.header-right .dropdown-item.active,
+	.page-sidebar .logo,
+	.page-footer,
+	.header-right .user-profile-area .user-profile-heading,
+	.table,
+	table tr,
+	.custom-fieldset,
+	.custom-fieldset label,
+	.custom-fieldset-style label.custom-label,
+	pre[class*="language-"],
+	.font-select .fs-search input,
+	.settingSidebar-body .bg-gray-100,
+	.settingSidebar,
+	.dropdown-menu,
+	.product-details,
+	.modal-content,
+	.add-sidebar,
+	.card,
+	.daterangepicker,
+	.ui-widget-header,
+	table.dataTable tbody tr,
+	.bg-white,
+	.ui-widget-content,
+	.ui-state-default.ui-accordion-header-active .daterangepicker td.in-range,
+	.daterangepicker td.off,
+	.daterangepicker td.off.in-range,
+	.daterangepicker td.off.start-date,
+	.daterangepicker td.off.end-date,
+	.popover-details.popover,
+	.popover-details.popover-body,
+	.ql-snow .ql-picker-options,
+	.mail-compose-sidebar,
+	.selectize-control.contacts .selectize-dropdown-content,
+	.chat-details .chat-details-header,
+	.chat-details .chat-content-bottom,
+	.chat-details .attachment,
+	.foo-accordion tr td ul.pagination li a:hover,
+	.foo-accordion tr td ul.pagination li.active a,
+	.calandar-left-sidebar,
+	.tui-full-calendar-vlayout-container,
+	.tui-full-calendar-popup-container,
+	.tui-timepicker,
+	.tui-timepicker option,
+	.tui-datepicker.tui-rangepicker .tui-is-selected-range,
+	.icons-list>div,
+	.md-editor>textarea,
+	.flatpickr-calendar,
+	.grid,
+	.swal2-popup,
+	.select2-dropdown,
+	.dragula-container>div,
+	.gu-mirror,
+	.note-editor.note-airframe .note-editing-area .note-editable,
+	.note-editor.note-frame .note-editing-area .note-editable,
+	.sw-theme-circles>ul.step-anchor:before,
+	.sw-theme-dots>ul.step-anchor,
+	.sw-theme-dots>ul.step-anchor:before {
+		background-color: $dark-theme-brand-color;
+	}
+
+	.search-form input,
+	.blockMsg,
+	.th-search-form .tt-input {
+		background-color: $dark-theme-brand-color!important;
+	}
+
+	.page-sidebar .logo,
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-menu ul li.active>a,
+	#search-button:hover,
+	.font-select>span,
+	.font-select .fs-drop,
+	.tt-selectable:hover,
+	.header-right .list-inline-item:hover,
+	.header-right .dropdown-menu-right .header-service a:hover,
+	.header-right .languages-dropdown li:hover,
+	.dropdown-item:hover,
+	.page-header .header-bottom,
+	.header-right .user-profile-area .user-profile-heading,
+	.table,
+	table tr:hover,
+	.daterangepicker .ranges li:hover,
+	.daterangepicker .ranges li.active,
+	input,
+	optgroup,
+	option,
+	select,
+	textarea,
+	.select,
+	.label,
+	.custom-file,
+	.custom-select,
+	.custom-file-label,
+	.custom-file-label::after,
+	.form-control,
+	.bg-gray-100,
+	.bg-gray-200,
+	.bg-gray-300,
+	.bootstrap-tagsinput,
+	.page-item .page-link,
+	.img-thumbnail,
+	.audience-overview-tab a.active,
+	table.dataTable thead th.ui-state-default,
+	table.dataTable tfoot th.ui-state-default,
+	table.dataTable tbody td.sorting_1,
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default,
+	.ui-button,
+	html .ui-button.ui-state-disabled:hover,
+	html .ui-button.ui-state-disabled:active,
+	.jctkr-label,
+	.calendar-table,
+	.audience-demographics .nav-tabs .nav-item.show .nav-link,
+	.audience-demographics .nav-tabs .nav-link.active,
+	.selectize-control.contacts .selectize-input,
+	.selectize-control.contacts .selectize-dropdown [data-selectable]:hover,
+	.selectize-control.contacts .selectize-dropdown [data-selectable].active,
+	.mailbox-mini-sidebar .mail-menu li:hover,
+	.mailbox-mini-sidebar .label-menu li:hover a,
+	.mailbox-mini-sidebar .tag-menu li:hover a,
+	.mailbox-list-sidebar .mailbox-mail-list .messages-date,
+	.mailbox-mail-list .list-group-item.active,
+	.mailbox-list-sidebar .mailbox-mail-list .messages-load-more,
+	.mailbox-mail-list .list-group-item.active,
+	.mailbox-mini-sidebar .compose-mail,
+	.mailbox-list-sidebar .search-mini,
+	.mailbox-details .mailbox-details-header,
+	.chat-list-sidebar .search-mini,
+	.chat-list-sidebar .chat-contact-list .chat-contact-load-more,
+	.chat-contact-list nav.chat-channel-list a:hover,
+	.chat-contact-list .chat-date,
+	.chat-details .flex-row-reverse,
+	.chat-details .normal,
+	.chat-contact-list .list-group-item.active,
+	.chat-details .chat-details-header,
+	.contact-add-sidebar .form-group.birthday-select select,
+	.lnb-new-schedule,
+	#menu,
+	.tui-full-calendar-button,
+	.tui-full-calendar-button:active,
+	.tui-full-calendar-open .tui-full-calendar-dropdown-menu,
+	.tui-full-calendar-popup-section-item input.tui-full-calendar-content,
+	.tui-calendar,
+	.tui-calendar .tui-calendar-title-today,
+	.tui-datepicker .tui-is-selectable:hover,
+	.tui-calendar-btn,
+	.file-manager-sidebar .upload-button,
+	.file-manager-content .file-manager-content-header,
+	.file-manager-sidebar .file-manager-menu ul li:hover a,
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs .nav-link.active,
+	.icons-list>div:hover,
+	.icons-list>div:hover span,
+	.input-group-text,
+	.wizard,
+	.sw-theme-default .step-content,
+	.sw-theme-default .sw-toolbar,
+	.ui-datepicker select.ui-datepicker-month,
+	.ui-datepicker select.ui-datepicker-year,
+	table.dataTable.stripe tbody tr.odd,
+	table.dataTable.display tbody tr.odd,
+	table.dataTable.hover tbody tr:hover,
+	table.dataTable.display tbody tr:hover,
+	table.dataTable.display tbody tr.odd>.sorting_1,
+	table.dataTable.order-column.stripe tbody tr.odd>.sorting_1,
+	table.dataTable.display tbody tr.even>.sorting_1,
+	table.dataTable.order-column.stripe tbody tr.even>.sorting_1,
+	.daterangepicker select.hourselect,
+	.daterangepicker select.minuteselect,
+	.daterangepicker select.secondselect,
+	.daterangepicker select.ampmselect,
+	.daterangepicker select.monthselect,
+	.daterangepicker select.yearselect,
+	.md-editor .md-footer,
+	.md-editor>.md-header,
+	.md-editor>.md-preview,
+	.multiselect-container .input-group-addon,
+	.select2-container--default .select2-selection--single,
+	.select2-container--default.select2-container--focus .select2-selection--multiple,
+	.select2-container--default .select2-selection--multiple,
+	.dragula-container,
+	.dragula-container:nth-child(odd),
+	.note-popover .popover-content,
+	.note-toolbar,
+	.note-editor.note-airframe .note-statusbar,
+	.note-editor.note-frame .note-statusbar,
+	.sw-theme-arrows .step-content,
+	.sw-theme-arrows>ul.step-anchor,
+	.sw-theme-circles>ul.step-anchor,
+	.sw-theme-circles .sw-toolbar,
+	.sw-theme-circles .step-content,
+	.sw-theme-dots>ul.step-anchor,
+	.sw-theme-dots .sw-toolbar,
+	.sw-theme-dots .step-content,
+	.grid-square {
+		background-color: $dark-theme-primary-color;
+	}
+	body.dark-theme .page-sidebar-menu ul li.open ul.sub-menu {
+		background: #232f4c;
+	}
+	.bg-light,
+	.btn-light,
+	.btn-default {
+		background-color: $dark-theme-primary-color!important;
+	}
+
+	.slimScrollBar {
+		background-color: $dark-theme-light-color!important;
+	}
+
+	.search-form,
+	.header-right .dropdown-menu,
+	.page-container.container,
+	.settingPanelToggle,
+	.custom-fieldset,
+	.custom-fieldset label,
+	.custom-fieldset-style,
+	.custom-fieldset-style label.custom-label,
+	pre[class*="language-"],
+	.selectgroup-button,
+	.font-select>span,
+	.font-select .fs-search input,
+	.font-select .fs-drop,
+	.card,
+	.table-bordered,
+	.table-bordered td,
+	.table-bordered th,
+	.header-bottom .settings-dropdown,
+	.product-details .bootstrap-tagsinput,
+	.btn-light,
+	.btn-light:not(:disabled):not(.disabled).active,
+	.btn-light:not(:disabled):not(.disabled):active,
+	.show>.btn-light.dropdown-toggle,
+	.btn-default,
+	.bd,
+	input,
+	optgroup,
+	option,
+	select,
+	textarea,
+	.select,
+	.custom-file,
+	.custom-select,
+	.custom-file-label,
+	.custom-file-label::after,
+	.form-control,
+	.dropdown-menu,
+	.daterangepicker,
+	.ql-toolbar.ql-snow,
+	.ql-container.ql-snow,
+	.ql-toolbar.ql-snow .ql-picker-label,
+	.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label,
+	.ql-snow .ql-picker-options .ql-picker-item,
+	.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options,
+	.page-item .page-link,
+	.img-thumbnail,
+	.dataTables_wrapper .dataTables_paginate .fg-button,
+	.calculator-block .cryptonatorwidget input,
+	.calculator-block .cryptonatorwidget select,
+	.input-group-text,
+	.ui-accordion .ui-accordion-header,
+	.ui-widget-content,
+	.custom-btn-group .nav-item a,
+	.daterangepicker .calendar-table,
+	.daterangepicker .drp-buttons .btn,
+	.popover,
+	.popover-details.popover,
+	.popover-details.popover-body,
+	.selectize-control.contacts .selectize-input,
+	.chat-contact-list .list-group-item.active,
+	.foo-accordion tr td ul.pagination li a,
+	.contact-add-sidebar .form-group.birthday-select select,
+	.tui-full-calendar-popup-container,
+	.lnb-new-schedule,
+	.tui-full-calendar-button,
+	.tui-full-calendar-dropdown-menu,
+	.tui-datepicker,
+	.tui-full-calendar-popup-section-item,
+	.tui-full-calendar-section-end-date:focus .tui-datepicker,
+	.tui-full-calendar-section-end-date:focus .tui-full-calendar-popup-section-item,
+	.tui-full-calendar-section-end-date:hover .tui-datepicker,
+	.tui-full-calendar-section-end-date:hover .tui-full-calendar-popup-section-item,
+	.tui-full-calendar-section-start-date:focus .tui-datepicker,
+	.tui-full-calendar-section-start-date:focus .tui-full-calendar-popup-section-item,
+	.tui-full-calendar-section-start-date:hover .tui-datepicker,
+	.tui-full-calendar-section-start-date:hover .tui-full-calendar-popup-section-item,
+	.bd-highlight,
+	.form-layout-2 .form-group,
+	.form-layout-3 .form-group,
+	.wizard,
+	.sw-theme-default,
+	.ui-datepicker .ui-datepicker-calendar td span,
+	.ui-datepicker .ui-datepicker-calendar td a,
+	.ui-datepicker select.ui-datepicker-month,
+	.ui-datepicker select.ui-datepicker-year,
+	.footable-page-arrow a,
+	.footable-page a,
+	.daterangepicker select.hourselect,
+	.daterangepicker select.minuteselect,
+	.daterangepicker select.secondselect,
+	.daterangepicker select.ampmselect,
+	.daterangepicker select.monthselect,
+	.daterangepicker select.yearselect,
+	.md-editor,
+	.checkbox label::before,
+	.radio label::before,
+	.multiselect-container .input-group-addon,
+	.bootstrap-tagsinput,
+	.dd-handle,
+	.dd-content,
+	.select2-container--default .select2-selection--single,
+	.select2-container--default.select2-container--focus .select2-selection--multiple,
+	.select2-container--default .select2-selection--multiple,
+	.select2-dropdown,
+	.note-editor.note-airframe,
+	.note-editor.note-frame,
+	.sw-theme-arrows,
+	.grid-square,
+	#colorpicker {
+		border: 1px solid $dark-theme-secondary-color;
+	}
+
+	.daterangepicker,
+	.search-form input:focus,
+	.border {
+		border: 1px solid $dark-theme-primary-color!important;
+	}
+
+	input:focus,
+	.custom-file:focus,
+	.custom-select:focus,
+	.form-control:focus,
+	.calculator-block .cryptonatorwidget input:focus,
+	.calculator-block .cryptonatorwidget select:focus,
+	.contact-add-sidebar .form-group.birthday-select select:focus,
+	.tui-full-calendar-popup-section-item:focus,
+	.tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+	.tui-full-calendar-button:hover,
+	.tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-menu {
+		border: 1px solid $theme-primary-color;
+	}
+
+	.header-right .notifications-box .list-group-item,
+	.header-right .message-box .list-group-item,
+	.header-right .top-message-area .top-message-footer,
+	.header-right .top-notifications-area .notifications-footer,
+	.card-footer,
+	.page-footer,
+	hr,
+	.bd-t,
+	.accordion-menu .sub-menu li.divider-border,
+	.table td,
+	.table th,
+	.table thead th,
+	.dropdown-divider,
+	.product-content,
+	.list-item,
+	.daterangepicker .drp-buttons,
+	.chat-details .chat-content-bottom,
+	.tui-datepicker-footer .tui-timepicker,
+	.tui-full-calendar-month-dayname-item,
+	.modal-footer,
+	.icons-list,
+	.wizard.vertical>.actions,
+	.wizard-tab>.actions,
+	table.dataTable.row-border tbody th,
+	table.dataTable.row-border tbody td,
+	table.dataTable.display tbody th,
+	table.dataTable.display tbody td,
+	.md-editor>textarea,
+	.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time,
+	.swal2-footer,
+	.note-editor.note-airframe .note-statusbar,
+	.note-editor.note-frame .note-statusbar {
+		border-top: 1px solid $dark-theme-primary-color;
+	}
+
+	.header-bottom,
+	.search-form input,
+	.header-right .top-notifications-area .notifications-heading,
+	.header-right .top-message-area .top-message-heading,
+	.card-header,
+	.font-select .fs-search,
+	.billing-shipping-details .table-bordered td:last-child,
+	.billing-shipping-details .table-bordered th:first-child,
+	.modal-header,
+	table.dataTable.no-footer,
+	.table thead th,
+	.nav-tabs,
+	.icons-list>div,
+	.md-editor>textarea {
+		border-bottom: 1px solid $dark-theme-primary-color;
+	}
+
+	.mailbox-mini-sidebar .compose-mail,
+	.mailbox-list-sidebar .search-mini,
+	.mailbox-details .mailbox-details-header,
+	.chat-list-sidebar .search-mini,
+	.chat-details .chat-details-header,
+	.file-manager-sidebar .upload-button,
+	.file-manager-content .file-manager-content-header {
+		border-bottom: 1px solid #323f61;
+	}
+
+	.settingSidebar,
+	.daterangepicker.show-ranges.ltr .drp-calendar.left,
+	.icons-list {
+		border-left: 1px solid $dark-theme-primary-color;
+	}
+
+	.mailbox-list-sidebar .search-mini,
+	.chat-list-sidebar .search-mini,
+	.wizard.vertical>.content,
+	.wizard.vertical>.actions {
+		border-left: 1px solid #323f61;
+	}
+
+	.bd-l,
+	.page-inner-content .inner-sidebar,
+	.page-header-fixed .page-inner-content .inner-sidebar,
+	.page-header-fixed .page-container.container .page-inner-content .inner-sidebar {
+		border-left: 1px solid $dark-theme-primary-color!important;
+	}
+
+	.page-sidebar,
+	.audience-demographics .nav-tabs,
+	.calandar-left-sidebar,
+	.file-manager-sidebar,
+	.icons-list>div {
+		border-right: 1px solid #404e73;
+	}
+
+	.mailbox-list-sidebar,
+	.chat-list-sidebar {
+		border-right: 1px solid #323f61;
+	}
+
+	.page-sidebar .logo {
+		border-right: 1px solid $dark-theme-primary-color;
+		border-bottom: 1px solid $dark-theme-primary-color;
+	}
+
+	.page-sidebar-menu ul li.menu-label,
+	.search-form input,
+	.search-form #close-search,
+	.page-navigation-menu,
+	.font-select .fs-search input,
+	.accordion-menu .sub-menu .sub-menu-label,
+	.btn-outline-brand:hover,
+	.settings-dropdown h2,
+	input,
+	.custom-file,
+	.custom-select,
+	.form-control,
+	.modal-header .modal-title,
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default,
+	.ui-button,
+	html .ui-button.ui-state-disabled:hover,
+	html .ui-button.ui-state-disabled:active,
+	.daterangepicker .drp-buttons .btn.btn-primary,
+	.daterangepicker th.month,
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs .nav-link.active,
+	.input-group-text,
+	.custom-file-label,
+	.custom-file-label::after,
+	.tx-gray-500,
+	.tx-gray-800,
+	.tx-gray-900,
+	.wizard>.content>.title,
+	li.multiselect-group label b,
+	span.flatpickr-weekday,
+	.flatpickr-weekwrapper span.flatpickr-day,
+	.flatpickr-weekwrapper span.flatpickr-day:hover,
+	.dd-item>button:before,
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		color: $dark-theme-light-color;
+	}
+
+	.btn,
+	.btn-primary:hover,
+	.btn-outline-primary:hover,
+	.btn-custom-primary:hover,
+	.dropdown-menu>li>a,
+	.tui-full-calendar-layout *,
+	.btn-outline-light,
+	.sw-theme-default>ul.step-anchor>li.done>a {
+		color: $dark-theme-light-color!important;
+	}
+
+	.header-right .dropdown-menu:before,
+	.header-right .dropdown-menu:after {
+		border: 10px solid $dark-theme-primary-color;
+		border-color: transparent transparent $dark-theme-primary-color transparent;
+	}
+
+	.bd-b {
+		border-bottom: 1px solid $dark-theme-primary-color;
+	}
+
+	.bd-r {
+		border-right: 1px solid $dark-theme-primary-color;
+	}
+
+	.header-right .top-message-area .top-message-heading .heading-title h6,
+	.top-notifications-area .notifications-heading .heading-title h6,
+	.dropdown-item,
+	.header-right .user-profile-area .profile-text h6,
+	code[class*="language-"],
+	pre[class*="language-"],
+	.custom-btn-group .nav-item a,
+	.daterangepicker .drp-buttons .btn,
+	.tx-gray-700,
+	.bootstrap-select .dropdown-header span.text {
+		color: #868DAA;
+	}
+
+	.header-right .user-profile-area .user-profile-heading {
+		background-image: none;
+	}
+
+	.bg-soft-light {
+		background-color: rgb(49, 63, 105);
+		color: $dark-theme-light-color !important;
+	}
+
+	.audience-demographics .nav-tabs .nav-item.show .nav-link,
+	.audience-demographics .nav-tabs .nav-link.active,
+	.audience-demographics .nav-tabs .nav-link:hover {
+		border-color: $dark-theme-secondary-color $dark-theme-brand-color $dark-theme-secondary-color $dark-theme-secondary-color;
+	}
+
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs .nav-link.active,
+	.nav-tabs .nav-link:focus,
+	.nav-tabs .nav-link:hover {
+		border-color: $dark-theme-secondary-color $dark-theme-secondary-color $dark-theme-brand-color $dark-theme-secondary-color;
+	}
+
+	.daterangepicker:before {
+		top: -7px;
+		border-right: 7px solid transparent;
+		border-left: 7px solid transparent;
+		border-bottom: 7px solid #2a365a;
+	}
+
+	.daterangepicker:after {
+		top: -6px;
+		border-right: 6px solid transparent;
+		border-bottom: 6px solid #2a365a;
+		border-left: 6px solid transparent;
+	}
+
+	.chat-details {
+		background-image: url(../../../images/bg/chat-bg-dark.png);
+	}
+
+	.tui-full-calendar-popup-delete,
+	.tui-full-calendar-popup-edit {
+		color: $dark-theme-light-color !important;
+		background-color: $theme-primary-color !important;
+		border: 1px solid $theme-primary-color;
+	}
+
+	.token.function,
+	.token.punctuation,
+	.token.operator,
+	.flatpickr-time .flatpickr-time-separator,
+	.flatpickr-time .flatpickr-am-pm {
+		color: inherit;
+	}
+
+	.bd-2 {
+		border-width: 2px;
+		border-color: #3b4e7f;
+	}
+
+	.bd-3 {
+		border-width: 3px;
+	}
+
+	.bd-4 {
+		border-width: 4px;
+	}
+
+	.bd-5 {
+		border-width: 5px;
+	}
+
+	.wizard>.content,
+	.sw-theme-default .sw-container {
+		border-top: 1px solid #384873;
+		border-bottom: 1px solid #384873;
+	}
+
+	.flatpickr-day.flatpickr-disabled,
+	.flatpickr-day.flatpickr-disabled:hover,
+	.flatpickr-day.prevMonthDay,
+	.flatpickr-day.nextMonthDay,
+	.flatpickr-day.notAllowed,
+	.flatpickr-day.notAllowed.prevMonthDay,
+	.flatpickr-day.notAllowed.nextMonthDay {
+		color: rgba(147, 148, 156, 0.3);
+	}
+
+	.flatpickr-day.inRange,
+	.flatpickr-weekwrapper .flatpickr-weeks {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.mailbox-mail-list .list-group-item.active {
+		border: 1px solid $dark-theme-secondary-color;
+	}
+
+	.mailbox-details {
+		border-left: 1px solid $dark-theme-secondary-color;
+	}
+
+	.tui-full-calendar-popup-section-item {
+		background: $dark-theme-primary-color;
+	}
+
+	.tui-full-calendar-month-dayname,
+	.tui-full-calendar-weekday-border {
+		border-top: 1px solid $dark-theme-primary-color!important;
+	}
+
+	.tui-full-calendar-weekday-grid-line {
+		border-right: 1px solid $dark-theme-primary-color!important;
+	}
+
+	.basic-pricing .card-price,
+	#pricing h2 {
+		color: $dark-theme-light-color;
+	}
+
+	#pricing .block-pricing ul li {
+		border-bottom: 1px solid #263250;
+	}
+
+	#headerColor .bg-white {
+		background-color: #0f162f !important;
+	}
+
+	#headerColor .lis-brd-light {
+		border-color: #141c34 !important;
+	}	
+}

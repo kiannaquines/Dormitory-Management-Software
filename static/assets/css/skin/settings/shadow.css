@@ -1,0 +1,233 @@
+/**********************************************************************
+***********************************************************************
+### Theme Shadow CSS
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.theme-shadow .card {
+  -webkit-box-shadow: 0px 5px 20px 0 rgba(25, 42, 70, 0.12);
+  -moz-box-shadow: 0px 5px 20px 0 rgba(25, 42, 70, 0.12);
+  -ms-box-shadow: 0px 5px 20px 0 rgba(25, 42, 70, 0.12);
+  -o-box-shadow: 0px 5px 20px 0 rgba(25, 42, 70, 0.12);
+  box-shadow: 0px 5px 20px 0 rgba(25, 42, 70, 0.12); }
+body.theme-shadow .dropdown-menu,
+body.theme-shadow .header-right .dropdown-menu,
+body.theme-shadow .header-right .languages-dropdown,
+body.theme-shadow .select2-dropdown {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2); }
+body.theme-shadow .header-bottom,
+body.theme-shadow .th-search-form .tt-open {
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+  -moz-box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+  -ms-box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15);
+  box-shadow: 0px 10px 50px 0px rgba(82, 63, 105, 0.15); }
+body.theme-shadow .page-sidebar {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1); }
+body.theme-shadow .showSettingPanel {
+  -webkit-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.5);
+  -moz-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.5);
+  -ms-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.5);
+  -o-box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.5);
+  box-shadow: 0 0 30px 0 rgba(140, 150, 160, 0.5); }
+body.theme-shadow .box-shadow {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1);
+  box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.1); }
+body.theme-shadow .page-footer {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+  -ms-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12);
+  box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.12); }
+body.theme-shadow .popover {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1); }
+body.theme-shadow .card-hover:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+body.theme-shadow .modal.effect-scale.show .modal-dialog {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08); }
+body.theme-shadow .search-form {
+  -webkit-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  -moz-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  -ms-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  -o-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05); }
+body.theme-shadow .tt-menu {
+  -webkit-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  -moz-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  -ms-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  -o-box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05);
+  box-shadow: 0 10px 10px 0 rgba(20, 25, 30, 0.05); }
+body.theme-shadow .btn-scroll-top {
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+  -ms-box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15);
+  box-shadow: 0px 0px 25px 0px rgba(80, 60, 105, 0.15); }
+body.theme-shadow .tooltip-inner {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3); }
+body.theme-shadow .popover-details.popover {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15);
+  box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.15); }
+body.theme-shadow .daterangepicker {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2);
+  box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.2); }
+body.theme-shadow .mail-compose-sidebar {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08); }
+body.theme-shadow .selectize-control.contacts .selectize-dropdown-content {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2);
+  box-shadow: 0px 10px 30px 0px rgba(80, 62, 105, 0.2); }
+body.theme-shadow .add-sidebar {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  -o-box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08);
+  box-shadow: 0px 10px 30px 0px rgba(80, 60, 105, 0.08); }
+body.theme-shadow .tui-full-calendar-popup,
+body.theme-shadow .tui-full-calendar-popup-container,
+body.theme-shadow .growl {
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+  -ms-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+  box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15); }
+body.theme-shadow .custom-fieldset {
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+  -moz-box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+  -ms-box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07);
+  box-shadow: 0px 20px 20px 0px rgba(82, 63, 105, 0.07); }
+body.theme-shadow .theme-setting-options ul li div {
+  -webkit-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2); }
+body.theme-shadow .theme-setting-options ul li.active div {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none; }
+body.theme-shadow .selectize-control.contacts .selectize-input > div {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+body.theme-shadow #toast-container > div:hover {
+  -moz-box-shadow: 0 0 12px #7b7986;
+  -webkit-box-shadow: 0 0 12px #7b7986;
+  box-shadow: 0 0 12px #7b7986; }
+body.theme-shadow .hover-shadow:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+
+body.theme-shadow.page-sidebar-collapsed .page-sidebar-menu ul.sub-menu {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+  -ms-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+  -o-box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2);
+  box-shadow: 0px 10px 30px 0px rgba(60, 62, 105, 0.2); }
+
+/*Dark Theme CSS*/
+body.theme-shadow.dark-theme .dropdown-menu,
+body.theme-shadow.dark-theme .header-right .dropdown-menu,
+body.theme-shadow.dark-theme .header-right .languages-dropdown,
+body.theme-shadow.dark-theme .select2-dropdown,
+body.theme-shadow.dark-theme .custom-fieldset,
+body.theme-shadow.dark-theme .card,
+body.theme-shadow.dark-theme .tt-menu,
+body.theme-shadow.dark-theme .header-bottom,
+body.theme-shadow.dark-theme .th-search-form .tt-open,
+body.theme-shadow.dark-theme .daterangepicker,
+body.theme-shadow.dark-theme .modal-content,
+body.theme-shadow.dark-theme .popover,
+body.theme-shadow.dark-theme .popover-details.popover,
+body.theme-shadow.dark-theme .selectize-control.contacts .selectize-dropdown-content,
+body.theme-shadow.dark-theme .tui-full-calendar-popup,
+body.theme-shadow.dark-theme .tui-full-calendar-popup-container,
+body.theme-shadow.dark-theme .growl,
+body.theme-shadow.dark-theme .swal2-popup,
+body.theme-shadow.dark-theme #toast-container > div {
+  -webkit-box-shadow: 0px 15px 25px 0px #0a0f28;
+  -moz-box-shadow: 0px 15px 25px 0px #0a0f28;
+  -ms-box-shadow: 0px 15px 25px 0px #0a0f28;
+  -o-box-shadow: 0px 15px 25px 0px #0a0f28;
+  box-shadow: 0px 15px 25px 0px #0a0f28; }
+body.theme-shadow.dark-theme .settingPanelToggle,
+body.theme-shadow.dark-theme .page-footer,
+body.theme-shadow.dark-theme .add-sidebar {
+  -webkit-box-shadow: -10px 15px 25px 0px #0a0f28;
+  -moz-box-shadow: -10px 15px 25px 0px #0a0f28;
+  -ms-box-shadow: -10px 15px 25px 0px #0a0f28;
+  -o-box-shadow: -10px 15px 25px 0px #0a0f28;
+  box-shadow: -10px 15px 25px 0px #0a0f28; }
+body.theme-shadow.dark-theme .showSettingPanel {
+  -webkit-box-shadow: 0 0 30px 0 black;
+  -moz-box-shadow: 0 0 30px 0 black;
+  -ms-box-shadow: 0 0 30px 0 black;
+  -o-box-shadow: 0 0 30px 0 black;
+  box-shadow: 0 0 30px 0 black; }
+body.theme-shadow.dark-theme body.theme-shadow.dark-theme.page-sidebar-collapsed .page-sidebar-menu ul.sub-menu {
+  -webkit-box-shadow: 0px 10px 25px 0px #0c1228;
+  -moz-box-shadow: 0px 10px 25px 0px #0c1228;
+  -ms-box-shadow: 0px 10px 25px 0px #0c1228;
+  -o-box-shadow: 0px 10px 25px 0px #0c1228;
+  box-shadow: 0px 10px 25px 0px #0c1228; }
+body.theme-shadow.dark-theme .box-shadow {
+  -webkit-box-shadow: 0px 10px 30px 0px #0b112a;
+  -moz-box-shadow: 0px 10px 30px 0px #0b112a;
+  -ms-box-shadow: 0px 10px 30px 0px #0b112a;
+  -o-box-shadow: 0px 10px 30px 0px #0b112a;
+  box-shadow: 0px 10px 30px 0px #0b112a; }
+
+body.dark-theme .page-container.container {
+  -webkit-box-shadow: 0 0 30px 0 black;
+  -moz-box-shadow: 0 0 30px 0 black;
+  -ms-box-shadow: 0 0 30px 0 black;
+  -o-box-shadow: 0 0 30px 0 black;
+  box-shadow: 0 0 30px 0 black; }
+
+/*# sourceMappingURL=shadow.css.map */

@@ -1,0 +1,451 @@
+/**********************************************************************
+***********************************************************************
+### Responsive CSS
+*********************************************************************
+*********************************************************************/
+
+@media (min-width: 320px) {
+	.container {
+		padding: 0;
+	}
+	.mailbox-list-sidebar,
+	.mailbox-mini-sidebar {
+		display: none!important;
+	}
+	.mailbox-details,
+	.file-manager-content,
+	.file-manager-content .file-manager-content-scroll {
+		left: 0px!important;
+		margin-left: 0px!important;
+	}
+
+	figure {
+		margin: 0em 0px!important;
+	}
+	.bootstrap-tagsinput .tag {
+		display: block;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title,
+	.wizard.vertical>.steps ul li .title {
+		display: block;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 0;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.page-header-inner .navbar-default-inner,
+	.page-header-inner .header-bottom-inner,
+	.page-footer .page-footer-inner {
+		width: 100%;
+	}
+	.fc-toolbar .fc-left,
+	.fc-toolbar .fc-right{
+		margin-bottom: 15px;
+	}
+	.calendar-wrapper .main-calendar .box {
+		padding: 15px 40px 30px 40px;
+	}
+	.card-header:after,
+	.card-custom-header:after {
+		display: none!important;
+	}
+}
+
+@media (min-width: 375px) {
+	.mailbox-list-sidebar,
+	.mailbox-mini-sidebar {
+		display: none!important;
+	}
+	.mailbox-details,
+	.file-manager-content,
+	.file-manager-content .file-manager-content-scroll {
+		left: 0px!important;
+		margin-left: 0px!important;
+	}
+	.bootstrap-tagsinput .tag {
+		display: block;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title,
+	.wizard.vertical>.steps ul li .title {
+		display: block;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 0;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.card-header:after,
+	.card-custom-header:after {
+		display: none!important;
+	}
+}
+
+@media (min-width: 425px) {
+	.mailbox-list-sidebar,
+	.mailbox-mini-sidebar {
+		display: none!important;
+	}
+	.mailbox-details,
+	.file-manager-content,
+	.file-manager-content .file-manager-content-scroll {
+		left: 0px!important;
+		margin-left: 0px!important;
+	}
+	.bootstrap-tagsinput .tag {
+		display: block;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title,
+	.wizard.vertical>.steps ul li .title {
+		display: block;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 0;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.card-header:after,
+	.card-custom-header:after {
+		display: none!important;
+	}
+}
+
+@media (min-width: 564px) {
+	.daterangepicker .ranges ul {
+		width: 170px;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title {
+		display: block;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li {
+		margin: 0;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.card-header:after,
+	.card-custom-header:after {
+		display: none!important;
+	}
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 960px;
+		padding: 0;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title,
+	.wizard.vertical>.steps ul li .title {
+		display: block;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 0;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.card-header:after,
+	.card-custom-header:after {
+		display: none!important;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	.page-header .navbar-nav>li>a>i {
+		font-size: 14px;
+		vertical-align: text-top;
+	}
+	.page-header .navbar-nav>li>a>i[class^="icon-"] {
+		font-size: 19px;
+		vertical-align: top;
+	}
+	.page-header-fixed .page-container.container .page-header {
+		width: 750px;
+	}
+	.container {
+		max-width: 1024px;
+		padding: 0;
+	}
+	.chat-details .chat-content-bottom {
+		left: 0px!important;
+	}
+	.bootstrap-tagsinput .tag {
+		display: inline-block;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title {
+		display: block;
+	}
+	.wizard.vertical>.steps ul li .title {
+		display: none;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 15px;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.card-header:after,
+	.card-custom-header:after {
+		display: block!important;
+	}
+}
+
+@media (min-width: 992px) {
+	.page-header-fixed .page-container.container .page-header {
+		width: 970px;
+	}
+	.container {
+		max-width: 1180px;
+	}
+	.mailbox-mini-sidebar {
+		display: block!important;
+	}
+	.mailbox-details {
+		left: 240px!important;
+		border-left: 1px solid #eee;
+	}
+	.file-manager-content {
+		margin-left: 280px!important;
+	}
+	.file-manager-content .file-manager-content-scroll {
+		left: 280px!important;
+	}
+	.wizard>.steps>ul {
+		display: block;
+		float: left;
+	}
+	.wizard>.steps .disabled .title,
+	.wizard>.steps .done a .title,
+	.wizard>.steps .done a:hover .title,
+	.wizard>.steps .done a:active .title {
+		display: block;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 15px;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.calendar-wrapper .main-calendar .box {
+		padding: 15px 40px 30px 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hidden-lg {
+		display: none !important;
+	}
+	.page-header-fixed .page-container.container .page-header {
+		width: 1278px;
+	}
+	.page-sidebar-fixed .page-content {
+		margin-left: 265px;
+	}
+	.container {
+		max-width: 1280px!important;
+	}
+	.modal-xl {
+		max-width: 1140px;
+	}
+	.page-inner-content .col-lg-9.page-content-area {
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;
+	}
+	.page-inner-content .col-lg-3.page-sidebar-area {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	.mailbox-list-sidebar{
+		display: block!important;
+	}
+	.mailbox-details {
+		left: 560px!important;
+	}
+	.file-manager-content {
+		margin-left: 280px!important;
+	}
+	.file-manager-content .file-manager-content-scroll {
+		left: 280px!important;
+	}
+	.wizard>.steps>ul {
+		display: flex;
+	}
+	.wizard>.steps>ul li,
+	.wizard>.steps>ul li+li,
+	.wizard.vertical>.steps ul li+li {
+		margin: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.hidden-xs {
+		display: none !important;
+	}
+	.page-header .navbar-default .navbar-brand ul.list-inline li a svg {
+		margin-bottom: -6px;
+	}
+	.login-wrapper .loginbox .login-right {
+		padding: 20px;
+		width: inherit;
+	}
+	.mailbox-details {
+		left: 240px;
+		border-left: 1px solid #eee;
+	}
+}
+
+@media (max-width: 991px) {
+	.page-header .navbar-default {
+		padding: 5px 30px 0 15px;
+	}
+	.page-header-fixed .page-inner-content .inner-content {
+		padding: 30px!important;
+	}
+	.page-sidebar-collapsed {
+		display: block;
+	}
+	.page-header-fixed .page-header {
+		left: 0 !important;
+	}
+	.page-sidebar {
+		position: fixed !important;
+		left: -264px;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+	.page-content,
+	.page-sidebar-collapsed .page-content {
+		width: 100%;
+	}
+	.page-sidebar-fixed .page-content,
+	.page-sidebar-fixed.page-sidebar-collapsed .page-content {
+		margin-left: 0;
+	}
+	.page-header,
+	.page-header .navbar-default .container-fluid,
+	.page-header .navbar-default .navbar-collapse {
+		padding: 0;
+	}
+	.navbar li {
+		display: inline-block;
+	}
+	#fixed-sidebar-toggle-button,
+	.navbar-nav.navbar-right {
+		display: none;
+	}
+	.navbar-collapse {
+		padding: 0 !important;
+	}
+	.page-sidebar-visible .page-sidebar {
+		left: 0;
+	}
+	#sidebar-toggle-button-close {
+		margin-left: auto;
+		float: right;
+		height: 40px;
+		font-size: 25px;
+		margin-top: 0px;
+		display: block!important;
+		position: absolute;
+		right: 10px;
+	}
+	.page-sidebar-collapsed #sidebar-toggle-button-close {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.btn-scroll-top {
+		bottom: .625rem;
+		right: .625rem;
+		z-index: 9999;
+	}
+	.btn-scroll-top:focus,
+	.btn-scroll-top:hover {
+		background: #007aff;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	.email-right-sidebar .table td,
+	.email-right-sidebar .table th,
+	.email-right-sidebar .table thead th {
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.hidden-sm {
+		display: none !important;
+	}
+	.chat-sidebar .chat-left-sidebar .media .action-icon {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.hidden-md {
+		display: none !important;
+	}
+}

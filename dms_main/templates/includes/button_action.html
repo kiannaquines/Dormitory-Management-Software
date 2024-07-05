@@ -1,0 +1,30 @@
+{% if request.path == "/users/" %}
+<a href="{% url 'add_user' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add User Information</a>
+{% endif %}
+
+{% if request.path == "/dms/dormitory/room/" %}
+<a href="{% url 'add_room' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add Room Information</a>
+{% endif %}
+
+{% if request.path == "/emergency_information/" %}
+<a href="{% url 'add_emergency_information' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add Emergency Information</a>
+{% endif %}
+
+{% if request.path == "/dms/dormitory/" %}
+<a href="{% url 'add_dormitory' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add Dormitory Information</a>
+{% endif %}
+
+{% if request.path == "/dms/account/" %}
+<a href="{% url 'account_add' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add Payment Information</a>
+
+<a href="{% url 'export_data' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Export Payment Information</a>
+
+{% endif %}
+
+{% if request.path == "/dms/reservation/" %}
+<a href="{% url 'reservation_add' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add Reservation Information</a>
+{% endif %}
+
+{% if request.path == "/dms/account/billing/" %}
+<a href="{% url 'add_billing' %}" class="btn bg-soft-primary d-none d-md-block pd-y-8-force waves-effect" style="margin-right: 5px;"><span data-feather="plus" class="wd-16 ht-16 mr-1"></span>Add Billing</a>
+{% endif %}

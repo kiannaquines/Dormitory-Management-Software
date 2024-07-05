@@ -1,0 +1,299 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Red
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.theme-red .logo a.logo-img {
+  background-image: url(../../../images/logos/logo-red.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-red .logo a.logo-img img {
+  display: none; }
+body.theme-red a:hover,
+body.theme-red .tx-primary,
+body.theme-red .custom-btn-group .nav-item a:hover,
+body.theme-red .btn-outline-brand,
+body.theme-red .btn-outline-primary,
+body.theme-red .btn-default:hover,
+body.theme-red .header-bottom .settings-dropdown a:hover,
+body.theme-red .header-bottom .settings-dropdown a:hover svg,
+body.theme-red .header-right .notifications-box a:hover h3,
+body.theme-red .daterangepicker .ranges li.active,
+body.theme-red .daterangepicker .ranges li:hover,
+body.theme-red .header-right .message-box a:hover h3,
+body.theme-red .header-right .top-message-area .top-message-footer a,
+body.theme-red .header-right .top-notifications-area .notifications-footer a,
+body.theme-red .header-right .languages-dropdown li a:hover,
+body.theme-red .header-right .user-profile-area .dropdown-item:hover,
+body.theme-red .page-sidebar-menu ul li.active > a,
+body.theme-red .page-sidebar-menu ul li .sub-menu a:hover,
+body.theme-red .page-sidebar-menu ul li.active > a i,
+body.theme-red .page-sidebar-menu ul li.active > a i.accordion-icon,
+body.theme-red .page-sidebar-menu ul li.open > a i.accordion-icon,
+body.theme-red .page-sidebar-menu ul li a:hover i.accordion-icon,
+body.theme-red .page-sidebar-menu ul li a:hover,
+body.theme-red .open:not(.active) > a,
+body.theme-red .custom-btn-group .nav-item a.active,
+body.theme-red .payment-info .nav-item a.active,
+body.theme-red .audience-overview-tab a.active h2,
+body.theme-red .audience-demographics .nav-tabs .nav-item.show .nav-link,
+body.theme-red .audience-demographics .nav-tabs .nav-link.active,
+body.theme-red .mailbox-mini-sidebar .mail-menu li:hover a,
+body.theme-red .mailbox-mini-sidebar .mail-menu li:hover a span svg,
+body.theme-red .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-red .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-red .mailbox-list-sidebar .mailbox-mail-list a.active .messages-name,
+body.theme-red .mailbox-list-sidebar .mailbox-mail-list a:hover .messages-name,
+body.theme-red .chat-list-sidebar .chat-contact-list a.active .messages-name,
+body.theme-red .chat-list-sidebar .chat-contact-list a:hover .messages-name,
+body.theme-red .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-red .chat-details .chat-details-header .chat-right-icons a:hover,
+body.theme-red .chat-details .middle .normal:hover a,
+body.theme-red .chat-details .middle .flex-row-reverse:hover a,
+body.theme-red .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+body.theme-red .file-manager-sidebar .file-manager-menu ul li:hover a,
+body.theme-red .file-manager-content .file-manager-file-list .card:hover .card-body a.tx-dark,
+body.theme-red .page-inner-content .inner-sidebar .section-nav .nav-link:hover,
+body.theme-red .page-inner-content .inner-sidebar .section-nav .nav-link.active,
+body.theme-red .ui-accordion-header.ui-state-active,
+body.theme-red .ui-accordion .ui-accordion-header:hover,
+body.theme-red .icons-list > div i,
+body.theme-red .icons-list > div svg,
+body.theme-red .settingPanelToggle {
+  color: #ea5455; }
+body.theme-red .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.theme-red .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.theme-red .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill],
+body.theme-red .page-header .navbar-default .adata-svg-icon g [fill],
+body.theme-red .page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill],
+body.theme-red .adata-svg-icon g [fill] {
+  fill: #ea5455; }
+body.theme-red .btn-primary,
+body.theme-red .btn-custom-primary,
+body.theme-red .btn-outline-brand:hover,
+body.theme-red .btn-outline-primary:hover,
+body.theme-red .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-red .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-red .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-red .tooltip-primary .tooltip-inner,
+body.theme-red .header-right .top-message-area .top-message-heading > span,
+body.theme-red .header-right .top-notifications-area .notifications-heading > span,
+body.theme-red .show > .btn-primary.dropdown-toggle,
+body.theme-red .daterangepicker td.active,
+body.theme-red .daterangepicker td.active:hover,
+body.theme-red .applyBtn.btn-primary:hover,
+body.theme-red .selectgroup-input-radio:focus + .selectgroup-button,
+body.theme-red .selectgroup-input-radio:checked + .selectgroup-button,
+body.theme-red .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-red .accordion-menu .sub-menu li a:hover:before,
+body.theme-red .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-red .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-red .badge-primary,
+body.theme-red .selectize-control.contacts .selectize-input > div,
+body.theme-red .tui-full-calendar-confirm,
+body.theme-red .tui-datepicker .tui-is-selectable.tui-is-selected,
+body.theme-red .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected,
+body.theme-red .tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator,
+body.theme-red .page-inner-content .inner-sidebar .section-nav .nav-link.active::after,
+body.theme-red .nav-pills .nav-link.active,
+body.theme-red .nav-pills .show > .nav-link,
+body.theme-red .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-red .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-red .custom-list-group .list-group-item.active,
+body.theme-red .custom-scrollbar .custom-scrollbar-color > .ps__rail-y > .ps__thumb-y,
+body.theme-red .irs--flat .irs-bar,
+body.theme-red .irs--flat .irs-from,
+body.theme-red .irs--flat .irs-to,
+body.theme-red .irs--flat .irs-single,
+body.theme-red .irs--flat .irs-handle > i:first-child,
+body.theme-red .irs--flat .irs-handle.state_hover > i:first-child,
+body.theme-red .irs--flat .irs-handle:hover > i:first-child,
+body.theme-red .checkbox label::after,
+body.theme-red .sk-plane,
+body.theme-red .sk-chase-dot:before,
+body.theme-red .sk-bounce-dot,
+body.theme-red .sk-wave-rect,
+body.theme-red .sk-pulse,
+body.theme-red .sk-flow-dot,
+body.theme-red .sk-swing-dot,
+body.theme-red .sk-circle-dot:before,
+body.theme-red .sk-circle-fade-dot:before,
+body.theme-red .sk-grid-cube,
+body.theme-red .sk-fold-cube:before,
+body.theme-red .sk-wander-cube,
+body.theme-red .btn-scroll-top {
+  background-color: #ea5455; }
+body.theme-red .bg-primary,
+body.theme-red .header-color .accordion-title.bg-primary {
+  background-color: #ea5455 !important; }
+body.theme-red .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-red .bg-soft-color .ui-widget-content.ui-accordion-content-active {
+  background: rgba(234, 84, 85, 0.1); }
+body.theme-red .page-sidebar-menu ul li.active > a,
+body.theme-red .page-sidebar-menu ul li a:hover,
+body.theme-red .open:not(.active) > a,
+body.theme-red .page-sidebar-collapsed .page-sidebar-menu ul li.active > a,
+body.theme-red .page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.theme-red .page-sidebar-collapsed .open:not(.active) > a {
+  background: #fdeded; }
+body.theme-red .selectize-control.contacts .selectize-input > div {
+  background: #ea5455;
+  background: -moz-linear-gradient(top, #ea5455 0%, #ea5455 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ea5455), color-stop(100%, #ea5455));
+  background: -webkit-linear-gradient(top, #ea5455 0%, #ea5455 100%);
+  background: -o-linear-gradient(top, #ea5455 0%, #ea5455 100%);
+  background: -ms-linear-gradient(top, #ea5455 0%, #ea5455 100%);
+  background: linear-gradient(to bottom, #ea5455 0%, #ea5455 100%); }
+body.theme-red .btn-primary,
+body.theme-red .btn-custom-primary,
+body.theme-red .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-red .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-red .btn-outline-brand,
+body.theme-red .btn-outline-primary,
+body.theme-red .btn-outline-primary:hover,
+body.theme-red .btn-default:hover,
+body.theme-red .show > .btn-primary.dropdown-toggle,
+body.theme-red .header-right .user-profile-area .dropdown-item:hover,
+body.theme-red .applyBtn.btn-primary:hover,
+body.theme-red .accordion-menu .sub-menu li a:hover:before,
+body.theme-red .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-red .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-red input:focus,
+body.theme-red .custom-file:focus,
+body.theme-red .custom-select:focus,
+body.theme-red .form-control:focus,
+body.theme-red .selectize-control.contacts .selectize-input > div,
+body.theme-red .selectize-control.contacts .selectize-input.dropdown-active,
+body.theme-red .tui-full-calendar-popup-section-item:focus,
+body.theme-red .tui-full-calendar-popup-section-item:hover,
+body.theme-red .tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+body.theme-red .tui-full-calendar-button:hover,
+body.theme-red .flow-drop,
+body.theme-red .border-color .accordion-title.bd-primary,
+body.theme-red .border-color .ui-widget-content.bd-primary,
+body.theme-red .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-red .bg-soft-color .ui-widget-content.ui-accordion-content-active,
+body.theme-red .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-red .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-red .custom-list-group .list-group-item.active,
+body.theme-red .contact-add-sidebar .form-group.birthday-select select:focus,
+body.theme-red .btn-scroll-top {
+  border-color: #ea5455; }
+body.theme-red .tui-full-calendar-month-creation-guide {
+  border-color: #ea5455 !important; }
+body.theme-red .audience-overview-tab a.active {
+  border-top: 1px solid #ea5455; }
+body.theme-red .irs--flat .irs-from:before,
+body.theme-red .irs--flat .irs-to:before,
+body.theme-red .irs--flat .irs-single:before {
+  border-top-color: #ea5455; }
+body.theme-red .mailbox-mini-sidebar .mail-menu li:hover,
+body.theme-red .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-red .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-red .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-red .file-manager-sidebar .file-manager-menu ul li:hover a {
+  border-left: 1px solid #ea5455; }
+body.theme-red .bg-soft-primary,
+body.theme-red .custom-btn-group .nav-item a.active {
+  background-color: rgba(234, 84, 85, 0.15) !important;
+  color: #ea5455 !important; }
+body.theme-red .btn-primary:hover,
+body.theme-red .btn-secondary:hover,
+body.theme-red .btn-warning:hover,
+body.theme-red .btn-success:hover,
+body.theme-red .btn-danger:hover,
+body.theme-red .btn-info:hover,
+body.theme-red .btn-dark:hover,
+body.theme-red .btn-custom-primary:hover,
+body.theme-red .btn-outline-brand:hover,
+body.theme-red .btn-outline-primary:hover,
+body.theme-red .tooltip-primary .tooltip-inner,
+body.theme-red .header-color .ui-accordion-header.ui-state-active,
+body.theme-red .header-color .ui-accordion-header,
+body.theme-red .header-color .ui-accordion-header:hover,
+body.theme-red .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-red .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-red .btn-scroll-top {
+  color: #ffffff !important; }
+body.theme-red .tooltip-primary.bs-tooltip-top .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #ea5455; }
+body.theme-red .tooltip-primary.bs-tooltip-bottom .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #ea5455; }
+body.theme-red .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #ea5455; }
+body.theme-red .tooltip-primary.bs-tooltip-right .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before,
+body.theme-red .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #ea5455; }
+body.theme-red .order-details-tab .nav-item a.active,
+body.theme-red .order-details-tab .nav-item a:hover {
+  color: #ea5455;
+  border-bottom: 1px solid #ea5455; }
+
+body.theme-red.page-sidebar-collapsed .logo a.logo-img img.small-logo {
+  background-image: url(../../../images/logos/small-logo-red.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-red.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  color: #ea5455; }
+body.theme-red.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a .adata-svg-icon g [fill] {
+  fill: #ea5455; }
+
+body.theme-red.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background-color: #ea5455; }
+
+body.dark-sidebar.theme-red .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li.active > a,
+body.dark-sidebar.theme-red .page-sidebar .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li a:hover,
+body.dark-sidebar.theme-red .page-sidebar .page-sidebar .page-sidebar-inner .open:not(.active) > a {
+  background: #ea5455; }
+
+/*Dark Theme CSS*/
+body.dark-theme.theme-red a:hover {
+  color: #ea5455; }
+body.dark-theme.theme-red .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-red .open:not(.active) > a,
+body.dark-theme.theme-red .page-sidebar-menu ul li.active > a {
+  background-color: #593142; }
+body.dark-theme.theme-red input:focus,
+body.dark-theme.theme-red .custom-file:focus,
+body.dark-theme.theme-red .custom-select:focus,
+body.dark-theme.theme-red .form-control:focus,
+body.dark-theme.theme-red .calculator-block .cryptonatorwidget input:focus,
+body.dark-theme.theme-red .calculator-block .cryptonatorwidget select:focus,
+body.dark-theme.theme-red .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #ea5455; }
+
+body.dark-theme.theme-red.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-red.page-sidebar-collapsed .open:not(.active) > a,
+body.dark-theme.theme-red.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  background-color: #593142; }
+
+/*Semi Dark Theme CSS*/
+body.semi-dark-theme.theme-red .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-red .open:not(.active) > a,
+body.semi-dark-theme.theme-red .page-sidebar-menu ul li.active > a {
+  background-color: #593142; }
+
+body.semi-dark-theme.theme-red.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-red.page-sidebar-collapsed .open:not(.active) > a,
+body.semi-dark-theme.theme-red.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  background-color: #593142; }
+
+body.semi-dark-theme.theme-red input:focus,
+body.semi-dark-theme.theme-red .custom-file:focus,
+body.semi-dark-theme.theme-red .custom-select:focus,
+body.semi-dark-theme.theme-red .form-control:focus,
+body.semi-dark-theme.theme-red .calculator-block .cryptonatorwidget input:focus,
+body.semi-dark-theme.theme-red .calculator-block .cryptonatorwidget select:focus,
+body.semi-dark-theme.theme-red .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #ea5455; }
+
+/*# sourceMappingURL=theme-red.css.map */

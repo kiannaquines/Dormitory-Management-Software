@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keyword" content="">
+      <meta name="author"  content=""/>
+      <title>{% block title %} {% endblock %} | Dormitory Management System</title>
+      <link type="text/css" rel="stylesheet" href="{% static '/assets/css/style.css' %}"/>
+      <link type="image/x-icon" rel="icon" href="{% static 'assets/images/small-logo.png' %}">
+      <link type="text/css" rel="stylesheet"  href="{% static 'assets/plugins/parsleyjs/parsley.css' %}">
+      <!--[if lt IE 9]>
+      <script src="https:oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https:oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+    {% block content %}
+    {% endblock %}
+    
+    <script src="{% static 'assets/js/plugin-bundle.js' %}"></script>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+    <script src="{% static 'assets/js/adata-init.js' %}"></script>
+    <script src="{% static 'assets/plugins/parsleyjs/parsley.js' %}"></script>
+   </body>
+</html>

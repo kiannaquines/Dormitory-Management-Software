@@ -1,0 +1,89 @@
+{% extends 'includes/base.html' %}
+{% block title %}Add Room{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+    <h2>Add room page</h2>
+    <div class="mg-t-20">
+        <div class="card custom-fieldset-style mg-b-30">
+            <form action="{% url 'add_room' %}" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                {% csrf_token %}
+                <div class="clearfix">
+
+    
+                    <div class="row">
+                        <div class="col-lg">
+                        <label for="first_name">{{ room_form.room_name.label }} <span class="tx-danger">*</span> </label>
+                        {{ room_form.room_name }}
+                        </div>
+                    </div>
+
+                     <div class="row mg-t-20">
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="dorm">{{ room_form.dorm_id.label }} <span class="tx-danger">*</span> </label>
+                            <div class="input-group mb-3">
+                                {{ room_form.dorm_id }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mg-t-20">
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="dorm">{{ room_form.room_location.label }} <span class="tx-danger">*</span> </label>
+                            <div class="input-group mb-3">
+                                {{ room_form.room_location }}
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mg-t-10">
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="lastname_name">{{ room_form.room_no.label }} <span class="tx-danger">*</span> </label>
+                            {{ room_form.room_no }} 
+                        </div>
+    
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="lastname_name">{{ room_form.room_capacity.label }} <span class="tx-danger">*</span> </label>
+                            {{ room_form.room_capacity }}
+                        </div>
+
+
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="lastname_name">{{ room_form.room_image.label }} <span class="tx-danger">*</span> </label>
+                            {{ room_form.room_image }}
+                        </div>
+
+                    </div>
+    
+                    <div class="row mg-t-20">
+                        <div class="col-lg">
+                            <label for="first_name">{{ room_form.room_beds.label }} <span class="tx-danger">*</span> </label>
+                            {{ room_form.room_beds }}
+                        </div>
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="lastname_name">{{ room_form.room_current_bed_available.label }} <span class="tx-danger">*</span> </label>
+                            {{ room_form.room_current_bed_available }}
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row mg-t-20">
+                        <div class="col-lg mg-t-10 mg-lg-t-0">
+                            <label for="room_availablity">{{ room_form.room_availability.label }} <span class="tx-danger">*</span> </label>
+                            <div class="input-group mb-3">
+                                {{ room_form.room_availability }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mg-t-20">
+                        <div class="col-lg">
+                            <input type="submit" class="btn btn-primary btn-md" value="Save room information">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

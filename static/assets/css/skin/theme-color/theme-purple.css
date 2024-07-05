@@ -1,0 +1,302 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Purple
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.theme-purple .logo a.logo-img {
+  background-image: url(../../../images/logos/logo-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-purple .logo a.logo-img img {
+  display: none; }
+body.theme-purple a:hover,
+body.theme-purple .tx-primary,
+body.theme-purple .custom-btn-group .nav-item a:hover,
+body.theme-purple .btn-outline-brand,
+body.theme-purple .btn-outline-primary,
+body.theme-purple .btn-default:hover,
+body.theme-purple .header-bottom .settings-dropdown a:hover,
+body.theme-purple .header-bottom .settings-dropdown a:hover svg,
+body.theme-purple .header-right .notifications-box a:hover h3,
+body.theme-purple .daterangepicker .ranges li.active,
+body.theme-purple .daterangepicker .ranges li:hover,
+body.theme-purple .header-right .message-box a:hover h3,
+body.theme-purple .header-right .top-message-area .top-message-footer a,
+body.theme-purple .header-right .top-notifications-area .notifications-footer a,
+body.theme-purple .header-right .languages-dropdown li a:hover,
+body.theme-purple .header-right .user-profile-area .dropdown-item:hover,
+body.theme-purple .page-sidebar-menu ul li.active > a,
+body.theme-purple .page-sidebar-menu ul li .sub-menu a:hover,
+body.theme-purple .page-sidebar-menu ul li.active > a i,
+body.theme-purple .page-sidebar-menu ul li.active > a i.accordion-icon,
+body.theme-purple .page-sidebar-menu ul li.open > a i.accordion-icon,
+body.theme-purple .page-sidebar-menu ul li a:hover i.accordion-icon,
+body.theme-purple .page-sidebar-menu ul li a:hover,
+body.theme-purple .open:not(.active) > a,
+body.theme-purple .custom-btn-group .nav-item a.active,
+body.theme-purple .payment-info .nav-item a.active,
+body.theme-purple .audience-overview-tab a.active h2,
+body.theme-purple .audience-demographics .nav-tabs .nav-item.show .nav-link,
+body.theme-purple .audience-demographics .nav-tabs .nav-link.active,
+body.theme-purple .mailbox-mini-sidebar .mail-menu li:hover a,
+body.theme-purple .mailbox-mini-sidebar .mail-menu li:hover a span svg,
+body.theme-purple .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-purple .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-purple .mailbox-list-sidebar .mailbox-mail-list a.active .messages-name,
+body.theme-purple .mailbox-list-sidebar .mailbox-mail-list a:hover .messages-name,
+body.theme-purple .chat-list-sidebar .chat-contact-list a.active .messages-name,
+body.theme-purple .chat-list-sidebar .chat-contact-list a:hover .messages-name,
+body.theme-purple .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-purple .chat-details .chat-details-header .chat-right-icons a:hover,
+body.theme-purple .chat-details .middle .normal:hover a,
+body.theme-purple .chat-details .middle .flex-row-reverse:hover a,
+body.theme-purple .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+body.theme-purple .file-manager-sidebar .file-manager-menu ul li:hover a,
+body.theme-purple .file-manager-content .file-manager-file-list .card:hover .card-body a.tx-dark,
+body.theme-purple .page-inner-content .inner-sidebar .section-nav .nav-link:hover,
+body.theme-purple .page-inner-content .inner-sidebar .section-nav .nav-link.active,
+body.theme-purple .ui-accordion-header.ui-state-active,
+body.theme-purple .ui-accordion .ui-accordion-header:hover,
+body.theme-purple .icons-list > div i,
+body.theme-purple .icons-list > div svg,
+body.theme-purple .settingPanelToggle {
+  color: #7c94e0; }
+body.theme-purple .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.theme-purple .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.theme-purple .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill],
+body.theme-purple .page-header .navbar-default .adata-svg-icon g [fill],
+body.theme-purple .page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill],
+body.theme-purple .adata-svg-icon g [fill] {
+  fill: #7c94e0; }
+body.theme-purple .btn-primary,
+body.theme-purple .btn-custom-primary,
+body.theme-purple .btn-outline-brand:hover,
+body.theme-purple .btn-outline-primary:hover,
+body.theme-purple .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-purple .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-purple .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-purple .tooltip-primary .tooltip-inner,
+body.theme-purple .header-right .top-message-area .top-message-heading > span,
+body.theme-purple .header-right .top-notifications-area .notifications-heading > span,
+body.theme-purple .show > .btn-primary.dropdown-toggle,
+body.theme-purple .daterangepicker td.active,
+body.theme-purple .daterangepicker td.active:hover,
+body.theme-purple .applyBtn.btn-primary:hover,
+body.theme-purple .selectgroup-input-radio:focus + .selectgroup-button,
+body.theme-purple .selectgroup-input-radio:checked + .selectgroup-button,
+body.theme-purple .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-purple .accordion-menu .sub-menu li a:hover:before,
+body.theme-purple .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-purple .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-purple .badge-primary,
+body.theme-purple .selectize-control.contacts .selectize-input > div,
+body.theme-purple .tui-full-calendar-confirm,
+body.theme-purple .tui-datepicker .tui-is-selectable.tui-is-selected,
+body.theme-purple .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected,
+body.theme-purple .tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator,
+body.theme-purple .page-inner-content .inner-sidebar .section-nav .nav-link.active::after,
+body.theme-purple .nav-pills .nav-link.active,
+body.theme-purple .nav-pills .show > .nav-link,
+body.theme-purple .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-purple .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-purple .custom-list-group .list-group-item.active,
+body.theme-purple .custom-scrollbar .custom-scrollbar-color > .ps__rail-y > .ps__thumb-y,
+body.theme-purple .irs--flat .irs-bar,
+body.theme-purple .irs--flat .irs-from,
+body.theme-purple .irs--flat .irs-to,
+body.theme-purple .irs--flat .irs-single,
+body.theme-purple .irs--flat .irs-handle > i:first-child,
+body.theme-purple .irs--flat .irs-handle.state_hover > i:first-child,
+body.theme-purple .irs--flat .irs-handle:hover > i:first-child,
+body.theme-purple .checkbox label::after,
+body.theme-purple .sk-plane,
+body.theme-purple .sk-chase-dot:before,
+body.theme-purple .sk-bounce-dot,
+body.theme-purple .sk-wave-rect,
+body.theme-purple .sk-pulse,
+body.theme-purple .sk-flow-dot,
+body.theme-purple .sk-swing-dot,
+body.theme-purple .sk-circle-dot:before,
+body.theme-purple .sk-circle-fade-dot:before,
+body.theme-purple .sk-grid-cube,
+body.theme-purple .sk-fold-cube:before,
+body.theme-purple .sk-wander-cube,
+body.theme-purple .btn-scroll-top {
+  background-color: #7c94e0; }
+body.theme-purple .bg-primary,
+body.theme-purple .header-color .accordion-title.bg-primary {
+  background-color: #7c94e0 !important; }
+body.theme-purple .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-purple .bg-soft-color .ui-widget-content.ui-accordion-content-active {
+  background: rgba(91, 27, 204, 0.1); }
+body.theme-purple .page-sidebar-menu ul li.active > a,
+body.theme-purple .page-sidebar-menu ul li a:hover,
+body.theme-purple .open:not(.active) > a,
+body.theme-purple .page-sidebar-collapsed .page-sidebar-menu ul li.active > a,
+body.theme-purple .page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.theme-purple .page-sidebar-collapsed .open:not(.active) > a {
+  background: #f2f4ff; }
+body.theme-purple .selectize-control.contacts .selectize-input > div {
+  background: #7c94e0;
+  background: -moz-linear-gradient(top, #7c94e0 0%, #7c94e0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7c94e0), color-stop(100%, #7c94e0));
+  background: -webkit-linear-gradient(top, #7c94e0 0%, #7c94e0 100%);
+  background: -o-linear-gradient(top, #7c94e0 0%, #7c94e0 100%);
+  background: -ms-linear-gradient(top, #7c94e0 0%, #7c94e0 100%);
+  background: linear-gradient(to bottom, #7c94e0 0%, #7c94e0 100%); }
+body.theme-purple .btn-primary,
+body.theme-purple .btn-custom-primary,
+body.theme-purple .btn-primary:not(:disabled):not(.disabled).active,
+body.theme-purple .btn-primary:not(:disabled):not(.disabled):active,
+body.theme-purple .btn-outline-brand,
+body.theme-purple .btn-outline-primary,
+body.theme-purple .btn-outline-primary:hover,
+body.theme-purple .btn-default:hover,
+body.theme-purple .show > .btn-primary.dropdown-toggle,
+body.theme-purple .header-right .user-profile-area .dropdown-item:hover,
+body.theme-purple .applyBtn.btn-primary:hover,
+body.theme-purple .accordion-menu .sub-menu li a:hover:before,
+body.theme-purple .page-sidebar-menu ul li ul li.active > a:before,
+body.theme-purple .custom-control-input:checked ~ .custom-control-label::before,
+body.theme-purple input:focus,
+body.theme-purple .custom-file:focus,
+body.theme-purple .custom-select:focus,
+body.theme-purple .form-control:focus,
+body.theme-purple .selectize-control.contacts .selectize-input > div,
+body.theme-purple .selectize-control.contacts .selectize-input.dropdown-active,
+body.theme-purple .tui-full-calendar-popup-section-item:focus,
+body.theme-purple .tui-full-calendar-popup-section-item:hover,
+body.theme-purple .tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+body.theme-purple .tui-full-calendar-button:hover,
+body.theme-purple .flow-drop,
+body.theme-purple .border-color .accordion-title.bd-primary,
+body.theme-purple .border-color .ui-widget-content.bd-primary,
+body.theme-purple .bg-soft-color .accordion-title.ui-accordion-header-active,
+body.theme-purple .bg-soft-color .ui-widget-content.ui-accordion-content-active,
+body.theme-purple .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-purple .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-purple .custom-list-group .list-group-item.active,
+body.theme-purple .contact-add-sidebar .form-group.birthday-select select:focus,
+body.theme-purple .btn-scroll-top {
+  border-color: #7c94e0; }
+body.theme-purple .tui-full-calendar-month-creation-guide {
+  border-color: #7c94e0 !important; }
+body.theme-purple .audience-overview-tab a.active {
+  border-top: 1px solid #7c94e0; }
+body.theme-purple .irs--flat .irs-from:before,
+body.theme-purple .irs--flat .irs-to:before,
+body.theme-purple .irs--flat .irs-single:before {
+  border-top-color: #7c94e0; }
+body.theme-purple .mailbox-mini-sidebar .mail-menu li:hover,
+body.theme-purple .mailbox-mini-sidebar .label-menu li:hover a,
+body.theme-purple .mailbox-mini-sidebar .tag-menu li:hover a,
+body.theme-purple .chat-contact-list nav.chat-channel-list a:hover,
+body.theme-purple .file-manager-sidebar .file-manager-menu ul li:hover a {
+  border-left: 1px solid #7c94e0; }
+body.theme-purple .bg-soft-primary,
+body.theme-purple .custom-btn-group .nav-item a.active {
+  background-color: rgba(156, 39, 176, 0.15) !important;
+  color: #475ea9 !important; }
+body.theme-purple .btn-primary:hover,
+body.theme-purple .btn-secondary:hover,
+body.theme-purple .btn-warning:hover,
+body.theme-purple .btn-success:hover,
+body.theme-purple .btn-danger:hover,
+body.theme-purple .btn-info:hover,
+body.theme-purple .btn-dark:hover,
+body.theme-purple .btn-custom-primary:hover,
+body.theme-purple .btn-outline-brand:hover,
+body.theme-purple .btn-outline-primary:hover,
+body.theme-purple .tooltip-primary .tooltip-inner,
+body.theme-purple .header-color .ui-accordion-header.ui-state-active,
+body.theme-purple .header-color .ui-accordion-header,
+body.theme-purple .header-color .ui-accordion-header:hover,
+body.theme-purple .bg-flat-color .accordion-title.ui-accordion-header-active,
+body.theme-purple .bg-flat-color .ui-widget-content.ui-accordion-content-active,
+body.theme-purple .btn-scroll-top {
+  color: #ffffff !important; }
+body.theme-purple .tooltip-primary.bs-tooltip-top .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #7c94e0; }
+body.theme-purple .tooltip-primary.bs-tooltip-bottom .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #7c94e0; }
+body.theme-purple .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-left .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #7c94e0; }
+body.theme-purple .tooltip-primary.bs-tooltip-right .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before,
+body.theme-purple .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #7c94e0; }
+body.theme-purple .order-details-tab .nav-item a.active,
+body.theme-purple .order-details-tab .nav-item a:hover {
+  color: #7c94e0;
+  border-bottom: 1px solid #7c94e0; }
+
+body.theme-purple.page-sidebar-collapsed .logo a.logo-img img.small-logo {
+  background-image: url(../../../images/logos/small-logo-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.theme-purple.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  color: #7c94e0; }
+body.theme-purple.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a .adata-svg-icon g [fill] {
+  fill: #7c94e0; }
+
+body.theme-purple.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background-color: #7c94e0; }
+
+body.dark-sidebar.theme-purple .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li.active > a,
+body.dark-sidebar.theme-purple .page-sidebar .page-sidebar-inner .page-sidebar-menu ul li a:hover,
+body.dark-sidebar.theme-purple .page-sidebar .page-sidebar-inner .open:not(.active) > a {
+  background: #7c94e0; }
+
+/*Dark Theme CSS*/
+body.dark-theme.theme-purple a:hover {
+  color: #7c94e0; }
+body.dark-theme.theme-purple .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-purple .open:not(.active) > a,
+body.dark-theme.theme-purple .page-sidebar-menu ul li.active > a {
+  color: #aabfff;
+  background-color: #425486; }
+body.dark-theme.theme-purple input:focus,
+body.dark-theme.theme-purple .custom-file:focus,
+body.dark-theme.theme-purple .custom-select:focus,
+body.dark-theme.theme-purple .form-control:focus,
+body.dark-theme.theme-purple .calculator-block .cryptonatorwidget input:focus,
+body.dark-theme.theme-purple .calculator-block .cryptonatorwidget select:focus,
+body.dark-theme.theme-purple .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #7c94e0; }
+body.dark-theme.theme-purple input:focus,
+body.dark-theme.theme-purple .custom-file:focus,
+body.dark-theme.theme-purple .custom-select:focus,
+body.dark-theme.theme-purple .form-control:focus,
+body.dark-theme.theme-purple .calculator-block .cryptonatorwidget input:focus,
+body.dark-theme.theme-purple .calculator-block .cryptonatorwidget select:focus,
+body.dark-theme.theme-purple .contact-add-sidebar .form-group.birthday-select select:focus {
+  border: 1px solid #7c94e0; }
+
+body.dark-theme.theme-purple.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.dark-theme.theme-purple.page-sidebar-collapsed .open:not(.active) > a,
+body.dark-theme.theme-purple.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  color: #aabfff;
+  background-color: #425486; }
+
+/*Semi Dark Theme CSS*/
+body.semi-dark-theme.theme-purple .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-purple .open:not(.active) > a,
+body.semi-dark-theme.theme-purple .page-sidebar-menu ul li.active > a {
+  color: #7c94e0;
+  background-color: #425486; }
+
+body.semi-dark-theme.theme-purple.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.theme-purple.page-sidebar-collapsed .open:not(.active) > a,
+body.semi-dark-theme.theme-purple.page-sidebar-collapsed .page-sidebar-menu ul li.active > a {
+  color: #7c94e0;
+  background-color: #425486; }
+
+/*# sourceMappingURL=theme-purple.css.map */

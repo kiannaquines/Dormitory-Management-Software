@@ -1,0 +1,131 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block title %}Add My Payment{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+
+    <h2>Add my payment</h2>
+    
+    <div class="card mt-3">
+        <div class="inner-content">
+            <div class="custom-fieldset-style mg-b-30">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <form action="{% url 'add_payments' %}" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            {% csrf_token %}
+
+                            <div class="clearfix">
+                                {{ form.user_id }}
+                                <div class="row mg-t-10">
+                                    <div class="col-lg mg-t-10 mg-lg-t-0">
+                                        <label for="ref_code">{{ form.billing_id.label }} <span class="tx-danger">*</span> </label>
+                                        <div class="form-group mg-b-0">
+                                            {{ form.billing_id }}
+                                            <small>Select the billing date you want to pay.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg mg-t-10 mg-lg-t-0">
+                                        <label for="ref_code">{{ form.ref_code.label }} <span class="tx-danger">*</span> </label>
+                                        <div class="form-group mg-b-0">
+                                            {{ form.ref_code }}
+                                            <small>You can get your Refference Code in paying in GCash or Paymaya, please click <a class="text-primary" href="#" data-toggle="modal" data-target="#modalPyamentMode">here</a> to pay.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row mg-t-10">
+                                    <div class="col-lg mg-t-10 mg-lg-t-0">
+                                        <label for="ref_code">{{ form.amount_paid.label }} <span class="tx-danger">*</span> </label>
+                                        <div class="form-group mg-b-0">
+                                            {{ form.amount_paid }}
+                                            <small>Enter the amount you need to pay.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg mg-t-10 mg-lg-t-0">
+                                        <label for="ref_code">{{ form.payment_type.label }} <span class="tx-danger">*</span> </label>
+                                        <div class="form-group mg-b-0">
+                                            {{ form.payment_type }}
+                                            <small>Select type of your payment</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mg-t-10">
+                                    <div class="col-lg mg-t-10 mg-lg-t-0">
+                                        <label for="ref_code">{{ form.payment_receipt_image.label }} <span class="tx-danger">*</span> </label>
+                                        <div class="form-group mg-b-0">
+                                            {{ form.payment_receipt_image }}
+                                            <small>Upload your receipt image</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <input type="submit" class="btn btn-primary btn-md" value="Add Payment">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Mode Modal -->
+    <div class="modal fade" id="modalPyamentMode" tabindex="-1" role="dialog" aria-labelledby="ModalComponents" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalComponents">Our Mode of Payments</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#setting-gcash" aria-expanded="false">GCash QRCODE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#setting-paymaya" aria-expanded="false">Paymaya QRCODE</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="setting-gcash">
+                    <div class="card">
+                       <div class="card-body">
+                            <img src="{% static 'assets/images/gcash_qrcode.jpeg' %}" class="img-fluid" alt="GCash QRCODE">
+                       </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="setting-paymaya" role="tabpanel">
+                    <div class="card">
+                       <div class="card-body">
+                            <img src="{% static 'assets/images/paymaya_qrcode.jpg' %}" class="img-fluid" alt="Paymaya QRCODE">
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary waves-effect" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block per_page_js %}
+<script>
+    $("#id_payment_as_of").datepicker()
+    $("#id_payment_to").datepicker()
+</script>
+{% endblock %}

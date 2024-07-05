@@ -1,0 +1,225 @@
+/**********************************************************************
+***********************************************************************
+### File Manager CSS
+*********************************************************************
+*********************************************************************/
+
+.file-manager-page-inner {
+	height: calc(100% - 60px);
+}
+
+.file-manager-sidebar {
+	width: 280px;
+	border-right: $bd-default;
+	float: left;
+	min-height: 100%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	flex-direction: column;
+}
+
+.file-manager-sidebar .upload-button {
+	text-align: center;
+	display: block;
+	padding: 9px 15px;
+	border-bottom: $bd-default;
+}
+
+.file-manager-content .file-manager-content-header {
+	text-align: center;
+	display: block;
+	padding: 9px 15px;
+	border-bottom: $bd-default;
+	position: relative;
+}
+
+.file-manager-content .file-manager-content-header .settings-dropdown a.dropdown-item span,
+.contact-header-right .settings-dropdown a.dropdown-item span {
+	font-weight: $font-weight-medium;
+}
+
+.file-manager-content .file-manager-content-header .settings-dropdown a.dropdown-item span>span,
+.contact-header-right .settings-dropdown a.dropdown-item span>span {
+	font-weight: $font-weight-normal;
+	color: $brand-color;
+	font-size: 10px;
+	letter-spacing: 0.5px;
+}
+
+.file-manager-sidebar .file-manager-menu h2 {
+	padding: 10px 15px;
+	margin: 20px 0 0;
+	display: block;
+}
+
+.file-manager-sidebar .file-manager-menu ul li a {
+	font-size: $font-size-default;
+	padding: 8px 15px;
+	/*color: $link-color;*/
+}
+
+.file-manager-sidebar .file-manager-menu ul li:hover a {
+	color: $color-primary;
+	background-color: #f2f4f7;
+	border-left: 1px solid $color-primary;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.6s;
+	transition: all 0.5s;
+}
+
+.file-manager-content {
+	margin-left: 280px;
+	display: block;
+	overflow: hidden;
+	height: 100%;
+}
+
+.file-manager-content .file-manager-file-list {
+	padding: 15px 20px;
+	margin-bottom: 80px;
+}
+
+.file-manager-content .file-manager-content-scroll {
+	min-height: 100%;
+	top: 56px;
+	bottom: 0px;
+	left: 280px;
+	right: 0;
+	position: absolute;
+	flex-direction: column;
+}
+
+.file-manager-content .file-manager-file-list .card:hover .card-body a.tx-dark {
+	color: $color-primary;
+}
+
+.file-manager-content .file-manager-file-list .settings-dropdown {
+	width: 200px;
+}
+
+.flow-error {
+	display: none;
+}
+
+.flow-drop {
+	position: relative;
+	display: none;
+	width: 100%;
+	text-align: center;
+	border: 1px dashed $color-primary;
+}
+
+.flow-progress .progress-resume-link,
+.flow-progress .progress-pause-link {
+	display: none;
+}
+
+.default-style .flow-drop {
+	border: 3px dashed rgba(24, 28, 33, 0.06);
+}
+
+.material-style .flow-drop {
+	border: 3px dashed rgba(24, 28, 33, 0.06);
+}
+
+.setting-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.custom-switch {
+	padding-left: 2.25rem;
+}
+
+.custom-control {
+	position: relative;
+	display: block;
+	min-height: 1.5rem;
+	padding-left: 1.5rem;
+}
+
+.custom-control-label {
+	position: relative;
+	margin-bottom: 0;
+	vertical-align: top;
+	cursor: pointer;
+	font-weight: $font-weight-normal;
+}
+
+.custom-switch.switch-primary .custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: $color-primary;
+	background-color: $color-primary;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: $color-primary;
+	background-color: $color-primary;
+}
+
+.custom-switch .custom-control-label::before {
+	left: -2.25rem;
+	width: 1.75rem;
+	pointer-events: all;
+	border-radius: .5rem;
+}
+
+.custom-file-label,
+.custom-file-label::after {
+	height: calc(2.5rem + 2px);
+	padding: .575rem .75rem;
+}
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.custom-control-label::before {
+	position: absolute;
+	top: .25rem;
+	left: -1.5rem;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	pointer-events: none;
+	content: "";
+	background-color: #fff;
+	border: solid 1px #c2d2e2;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+	background-color: #fff;
+	-webkit-transform: translateX(0.75rem);
+	transform: translateX(0.75rem);
+}
+
+.custom-switch .custom-control-label::after {
+	top: calc(.25rem + 2px);
+	left: calc(-2.25rem + 2px);
+	width: calc(1rem - 4px);
+	height: calc(1rem - 4px);
+	background-color: #c2d2e2;
+	border-radius: .5rem;
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+	transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+}
+
+.custom-control-label::after {
+	position: absolute;
+	top: .25rem;
+	left: -1.5rem;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	content: "";
+	background: no-repeat 50%/50% 50%;
+}

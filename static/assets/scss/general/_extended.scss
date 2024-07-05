@@ -1,0 +1,371 @@
+/**********************************************************************
+***********************************************************************
+### Extended CSS
+*********************************************************************
+*********************************************************************/
+
+.roundResult .cropper-view-box,
+.roundResult .cropper-face {
+	border-radius: 50%;
+}
+
+#roundResult {
+	text-align: center;
+}
+
+#roundResult img {
+	width: 50%;
+}
+
+.customizeCrop .row,
+.customizeCrop .preview {
+	overflow: hidden;
+}
+
+.uploadCrop .label {
+	cursor: pointer;
+}
+
+.uploadCrop .progress {
+	display: none;
+	margin-bottom: 1rem;
+}
+
+.uploadCrop .alert {
+	display: none;
+}
+
+.uploadCrop .img-container img {
+	max-width: 100%;
+}
+
+.th-search-form .tt-input {
+	width: 250px;
+}
+
+#custom-templates .empty-message {
+	padding: 5px 10px;
+	text-align: center;
+}
+
+#toast-container>div {
+	opacity: 1;
+}
+
+#toast-container>div:hover {
+	opacity: 1;
+}
+
+.toast-success {
+	background-color: #7ab339;
+}
+
+.toast-info {
+	background-color: #3dc7be;
+}
+
+.toast-warning {
+	background-color: #ffa117;
+}
+
+.toast-error {
+	background-color: #ea5455;
+}
+
+.toast-title {
+	font-weight: $font-weight-bold;
+}
+
+
+/*SpinKit CSS*/
+
+.sk-plane,
+.sk-chase-dot:before,
+.sk-bounce-dot,
+.sk-wave-rect,
+.sk-pulse,
+.sk-flow-dot,
+.sk-swing-dot,
+.sk-circle-dot:before,
+.sk-circle-fade-dot:before,
+.sk-grid-cube,
+.sk-fold-cube:before,
+.sk-wander-cube {
+	background-color: $color-primary;
+}
+
+
+/*Select2 CSS*/
+
+.select2-dropdown {
+	border: $bd-default;
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple {
+	border: $bd-default;
+	border-radius: 2px;
+}
+
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 38px;
+}
+
+.select2-container .select2-selection--single,
+.select2-selection__rendered {
+	padding: 2px 15px;
+}
+
+.select2-container .select2-search--inline {
+	padding: 5px 0px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	margin-top: 10px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background-color: #6777ef;
+	border: 1px solid #6777ef;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+	padding: 0 10px;
+}
+
+
+/*switealert2 css*/
+
+.swal2-styled.swal2-confirm {
+	background-color: $color-primary !important;
+	border: 1px solid #425ad6 !important;
+	color: #fff;
+}
+
+.swal2-styled:focus {
+	outline: 0;
+	box-shadow: none !important;
+}
+
+.swal2-title {
+	color: $brand-color !important;
+	font-size: 20px !important;
+	font-weight: 500 !important;
+}
+
+.swal2-content {
+	color: $brand-color !important;
+	font-size: 13px !important;
+}
+
+.swal2-footer {
+	font-size: 13px !important;
+}
+
+.demo-gallery {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+a.demo-gallery__img--main {
+	width: auto;
+	height: auto;
+}
+
+.demo-gallery a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+	display: block;
+	float: left;
+	margin: 0 15px 15px 0;
+	width: 302px;
+	line-height: 0;
+}
+
+.demo-gallery figure {
+	display: none;
+}
+
+figure {
+	display: block;
+}
+
+.style-select {
+	width: 100%;
+	float: left;
+}
+
+.demo-gallery img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+.plyr__video-embed iframe {
+	width: 100%;
+	height: 500px;
+}
+
+
+/*dragula css*/
+
+.wrapper {
+	display: table;
+}
+
+.dragula-container {
+	display: table-cell;
+	background-color: #fff;
+	width: 50%;
+}
+
+.dragula-container:nth-child(odd) {
+	background-color: #f2f4ff;
+}
+
+.dragula-container>div,
+.gu-mirror {
+	margin: 10px;
+	padding: 10px;
+	background-color: #e6ebf5;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.dragula-container>div {
+	cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	border-radius: 3px;
+}
+
+.gu-mirror {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.dragula-container .ex-moved {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.dragula-container .ex-moved code {
+	color: #000;
+}
+
+.dragula-container.ex-over {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#left-lovehandles>div,
+#right-lovehandles>div {
+	cursor: initial;
+}
+
+.wrapper .handle {
+	padding: 2px 6px;
+	margin-right: 5px;
+	background-color: $color-primary;
+	cursor: move;
+	color: #fff;
+}
+
+.image-thing {
+	margin: 20px 0;
+	display: block;
+	text-align: center;
+}
+
+.slack-join {
+	position: absolute;
+	font-weight: $font-weight-normal;
+	font-size: 14px;
+	right: 10px;
+	top: 50%;
+	margin-top: -8px;
+	line-height: 16px;
+}
+
+.container .ex-moved {
+	background-color: $color-primary;
+	color: #fff;
+}
+
+
+/*swiper css*/
+
+.swiper-container .swiper-slide {
+	padding: 5rem 0;
+	text-align: center;
+	font-size: 1.5rem;
+	background: #f2f4ff;
+	width: 100% !important;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+	color: $color-primary;
+}
+
+#custom-pagination .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 10px;
+	color: #4e4e5a;
+	opacity: 1;
+	background: #e4e6f5;
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.swiper-scrollbar-drag {
+	background: $color-primary !important;
+	color: #fff !important;
+}
+
+.swiper-pagination-progressbar {
+	background: rgba(205, 195, 195, 0.25);
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.swiper-scrollbar-drag {
+	background: $color-primary;
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+}
+
+#vertical-example {
+	max-height: 250px;
+}
+
+#swiper-3d-cube-effect {
+	max-width: 300px;
+}
+
+#swiper-3d-coverflow-effect .swiper-slide {
+	max-width: 300px;
+}
+
+#swiper-3d-flip-effect,
+#swiper-3d-flip-effect .swiper-slide {
+	max-width: 300px;
+}

@@ -1,0 +1,17 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Blue
+*********************************************************************
+*********************************************************************/
+body.header-top-color-blue .page-header .navbar-default {
+  background-color: #0168fa; }
+body.header-top-color-blue .page-header .navbar-default .adata-svg-icon g [fill],
+body.header-top-color-blue .page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill] {
+  fill: #ffffff !important; }
+body.header-top-color-blue .page-header .navbar-default a.dropdown-icon:hover .adata-svg-icon g [fill] {
+  fill: #7c94e0; }
+
+body.dark-theme.header-top-color-blue .page-header .navbar-default {
+  background-color: #0168fa; }
+
+/*# sourceMappingURL=header-top-blue.css.map */

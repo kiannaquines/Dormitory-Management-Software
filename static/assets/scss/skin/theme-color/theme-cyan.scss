@@ -1,0 +1,381 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Cyan
+*********************************************************************
+*********************************************************************/
+$theme-color-cyan: #3dc7be;
+$background-color-cyan: #245462;
+
+/*Light Theme CSS*/
+body.theme-cyan {
+	.logo a.logo-img {
+		background-image: url(../../../images/logos/logo-cyan.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.logo a.logo-img img {
+		display: none;
+	}
+
+	a:hover,
+	.tx-primary,
+	.custom-btn-group .nav-item a:hover,
+	.btn-outline-brand,
+	.btn-outline-primary,
+	.btn-default:hover,
+	.header-bottom .settings-dropdown a:hover,
+	.header-bottom .settings-dropdown a:hover svg,
+	.header-right .notifications-box a:hover h3,
+	.daterangepicker .ranges li.active,
+	.daterangepicker .ranges li:hover,
+	.header-right .message-box a:hover h3,
+	.header-right .top-message-area .top-message-footer a,
+	.header-right .top-notifications-area .notifications-footer a,
+	.header-right .languages-dropdown li a:hover,
+	.header-right .user-profile-area .dropdown-item:hover,
+	.page-sidebar-menu ul li.active>a,
+	.page-sidebar-menu ul li .sub-menu a:hover,
+	.page-sidebar-menu ul li.active>a i,
+	.page-sidebar-menu ul li.active>a i.accordion-icon,
+	.page-sidebar-menu ul li.open>a i.accordion-icon,
+	.page-sidebar-menu ul li a:hover i.accordion-icon,
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.custom-btn-group .nav-item a.active,
+	.payment-info .nav-item a.active,
+	.audience-overview-tab a.active h2,
+	.audience-demographics .nav-tabs .nav-item.show .nav-link,
+	.audience-demographics .nav-tabs .nav-link.active,
+	.mailbox-mini-sidebar .mail-menu li:hover a,
+	.mailbox-mini-sidebar .mail-menu li:hover a span svg,
+	.mailbox-mini-sidebar .label-menu li:hover a,
+	.mailbox-mini-sidebar .tag-menu li:hover a,
+	.mailbox-list-sidebar .mailbox-mail-list a.active .messages-name,
+	.mailbox-list-sidebar .mailbox-mail-list a:hover .messages-name,
+	.chat-list-sidebar .chat-contact-list a.active .messages-name,
+	.chat-list-sidebar .chat-contact-list a:hover .messages-name,
+	.chat-contact-list nav.chat-channel-list a:hover,
+	.chat-details .chat-details-header .chat-right-icons a:hover,
+	.chat-details .middle .normal:hover a,
+	.chat-details .middle .flex-row-reverse:hover a,
+	.footable.breakpoint>tbody>tr>td>span.footable-toggle,
+	.file-manager-sidebar .file-manager-menu ul li:hover a,
+	.file-manager-content .file-manager-file-list .card:hover .card-body a.tx-dark,
+	.page-inner-content .inner-sidebar .section-nav .nav-link:hover,
+	.page-inner-content .inner-sidebar .section-nav .nav-link.active,
+	.ui-accordion-header.ui-state-active,
+	.ui-accordion .ui-accordion-header:hover,
+	.icons-list>div i,
+	.icons-list>div svg,
+	.settingPanelToggle {
+		color: $theme-color-cyan;
+	}
+
+	.page-sidebar-menu ul li a .adata-svg-icon g [fill],
+	.page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+	.page-sidebar-menu ul>li.active a .adata-svg-icon g [fill],
+	.page-header .navbar-default .adata-svg-icon g [fill],
+	.page-header .navbar-default a.dropdown-icon .adata-svg-icon g [fill],
+	.adata-svg-icon g [fill] {
+		fill: $theme-color-cyan;
+	}
+
+	.btn-primary,
+	.btn-custom-primary,
+	.btn-outline-brand:hover,
+	.btn-outline-primary:hover,
+	.btn-primary:not(:disabled):not(.disabled).active,
+	.btn-primary:not(:disabled):not(.disabled):active,
+	.btn-primary:not(:disabled):not(.disabled):active,
+	.tooltip-primary .tooltip-inner,
+	.header-right .top-message-area .top-message-heading>span,
+	.header-right .top-notifications-area .notifications-heading>span,
+	.show>.btn-primary.dropdown-toggle,
+	.daterangepicker td.active,
+	.daterangepicker td.active:hover,
+	.applyBtn.btn-primary:hover,
+	.selectgroup-input-radio:focus+.selectgroup-button,
+	.selectgroup-input-radio:checked+.selectgroup-button,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.custom-control-input:checked~.custom-control-label::before,
+	.badge-primary,
+	.selectize-control.contacts .selectize-input>div,
+	.tui-full-calendar-confirm,
+	.tui-datepicker .tui-is-selectable.tui-is-selected,
+	.tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected,
+	.tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator,
+	.page-inner-content .inner-sidebar .section-nav .nav-link.active::after,
+	.nav-pills .nav-link.active,
+	.nav-pills .show>.nav-link,
+	.bg-flat-color .accordion-title.ui-accordion-header-active,
+	.bg-flat-color .ui-widget-content.ui-accordion-content-active,
+	.custom-list-group .list-group-item.active,
+	.custom-scrollbar .custom-scrollbar-color>.ps__rail-y>.ps__thumb-y,
+	.irs--flat .irs-bar,
+	.irs--flat .irs-from,
+	.irs--flat .irs-to,
+	.irs--flat .irs-single,
+	.irs--flat .irs-handle>i:first-child,
+	.irs--flat .irs-handle.state_hover>i:first-child,
+	.irs--flat .irs-handle:hover>i:first-child,
+	.checkbox label::after,
+	.sk-plane,
+	.sk-chase-dot:before,
+	.sk-bounce-dot,
+	.sk-wave-rect,
+	.sk-pulse,
+	.sk-flow-dot,
+	.sk-swing-dot,
+	.sk-circle-dot:before,
+	.sk-circle-fade-dot:before,
+	.sk-grid-cube,
+	.sk-fold-cube:before,
+	.sk-wander-cube,
+	.btn-scroll-top {
+		background-color: $theme-color-cyan;
+	}
+
+	.bg-primary,
+	.header-color .accordion-title.bg-primary {
+		background-color: $theme-color-cyan!important;
+	}
+
+	.bg-soft-color .accordion-title.ui-accordion-header-active,
+	.bg-soft-color .ui-widget-content.ui-accordion-content-active {
+		background: rgba(62, 198, 189, 0.1);
+	}
+
+	.page-sidebar-menu ul li.active>a,
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-collapsed .page-sidebar-menu ul li.active>a,
+	.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+	.page-sidebar-collapsed .open:not(.active)>a {
+		background: #e2f7f5;
+	}
+
+	.selectize-control.contacts .selectize-input>div {
+		background: $theme-color-cyan;
+		background: -moz-linear-gradient(top, $theme-color-cyan 0%, $theme-color-cyan 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $theme-color-cyan), color-stop(100%, $theme-color-cyan));
+		background: -webkit-linear-gradient(top, $theme-color-cyan 0%, $theme-color-cyan 100%);
+		background: -o-linear-gradient(top, $theme-color-cyan 0%, $theme-color-cyan 100%);
+		background: -ms-linear-gradient(top, $theme-color-cyan 0%, $theme-color-cyan 100%);
+		background: linear-gradient(to bottom, $theme-color-cyan 0%, $theme-color-cyan 100%);
+	}
+
+	.btn-primary,
+	.btn-custom-primary,
+	.btn-primary:not(:disabled):not(.disabled).active,
+	.btn-primary:not(:disabled):not(.disabled):active,
+	.btn-outline-brand,
+	.btn-outline-primary,
+	.btn-outline-primary:hover,
+	.btn-default:hover,
+	.show>.btn-primary.dropdown-toggle,
+	.header-right .user-profile-area .dropdown-item:hover,
+	.applyBtn.btn-primary:hover,
+	.accordion-menu .sub-menu li a:hover:before,
+	.page-sidebar-menu ul li ul li.active>a:before,
+	.custom-control-input:checked~.custom-control-label::before,
+	input:focus,
+	.custom-file:focus,
+	.custom-select:focus,
+	.form-control:focus,
+	.selectize-control.contacts .selectize-input>div,
+	.selectize-control.contacts .selectize-input.dropdown-active,
+	.tui-full-calendar-popup-section-item:focus,
+	.tui-full-calendar-popup-section-item:hover,
+	.tui-full-calendar-dropdown:hover .tui-full-calendar-dropdown-button,
+	.tui-full-calendar-button:hover,
+	.tui-full-calendar-month-creation-guide,
+	.flow-drop,
+	.border-color .accordion-title.bd-primary,
+	.border-color .ui-widget-content.bd-primary,
+	.bg-soft-color .accordion-title.ui-accordion-header-active,
+	.bg-soft-color .ui-widget-content.ui-accordion-content-active,
+	.bg-flat-color .accordion-title.ui-accordion-header-active,
+	.bg-flat-color .ui-widget-content.ui-accordion-content-active,
+	.custom-list-group .list-group-item.active,
+	.contact-add-sidebar .form-group.birthday-select select:focus,
+	.btn-scroll-top {
+		border-color: $theme-color-cyan;
+	}
+
+	.tui-full-calendar-month-creation-guide {
+		border-color: $theme-color-cyan!important;
+	}
+
+	.audience-overview-tab a.active {
+		border-top: 1px solid $theme-color-cyan;
+	}
+
+	.irs--flat .irs-from:before,
+	.irs--flat .irs-to:before,
+	.irs--flat .irs-single:before {
+		border-top-color: $theme-color-cyan;
+	}
+
+	.mailbox-mini-sidebar .mail-menu li:hover,
+	.mailbox-mini-sidebar .label-menu li:hover a,
+	.mailbox-mini-sidebar .tag-menu li:hover a,
+	.chat-contact-list nav.chat-channel-list a:hover,
+	.file-manager-sidebar .file-manager-menu ul li:hover a {
+		border-left: 1px solid $theme-color-cyan;
+	}
+
+	.bg-soft-primary,
+	.custom-btn-group .nav-item a.active {
+		background-color: rgba(61, 199, 190, 0.1);
+		color: $theme-color-cyan;
+	}
+
+	.btn-primary:hover,
+	.btn-secondary:hover,
+	.btn-warning:hover,
+	.btn-success:hover,
+	.btn-danger:hover,
+	.btn-info:hover,
+	.btn-dark:hover,
+	.btn-custom-primary:hover,
+	.btn-outline-brand:hover,
+	.btn-outline-primary:hover,
+	.tooltip-primary .tooltip-inner,
+	.header-color .ui-accordion-header.ui-state-active,
+	.header-color .ui-accordion-header,
+	.header-color .ui-accordion-header:hover,
+	.bg-flat-color .accordion-title.ui-accordion-header-active,
+	.bg-flat-color .ui-widget-content.ui-accordion-content-active,
+	.btn-scroll-top {
+		color: #ffffff;
+	}
+
+	.tooltip-primary.bs-tooltip-top .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+		border-top-color: $theme-color-cyan
+	}
+
+	.tooltip-primary.bs-tooltip-bottom .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+		border-bottom-color: $theme-color-cyan
+	}
+
+	.tooltip-primary.bs-tooltip-left .arrow::before,
+	.tooltip-primary.bs-tooltip-left .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+		border-left-color: $theme-color-cyan
+	}
+
+	.tooltip-primary.bs-tooltip-right .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before,
+	.tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+		border-right-color: $theme-color-cyan
+	}
+
+	.order-details-tab .nav-item a.active,
+	.order-details-tab .nav-item a:hover {
+		color: $theme-color-cyan;
+		border-bottom: 1px solid $theme-color-cyan;
+	}
+
+
+	
+} 
+
+
+body.theme-cyan.page-sidebar-collapsed {
+	.logo a.logo-img img.small-logo {
+		background-image: url(../../../images/logos/small-logo-cyan.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.page-sidebar-menu>ul>li:hover>a,{
+		color: $theme-color-cyan;
+	}
+	
+	.page-sidebar-menu>ul>li:hover>a .adata-svg-icon g [fill] {
+		fill: $theme-color-cyan;
+	}	
+} 
+
+body.theme-cyan.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu>ul>li:hover>a {
+	background-color: $theme-color-cyan;
+}
+	
+body.dark-sidebar.theme-cyan .page-sidebar .page-sidebar-inner {
+	.page-sidebar-menu ul li.active>a,
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a {
+		background: $theme-color-cyan;
+	}	
+}
+
+
+/*Dark Theme CSS*/
+body.dark-theme.theme-cyan {
+	a:hover {
+		color: $theme-color-cyan!important;
+	}
+	
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-menu ul li.active>a{
+		color: $theme-color-cyan;
+		background-color: $background-color-cyan;
+	}
+
+	input:focus,
+	.custom-file:focus,
+	.custom-select:focus,
+	.form-control:focus,
+	.calculator-block .cryptonatorwidget input:focus,
+	.calculator-block .cryptonatorwidget select:focus,
+	.contact-add-sidebar .form-group.birthday-select select:focus {
+		border: 1px solid $theme-color-cyan;
+	}	
+} 
+
+body.dark-theme.theme-cyan.page-sidebar-collapsed {
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-menu ul li.active>a {
+		color: $theme-color-cyan;
+		background-color: $background-color-cyan;
+	}
+}
+
+
+/*Semi Dark Theme CSS*/
+body.semi-dark-theme.theme-cyan {
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-menu ul li.active>a{
+		color: $theme-color-cyan;
+		background-color: $background-color-cyan;
+	}
+	
+	input:focus,
+	.custom-file:focus,
+	.custom-select:focus,
+	.form-control:focus,
+	.calculator-block .cryptonatorwidget input:focus,
+	.calculator-block .cryptonatorwidget select:focus,
+	.contact-add-sidebar .form-group.birthday-select select:focus {
+		border: 1px solid $theme-color-cyan;
+	}
+}
+
+body.semi-dark-theme.theme-cyan.page-sidebar-collapsed {
+	.page-sidebar-menu ul li a:hover,
+	.open:not(.active)>a,
+	.page-sidebar-menu ul li.active>a {
+		color: $theme-color-cyan;
+		background-color: $background-color-cyan;
+	}
+}

@@ -1,0 +1,708 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>USM Men's Dormitory</title>
+  <link href="{% static 'assets/images/small-logo.png' %}" rel="icon">
+  <link href="{% static 'assets/images/small-logo.png' %}" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'landing_page/assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">USM Men's Dormitory</a></h1>
+      <a href="index.html" class="logo"><img src="{% static 'assets/images/small-logo.png' %}" alt="" class="img-fluid"></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="getstarted scrollto" href="{% url 'login' %}">Login/Register</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Welcome to University of Southern Mindanao Men's Dormitory</h1>
+          <h2>Your Comfort Beyond Home</h2>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="{% url 'login' %}" class="btn-get-started scrollto">Start Your Reservation</a>
+      </div>
+
+      <div class="container">
+        <div class="justify-content-center">
+          <div class="row icon-boxes">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="ri-reserved-line"></i></div>
+                <h4 class="title"><a href="">Reservation</a></h4>
+                <p class="description">Effortlessly make and manage reservations with our user-friendly system.</p>
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="ri-bill-line"></i></div>
+                <h4 class="title"><a href="">Automated Billing</a></h4>
+                <p class="description">Experience the convenience of automated billing for all your financial transactions.</p>
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="ri-user-line"></i></div>
+                <h4 class="title"><a href="">Student Profiling</a></h4>
+                <p class="description">Create and manage student profiles with ease, keeping essential information at your fingertips.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+              <div class="icon-box">
+                <div class="icon"><i class="ri-building-line"></i></div>
+                <h4 class="title"><a href="">Amenities</a></h4>
+                <p class="description">Explore the wide range of amenities and facilities available for your convenience and enjoyment.</p>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-purecounter-start="0" data-purecounter-end="{{ room_count }}" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Available Room</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-purecounter-start="0" data-purecounter-end="{{ dorm_count }}" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Dormitories</p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-purecounter-start="0" data-purecounter-end="{{ student_count }}" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Student Stayed</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= About Video Section ======= -->
+    <section id="about" class="about-video">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <img src="{% static 'landing_page/assets/img/red-buildings-households.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>University of Southern Mindanao Dormitory Rules</h3>
+            <p class="fst-italic">
+              Explore our dormitory guidelines for a smooth and safe living experience.
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> That every resident should bring necessary appliances.</li>
+              <li><i class="bx bx-check-double"></i> That every resident should provide a time schedule to the dorm manager/attendant to be posted in one of the corners of the lobby for ready reference. </li>
+              <li><i class="bx bx-check-double"></i> That resident should behave in a manner that be speaks of dignified person worthy of respect by others.</li>
+              <li><i class="bx bx-check-double"></i>That resident is <span class="fw-bold">STRICTLY PROHIBITED</span> from bringing visitors <span class="fw-bold">INSIDE HIS ROOM</span>. </li>
+
+              <li><i class="bx bx-check-double"></i> That visitor must <span class="fw-bold">ONLY BE ENTERTAINED</span> at the <span class="fw-bold">RECEIVING ROOM</span>.</li>
+              <li><i class="bx bx-check-double"></i> That resident must be in proper attire when entertaining visitors. </li>
+
+              <li><i class="bx bx-check-double"></i> That observed <span class="fw-bold">CURFEW HOURS IS 9:00 P.M.</span> Resident who will stay outside of the dormitory beyond curfew hour must ask permission from the dorm personnel and must sign the logbook.</li>
+              <li><i class="bx bx-check-double"></i> That daily cleaners will be assigned and scheduled to clean the hallway, receiving hall, lobby and kitchen. </li>
+
+              <li><i class="bx bx-check-double"></i> That every resident should bring necessary appliances.</li>
+            </ul>
+
+            <a type="button" data-bs-toggle="modal" class="btn btn-primary btn-lg" data-bs-target="#exampleModal" style="background-color: #5c76fb; color: #fff;" href="#">Learn More</a>
+           
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Video Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Start Your Reservation By Clicking The Button</h3>
+          <p>Ready to secure your spot? Take the first step by clicking the button below. Our simple reservation process is just a click away, ensuring you're on your way to an enjoyable experience with us. Don't wait, make your reservation now!</p>
+          <a class="cta-btn" href="{% url 'login' %}">Start You Reservation</a>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg justify-content-center">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>USM MEN'S DORMITORY TEAM</h2>
+          <p>The USM Men's Dormitory Officers are a dedicated team committed to ensuring a safe and comfortable living environment for male students at our university. With a focus on security, well-being, and community building, our officers work tirelessly to maintain a welcoming atmosphere within the dormitories.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/v-pres external.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/profile.php?id=100086734300479&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Roger Lamason Porras Jr</h4>
+                <span>Vice-President External</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/dorm manager.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/johnray.balut?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>J-r Bal-ut</h4>
+                <span>Dormitory Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/president.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/johnmichael.sahisa?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>John Michael Batuampo Sahisa</h4>
+                <span>Dormitory President</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/v-pres internal.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/rydeljames.quismundo?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rydel James Quismundo</h4>
+                <span>Vice-President Internal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/auditor.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/nie.li.353803?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nherone Bryle C. Sabay</h4>
+                <span>Auditor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/secretary.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/james.pallado.1?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Darwin Pallado</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/treasurer.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/profile.php?id=100075335860551&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Charles Justin Advincula</h4>
+                <span>Treasurer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/pio.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/crxtyan?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Christian Paul Asis</h4>
+                <span>P.I.O</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/bod laysa.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/itsmelaysax?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Christian Paul Laysa</h4>
+                <span>Board of Director</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/bod walog.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/lyvincloid.walog.7?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Lyvin Cloid Walog </h4>
+                <span>Board of Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/bus man.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/ayykog.labda.90?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Brenz Bebit</h4>
+                <span>Business Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'landing_page/assets/img/mdofficers/busi man.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.facebook.com/stfukix?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Kian Angelo Escobido</h4>
+                <span>Business Manager</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+     <!-- ======= Cta Section ======= -->
+     <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Start Your Reservation By Clicking The Button</h3>
+          <p>Ready to secure your spot? Take the first step by clicking the button below. Our simple reservation process is just a click away, ensuring you're on your way to an enjoyable experience with us. Don't wait, make your reservation now!</p>
+          <a class="cta-btn" href="{% url 'login' %}">Start You Reservation</a>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="rooms" class="team section-bg justify-content-center">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <div class="section-title">
+            <h2>USM MEN'S DORMITORY ROOMS</h2>
+            <p>The USM Men's Dormitory Rooms offer a comfortable and conducive living environment for male students pursuing their academic journey at our institution. </p>
+          </div>
+          <div class="row">
+            {% for room in room_info %}
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="member-img">
+                  <img src="{{ room.room_image.url }}" class="img-fluid" alt="{{ room.room_name }}">
+                  <div class="social">
+                    <button type="button" onclick="redirect()" translate="no" style="text-transform: uppercase; background-color: transparent !important; width: 100%; height: 100%; outline: none !important; border: none !important; color: #5c76fb;">Reserve</button>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>{{ room.room_name }}</h4>
+                  <span>{{ room.dorm_id.dorm_name }}</span>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>University Men's Domitory Frequently Asked Questions</h2>
+          <p class="text-center">Welcome to our FAQ section, where we aim to provide quick and helpful answers to the questions you may have. Whether you're seeking information about our services, policies, or anything else, you'll find concise and informative responses here. </p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How do I apply for a spot in the men's dormitory? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Typically, the university will provide application instructions on their housing website. It often involves filling out an online application form and submitting necessary documents.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What amenities are usually available in the men's dormitory? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Men's dormitories typically offer a range of amenities, including shared bedrooms, communal bathrooms, common areas, study spaces, and sometimes recreational facilities like a gym or game room.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Can I choose my roommate?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Some universities allow you to request a specific roommate, while others use a random assignment system. Check with your university's housing office for their specific policies.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Are cooking facilities available in the men's dormitory?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Many dorms have communal kitchens equipped with basic appliances like microwaves and stoves. However, policies vary, and some dorms may only allow microwave use.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is it possible to have guests in the dormitory? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Generally, most dorms allow guests, but there are often rules and regulations to ensure the safety and comfort of all residents. Check with your dorm's rules and regulations for more.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">What security measures are in place? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dormitories usually have security measures such as security personnel, and surveillance cameras to ensure the safety of residents.
+                </p>
+              </div>
+            </li>
+
+
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Can I decorate my dorm room? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, you can usually personalize your space with decorations within the guidelines set by the university. Avoid causing damage to the walls or furniture.
+                </p>
+              </div>
+            </li>
+
+
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Are there quiet hours in the dormitory? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Many dorms have designated quiet hours to ensure a conducive environment for studying and rest. Check the dormitory rules for specific details.
+                </p>
+              </div>
+            </li>
+
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">How is laundry handled in the men's dormitory?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dorms typically have laundry facilities for boarders. 
+                </p>
+              </div>
+            </li>
+
+
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">What should I bring to the men's dormitory? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Besides personal items, check with the university for a recommended list. Essentials often include bedding, toiletries, kitchenware (if allowed), and any specific items based on dormitory rules.
+                </p>
+              </div>
+            </li>
+            
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">University of Southern Mindanao Men's Dormitory Rule</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Rule No.</th>
+                <th scope="col">Rule Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>That every resident should bring necessary appliances.</td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>That every resident should provide a time schedule to the dorm manager/attendant to be posted in one of the corners of the lobby for ready reference.</td>
+              </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td>That resident should behave in a manner that be speaks of a dignified person worthy of respect by others.</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>That a resident is STRICTLY PROHIBITED from bringing visitors INSIDE HIS ROOM.</td>
+              </tr>
+              <tr>
+                  <th scope="row">5</th>
+                  <td>That visitors must ONLY BE ENTERTAINED at the RECEIVING ROOM.</td>
+              </tr>
+              <tr>
+                  <th scope="row">6</th>
+                  <td>That a resident must be in proper attire when entertaining visitors.</td>
+              </tr>
+              <tr>
+                  <th scope="row">7</th>
+                  <td>That observed CURFEW HOURS IS 9:00 P.M. Residents who will stay outside of the dormitory beyond curfew hour must ask permission from the dorm personnel and must sign the logbook.</td>
+              </tr>
+              <tr>
+                  <th scope="row">8</th>
+                  <td>That daily cleaners will be assigned and scheduled to clean the hallway, receiving hall, lobby, and kitchen.</td>
+              </tr>
+              <tr>
+                  <th scope="row">9</th>
+                  <td>That a resident should use the dormitory facilities properly and with utmost care.</td>
+              </tr>
+              <tr>
+                  <th scope="row">10</th>
+                  <td>That shouting, talking aloud, boisterous laughter, running in the corridors, or kicking doors, and the use of radio/cassettes are strictly prohibited, especially during rest/quiet hours at 12:30-2:00 PM and after 7:00 PM to 5:00 AM.</td>
+              </tr>
+              <tr>
+                  <th scope="row">11</th>
+                  <td>That parents are allowed to visit their son and can sleep for a night. Stays beyond one day will be charged Php. 100.00 per night.</td>
+              </tr>
+              <tr>
+                  <th scope="row">12</th>
+                  <td>That COOKING AND EATING SHOULD BE AT THE KITCHEN/DINING HALL ONLY. NON-RESIDENTS ARE NOT ALLOWED TO EAT HABITUALLY WITH THE RESIDENTS.</td>
+              </tr>
+              <tr>
+                  <th scope="row">13</th>
+                  <td>That a resident may be asked to do special work/assignment in preparation for any dormitory or school activities.</td>
+              </tr>
+              <tr>
+                  <th scope="row">14</th>
+                  <td>Smoking and drinking liquor are strictly prohibited inside the dormitory.</td>
+              </tr>
+              <tr>
+                  <th scope="row">15</th>
+                  <td>That residents are required to attend regular schedule/special meetings called upon by the dorm manager or authorized persons.</td>
+              </tr>
+              <tr>
+                  <th scope="row">16</th>
+                  <td>That dormitory rental is considered non-refundable if a resident is terminated due to house rule violations.</td>
+              </tr>
+              <tr>
+                  <th scope="row">17</th>
+                  <td>That residents who wish to join an Educational Field Trip or Off-Campus activities should secure permission from the dorm manager/attendant.</td>
+              </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" style="background-color: #5c76fb !important; color: #fff !important;" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>USM Men's Dormitory</span></strong>.
+        </div>
+        <div class="credits">
+         Made with 💗
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.facebook.com/usmdormitory?mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'landing_page/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'landing_page/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'landing_page/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'landing_page/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'landing_page/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'landing_page/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'landing_page/assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'landing_page/assets/js/main.js' %}"></script>
+  <script>
+   function redirect(){
+    window.location.href = '/auth/'
+   }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{% extends 'includes/base.html' %}
+{% block title %}Add Billing{% endblock %}
+
+{% block content %}
+<div class="col-lg-12">
+    
+{% for message in messages %}
+    <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+    </div>
+{% endfor %}
+
+<h2>Add Billing Page</h2>
+
+<div class="card mt-3">
+    <div class="inner-content">
+        <div class="custom-fieldset-style mg-b-30">
+            <div class="clearfix">
+                <div class="clearfix">
+                   <form action="{% url 'add_billing' %}" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+
+                    <div class="form-group mt-3">
+                        <input type="submit" class="btn btn-primary btn-md" value="Add Billing">
+                    </div>
+
+                   </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

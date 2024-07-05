@@ -1,0 +1,155 @@
+/**********************************************************************
+***********************************************************************
+### Theme Name : Sidebar Theme Orange
+*********************************************************************
+*********************************************************************/
+/*Light Theme CSS*/
+body.sidebar-orange .logo a.logo-img {
+  background-image: url(../../../images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.sidebar-orange .logo a.logo-img img {
+  display: none; }
+body.sidebar-orange .page-sidebar .logo {
+  background-color: #ec9616;
+  border-right: 1px solid #ec9616;
+  border-bottom: 1px solid #ec9616; }
+body.sidebar-orange .page-sidebar {
+  border-right: 1px solid #ec9616; }
+body.sidebar-orange .page-sidebar-menu ul li.menu-label,
+body.sidebar-orange .page-sidebar-menu ul li a,
+body.sidebar-orange .page-sidebar-menu ul li a i.accordion-icon,
+body.sidebar-orange .accordion-menu .sub-menu .sub-menu-label {
+  color: #f1f1ff !important; }
+body.sidebar-orange .page-sidebar-menu ul li a:hover,
+body.sidebar-orange .page-sidebar-menu ul li.active > a,
+body.sidebar-orange .open:not(.active) > a {
+  color: #ffffff !important;
+  background: #c77c0b !important; }
+body.sidebar-orange .page-sidebar-menu ul li ul.sub-menu li.active > a,
+body.sidebar-orange .page-sidebar-menu ul li .sub-menu a:hover {
+  color: #ffffff !important;
+  background: transparent !important; }
+body.sidebar-orange .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.sidebar-orange .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.sidebar-orange .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill] {
+  fill: #ffffff !important;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+body.sidebar-orange .accordion-menu .sub-menu li a:before {
+  border: 1px solid #f1f1ff; }
+body.sidebar-orange .page-sidebar-menu ul li ul li.active > a:before,
+body.sidebar-orange .accordion-menu .sub-menu li a:hover:before,
+body.sidebar-orange .page-sidebar-menu ul li ul li.active > a:hover:before {
+  border: 1px solid #ec9616 !important;
+  background: #ffffff !important; }
+body.sidebar-orange .page-sidebar {
+  background: #ffa117; }
+body.sidebar-orange .page-sidebar-inner .accordion-menu .sub-menu {
+  background: #d68711; }
+body.sidebar-orange .accordion-menu .sub-menu li.divider-border {
+  border-top: 1px solid #e69215; }
+
+body.sidebar-orange.page-sidebar-collapsed .logo a.logo-img img.small-logo {
+  background-image: url(../../../images/small-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+body.sidebar-orange.page-sidebar-collapsed .page-sidebar .logo {
+  background-color: #c77c0b; }
+body.sidebar-orange.page-sidebar-collapsed .page-sidebar {
+  background: #ec9616; }
+body.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background: #ec9616; }
+body.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu {
+  border-left: 1px solid #ec9616;
+  border-right: 1px solid #ec9616;
+  border-bottom: 1px solid #ec9616; }
+body.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li > a,
+body.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  border: 1px solid #ec9616; }
+
+/*Semi-Dark Theme CSS*/
+body.semi-dark-theme.sidebar-orange .page-sidebar-menu ul li ul.sub-menu li.active > a,
+body.semi-dark-theme.sidebar-orange .page-sidebar-menu ul li .sub-menu a:hover {
+  color: #ec9616 !important; }
+body.semi-dark-theme.sidebar-orange .page-sidebar-menu ul li a .adata-svg-icon g [fill] {
+  fill: #ec9616 !important; }
+body.semi-dark-theme.sidebar-orange .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.semi-dark-theme.sidebar-orange .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill] {
+  fill: #ffffff !important; }
+
+body.semi-dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li > a,
+body.semi-dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  border: 1px solid #1a233a; }
+body.semi-dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu ul li a:hover,
+body.semi-dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu ul li.active > a,
+body.semi-dark-theme.sidebar-orange.page-sidebar-collapsed .open:not(.active) > a {
+  color: #ffffff !important;
+  background: #151d33 !important; }
+
+/*Dark Theme CSS*/
+body.dark-theme.sidebar-orange .page-sidebar .logo {
+  background-color: #ec9616;
+  border-right: 1px solid #ec9616;
+  border-bottom: 1px solid #ec9616; }
+body.dark-theme.sidebar-orange .page-sidebar {
+  border-right: 1px solid #ec9616; }
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li.menu-label,
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li a,
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li a i.accordion-icon,
+body.dark-theme.sidebar-orange .accordion-menu .sub-menu .sub-menu-label {
+  color: #f1f1ff !important; }
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li a:hover,
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li.active > a,
+body.dark-theme.sidebar-orange .open:not(.active) > a {
+  color: #ffffff !important;
+  background: #c77c0b !important; }
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li ul.sub-menu li.active > a,
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li .sub-menu a:hover {
+  color: #ffffff !important;
+  background: transparent !important; }
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li a .adata-svg-icon g [fill],
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li a:hover .adata-svg-icon g [fill],
+body.dark-theme.sidebar-orange .page-sidebar-menu ul > li.active a .adata-svg-icon g [fill] {
+  fill: #ffffff !important;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+body.dark-theme.sidebar-orange .accordion-menu .sub-menu li a:before {
+  border: 1px solid #f1f1ff; }
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li ul li.active > a:before,
+body.dark-theme.sidebar-orange .accordion-menu .sub-menu li a:hover:before,
+body.dark-theme.sidebar-orange .page-sidebar-menu ul li ul li.active > a:hover:before {
+  border: 1px solid #ec9616 !important;
+  background: #ffffff !important; }
+body.dark-theme.sidebar-orange .page-sidebar {
+  background: #ffa117; }
+body.dark-theme.sidebar-orange .page-sidebar-inner .accordion-menu .sub-menu {
+  background: #d68711; }
+body.dark-theme.sidebar-orange .accordion-menu .sub-menu li.divider-border {
+  border-top: 1px solid #e69215; }
+body.dark-theme.sidebar-orange #collapsed-sidebar-toggle-button:hover {
+  background-color: #ec9616; }
+
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar .logo {
+  background-color: #c77c0b; }
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar {
+  background: #ec9616; }
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a {
+  background: #ec9616; }
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu {
+  border-left: 1px solid #ec9616;
+  border-right: 1px solid #ec9616;
+  border-bottom: 1px solid #ec9616; }
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li > a,
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a,
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li.active > a {
+  border: 1px solid #ec9616; }
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a,
+body.dark-theme.sidebar-orange.page-sidebar-collapsed .page-sidebar-menu > ul > li.active > a {
+  background-color: #ec9616; }
+
+/*# sourceMappingURL=sidebar-orange.css.map */

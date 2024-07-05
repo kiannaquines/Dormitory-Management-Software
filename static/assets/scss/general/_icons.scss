@@ -1,0 +1,63 @@
+/**********************************************************************
+***********************************************************************
+### Icons CSS
+*********************************************************************
+*********************************************************************/
+
+.icons-list {
+	border-left: 1px solid #eff1f5;
+	border-top: 1px solid #eff1f5;
+}
+
+.icons-list>div {
+	font-size: $font-size-default;
+	background: $color-white;
+	border-bottom: 1px solid #eff1f5;
+	border-right: 1px solid #eff1f5;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 15px 15px;
+}
+
+.icons-list>div>svg {
+	margin: 0 15px;
+	color: $color-primary;
+}
+
+.icons-list>div i {
+	color: $color-primary;
+	display: inline-block;
+	font-size: 20px;
+	text-align: left;
+	padding: 0 15px;
+}
+
+.icons-list>div:hover,
+.icons-list>div:hover span {
+	background: #f2f4ff;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.icons-list>div:hover i,
+.icons-list>div:hover svg {
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: all 0.35s ease !important;
+	-ms-transition: all 0.35s ease !important;
+	transition: all 0.35s ease !important;
+}
+
+.icons-list .flag-icon {
+	margin: 0 10px;
+}
+
+.icons-list .preview {
+	align-items: center;
+	display: flex;
+}

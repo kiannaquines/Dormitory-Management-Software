@@ -1,0 +1,22 @@
+/**********************************************************************
+***********************************************************************
+### Header Top Color Name : Green
+*********************************************************************
+*********************************************************************/
+body.header-bottom-color-green .page-header .header-bottom {
+  background-color: #6fa531;
+  color: #fff; }
+  body.header-bottom-color-green .page-header .header-bottom .bg-soft-primary,
+  body.header-bottom-color-green .page-header .header-bottom .bg-soft-info {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important; }
+  body.header-bottom-color-green .page-header .header-bottom .bg-soft-light,
+  body.header-bottom-color-green .page-header .header-bottom .tx-dark {
+    color: #ffffff !important; }
+
+body.dark-theme.header-bottom-color-green .bd-r {
+  border-right: 1px solid #ffffff; }
+body.dark-theme.header-bottom-color-green .page-header .header-bottom {
+  background-color: #6fa531; }
+
+/*# sourceMappingURL=header-bottom-green.css.map */

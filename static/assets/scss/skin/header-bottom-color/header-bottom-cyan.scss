@@ -1,0 +1,30 @@
+/**********************************************************************
+***********************************************************************
+### Header Color Name : Cyan
+*********************************************************************
+*********************************************************************/
+body.header-bottom-color-cyan .page-header .header-bottom {
+    background-color: #3db9b1;
+    color: #fff;
+	
+	.bg-soft-primary,
+	.bg-soft-info {
+		background-color: rgba(255, 255, 255, 0.15) !important;
+		color: #ffffff !important;
+	}
+
+	.bg-soft-light,
+	.tx-dark {
+		color: #ffffff !important;
+	}	
+}
+
+body.dark-theme.header-bottom-color-cyan {
+	.bd-r {
+		border-right: 1px solid #ffffff;
+	}
+
+	.page-header .header-bottom  {
+		background-color: #3db9b1;
+	}
+}

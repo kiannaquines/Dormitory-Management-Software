@@ -1,0 +1,40 @@
+/**********************************************************************
+***********************************************************************
+### Fixed Footer CSS
+*********************************************************************
+*********************************************************************/
+.page-footer-fixed {
+	.page-inner {
+		margin-bottom: 50px;
+	}
+
+	.page-footer {
+		position: fixed;
+		bottom: 0;
+		width: calc(100% - 250px);
+	}
+	
+	.page-container.container .page-footer {
+		position: fixed;
+		bottom: 0;
+		width: calc(100% - 555px);
+	}
+
+	.page-inner-content {
+		margin-bottom: 50px;
+	}
+}
+
+.page-sidebar-collapsed .page-content .page-footer {
+	width: calc(100% - 0px);
+}
+
+.page-sidebar-collapsed.page-footer-fixed .page-content .page-footer {
+	width: calc(100% - 60px);
+}
+
+.page-footer-fixed.page-sidebar-collapsed .page-container.container .page-footer {
+	position: fixed;
+	bottom: 0;
+	width: calc(100% - 365px);
+}
